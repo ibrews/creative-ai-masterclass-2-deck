@@ -276,7 +276,11 @@ def build():
     end = html.index('const BONUS =',begin)
     html = html[:begin]+'const SECTIONS ='+json.dumps(sections,ensure_ascii=False,indent=1)+';\n\n'+html[end:]
     html = re.sub(r'const BONUS = .*?;\n', 'const BONUS = '+json.dumps(dict(year='NEXT',title='Keep the world. Change the brief.',tagline='Save your accepted scene, inspect the evidence and give the next session one clear step.',notes='Use the sharing and restart checks in the workbook. The full route stays available after class.'))+';\n',html,count=1)
-    b0=html.index('const BOOKENDS ='); b1=html.index('\n};',b0)+3
+    bm = re.search(r'const BOOKENDS\s*=\s*', html)
+    b0 = bm.start()
+    _, used = json.JSONDecoder().raw_decode(html[bm.end():])
+    b1 = bm.end() + used
+    if html[b1:b1+1] == ';': b1 += 1
     bookends={k:dict(notes=v) for k,v in {
       'cover':'Thursday November 12, 2026, 11 a.m. to 1 p.m. Eastern. Show the completed scene first, then open the workbook. Students can follow it independently.',
       'intro':'Last week built creative workflows in Blender and Godot. Today uses Unreal and a bounded job with saved checkpoints.',
