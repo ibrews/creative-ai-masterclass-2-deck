@@ -1,0 +1,27 @@
+Alex Coulombe Presents — class promotion
+November 12, 2026 | Ready to share; not posted
+
+SHORT POST (241 characters)
+Build a world. Enter the jam. Join today’s Unreal Engine 5.9 AI Masterclass: native AI tools, Forage, a city kit and a Second Brain to keep. Nov 12, 11am–1pm ET. Get ready for the Epic AI MegaJam. https://www.alexcoulombepresents.com/classes
+
+LONG POST
+A prompt. A whole new world.
+
+Today’s Creative AI Workflow Masterclass Part 2 is about directing Unreal Engine 5.9 Preview to build something you can actually open, edit and make your own.
+
+We’ll use native AI tools, Forage and an original kit of parts to build a miniature harbor city, then turn it into a cinematic. You’ll leave with starter and finished Unreal projects, a self-paced step-by-step workbook, free Forage and a portable Unreal Second Brain of techniques and gotchas.
+
+We’ll finish by turning those skills into a small, playable prototype plan for the Epic AI MegaJam. Bring an idea; leave with a next move.
+
+Thursday, November 12 · 11am–1pm Eastern
+Live on Zoom · Recording and materials included
+Join: https://www.alexcoulombepresents.com/classes
+
+MEDIA
+megajam-class-card.png — landscape social card, 1672×941. AI-assisted artwork based on the native Unreal class scene.
+megajam-masterclass-2026-11-12-portrait.mp4 — 20 seconds, 1080×1920, silent. First 12 seconds are the actual UE 5.9 cinematic; final 8 seconds carry the signup card. Add platform-native music if desired; no music license is bundled.
+
+ALT TEXT
+A warmly lit miniature harbor city with towers, bridges, market stalls and lanterns. The headline reads “Build a world. Enter the jam.” An Alex Coulombe Presents Unreal Engine 5.9 AI masterclass takes place November 12, 11am–1pm Eastern, including Forage, a city kit and a Second Brain. Signup: alexcoulombepresents.com/classes.
+
+Publishing note: the class is independent of Epic’s competition. Jam eligibility and submission rules apply; attendance does not automatically qualify someone for the student category. See the official jam page linked in the workbook.

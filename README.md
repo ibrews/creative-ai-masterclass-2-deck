@@ -51,3 +51,7 @@ An independent rendered review passed all **101 slides** at desktop and phone si
 ## Credits
 
 **Alex Coulombe Presents**. Framework: [Spatial Deck](https://github.com/ibrews/spatial-deck). Part 1 source: [Small Worlds Workshop](https://github.com/ibrews/creative-ai-masterclass-1-deck). Fonts retain their included licenses. Engine basic shapes are referenced from the learner’s installed Unreal Engine.
+
+## Class promotion
+
+[Social card](images/promo/megajam-class-card.png), [20-second portrait video](media/promo/megajam-masterclass-2026-11-12-portrait.mp4) and [ready-to-share captions](promo/SIGNUP-COPY.txt) promote the November 12 class with an Epic AI MegaJam preparation angle. The silent video uses the actual native Unreal cinematic; the card is AI-assisted artwork. These assets are prepared, not posted. Signup points to the live class calendar.
