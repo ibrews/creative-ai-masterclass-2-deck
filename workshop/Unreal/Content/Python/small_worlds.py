@@ -61,7 +61,7 @@ def light(label, xyz, intensity, color, radius=650):
     comp.set_mobility(ue.ComponentMobility.MOVABLE)
     comp.set_editor_property('intensity', float(intensity))
     comp.set_editor_property('attenuation_radius', float(radius))
-    comp.set_editor_property('light_color', ue.Color(*color, 255))
+    comp.set_editor_property('light_color', ue.Color(r=color[0], g=color[1], b=color[2], a=255))
     return actor
 
 
@@ -183,7 +183,7 @@ def build(stage='starter'):
             z = 395 - 70 * (1 - (abs(x) / 700)**2)
             mesh('SW_HangingLantern_%d' % i, (x, -100, z), (32, 32, 44), gold, 'Sphere')
             if i % 3 == 0:
-                light('SW_FestivalLight_%d' % i, (x, -100, z), 650, (255, 137, 45), 420)
+                light('SW_FestivalLight_%d' % i, (x, -100, z), 45, (255, 137, 45), 420)
         # Nine individual stepping stones and boats give foreground scale cues.
         for i, x in enumerate(range(-600, 601, 150)):
             mesh('SW_SteppingStone_%d' % i, (x, -300, 2), (70, 60, 14), ivory, 'Cylinder')
@@ -202,7 +202,7 @@ def build(stage='starter'):
     sun.get_component_by_class(ue.DirectionalLightComponent).set_mobility(ue.ComponentMobility.MOVABLE)
     sun.get_component_by_class(ue.DirectionalLightComponent).set_editor_property('atmosphere_sun_light', True)
     sun.get_component_by_class(ue.DirectionalLightComponent).set_editor_property('intensity', 2.0 if dusk else 5.0)
-    sun.get_component_by_class(ue.DirectionalLightComponent).set_editor_property('light_color', ue.Color(255, 181, 119, 255) if dusk else ue.Color(235, 243, 255, 255))
+    sun.get_component_by_class(ue.DirectionalLightComponent).set_editor_property('light_color', ue.Color(r=255, g=181, b=119, a=255) if dusk else ue.Color(r=235, g=243, b=255, a=255))
     pp = ACTORS.spawn_actor_from_class(ue.PostProcessVolume, ue.Vector(0, 0, 0))
     pp.set_actor_label('SW_Exposure')
     pp.set_editor_property('unbound', True)

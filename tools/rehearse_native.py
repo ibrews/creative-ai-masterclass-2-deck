@@ -24,6 +24,14 @@ for stage, map_name in [('starter', '01_PaperCity'), ('dusk', '02_Dusk'), ('fest
             if actor.get_actor_label().startswith('SW_Roof_'):
                 side = int(actor.get_actor_label().rsplit('_', 1)[1])
                 actor.set_actor_rotation(ue.Rotator(-side * 30, 0, 0), False)
+            if isinstance(actor, ue.PointLight):
+                comp = actor.get_component_by_class(ue.PointLightComponent)
+                festival_light = actor.get_actor_label().startswith('SW_FestivalLight_')
+                comp.set_editor_property('intensity', 45.0 if festival_light else 90.0)
+                comp.set_editor_property('light_color', ue.Color(r=255, g=137 if festival_light else 157, b=45 if festival_light else 67, a=255))
+            if isinstance(actor, ue.DirectionalLight):
+                comp = actor.get_component_by_class(ue.DirectionalLightComponent)
+                comp.set_editor_property('light_color', ue.Color(r=235, g=243, b=255, a=255) if stage == 'starter' else ue.Color(r=255, g=181, b=119, a=255))
             if isinstance(actor, ue.PostProcessVolume):
                 settings = actor.get_editor_property('settings')
                 settings.set_editor_property('override_auto_exposure_apply_physical_camera_exposure', True)
