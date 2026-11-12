@@ -209,7 +209,7 @@ def render_lesson(lesson, index, total, next_id):
     slug = escape(lesson["id"])
     actions = "".join(f"<li>{escape(action)}</li>" for action in lesson["actions"])
     if lesson["image"]:
-        caption = escape(CAPTIONS[lesson["id"]])
+        caption = escape(lesson.get("caption") or CAPTIONS.get(lesson["id"], lesson["subtitle"]))
         # The visible caption supplies the image's equivalent in the reading order.
         visual = (f'<figure class="illustration"><img src="{data_uri(lesson["image"])}" alt="">'
                   f'<figcaption>{caption}</figcaption></figure>')

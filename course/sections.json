@@ -78,7 +78,7 @@
           "Open a chat in this project.",
           "Check that it can name real files."
         ],
-        "notes": "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\n\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\n\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\n\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\n\nCheck: It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nRecovery: Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content.",
+        "notes": "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\n\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\n\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\n\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower wall heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\n\nCheck: It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nRecovery: Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content.",
         "guideStep": "open-folder",
         "example": {
           "label": "Your route",
@@ -101,11 +101,11 @@
         "example": {
           "label": "Prompt opening",
           "lines": [
-            "Read AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything."
+            "Read AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower wall heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything."
           ]
         },
         "guideStep": "open-folder",
-        "notes": "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\n\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\n\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\n\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\n\nCheck: It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nRecovery: Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content."
+        "notes": "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\n\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\n\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\n\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower wall heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\n\nCheck: It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nRecovery: Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content."
       },
       {
         "title": "04 · Write a small job before running it",
@@ -277,7 +277,7 @@
           "Compare the two 180 cm-wide bridges with the towers.",
           "Run Actions/05_verify_current.py."
         ],
-        "notes": "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\n\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\n\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\n\nCheck: Tower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nRecovery: A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing.",
+        "notes": "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\n\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\n\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\n\nCheck: Tower wall heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nRecovery: A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing.",
         "guideStep": "units",
         "example": {
           "label": "Your route",
@@ -295,7 +295,7 @@
         "bullets": [
           "Copy the complete prompt from the workbook.",
           "Inspect the actual result before continuing.",
-          "Tower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count."
+          "Tower wall heights are 200 / 300 / 400 cm. A receipt states the engine and actor count."
         ],
         "example": {
           "label": "Prompt opening",
@@ -304,7 +304,7 @@
           ]
         },
         "guideStep": "units",
-        "notes": "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\n\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\n\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\n\nCheck: Tower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nRecovery: A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing."
+        "notes": "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\n\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\n\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\n\nCheck: Tower wall heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nRecovery: A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing."
       },
       {
         "title": "09 · Inspect the material library",
@@ -475,10 +475,10 @@
         "subtitle": "Name the visual problem and protect what works.",
         "bullets": [
           "Pick one screenshot and write what you see.",
-          "Name the protected elements: tower heights, camera, bridge width and accepted rail material.",
+          "Name the protected elements: tower wall heights, camera, bridge width and accepted rail material.",
           "Ask for one revision in a duplicate map."
         ],
-        "notes": "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\n\nName the protected elements: tower heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\n\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\n\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\n\nCheck: The revision changes one named problem and preserves your protected choices.\n\nRecovery: If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change.",
+        "notes": "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\n\nName the protected elements: tower wall heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\n\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\n\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower wall heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\n\nCheck: The revision changes one named problem and preserves your protected choices.\n\nRecovery: If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change.",
         "guideStep": "art-direction",
         "example": {
           "label": "Your route",
@@ -502,11 +502,11 @@
         "example": {
           "label": "Prompt opening",
           "lines": [
-            "The hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate …"
+            "The hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower wall heights, both bridges, the camera and all materials. Work only in a dupli…"
           ]
         },
         "guideStep": "art-direction",
-        "notes": "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\n\nName the protected elements: tower heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\n\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\n\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\n\nCheck: The revision changes one named problem and preserves your protected choices.\n\nRecovery: If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change."
+        "notes": "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\n\nName the protected elements: tower wall heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\n\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\n\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower wall heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\n\nCheck: The revision changes one named problem and preserves your protected choices.\n\nRecovery: If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change."
       },
       {
         "title": "14 · Request a batch with a fixed budget",
@@ -913,7 +913,7 @@
           "Specify the allowed map, output folder, maximum active time, retry count and checkpoint frequency.",
           "Ask for a short progress file at each completed milestone."
         ],
-        "notes": "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\n\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\n\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\n\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\n\nCheck: The agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nRecovery: If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized.",
+        "notes": "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\n\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\n\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\n\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower wall heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\n\nCheck: The agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nRecovery: If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized.",
         "guideStep": "long-job",
         "example": {
           "label": "Your route",
@@ -937,11 +937,11 @@
         "example": {
           "label": "Prompt opening",
           "lines": [
-            "In a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. S…"
+            "In a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower wall heights. Budget: 20 minutes, two retries per failing operation, no paid servic…"
           ]
         },
         "guideStep": "long-job",
-        "notes": "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\n\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\n\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\n\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\n\nCheck: The agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nRecovery: If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized."
+        "notes": "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\n\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\n\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\n\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower wall heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\n\nCheck: The agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nRecovery: If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized."
       },
       {
         "title": "25 · Separate checks from your verdict",

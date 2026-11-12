@@ -21,6 +21,9 @@ for stage, map_name in [('starter', '01_PaperCity'), ('dusk', '02_Dusk'), ('fest
     if os.environ.get('SMALL_WORLDS_FROM_SAVED') == '1':
         sw.LEVELS.load_level(sw.ROOT + '/Maps/' + map_name)
         for actor in sw.ACTORS.get_all_level_actors():
+            if actor.get_actor_label().startswith('SW_Roof_'):
+                side = int(actor.get_actor_label().rsplit('_', 1)[1])
+                actor.set_actor_rotation(ue.Rotator(-side * 30, 0, 0), False)
             if isinstance(actor, ue.PostProcessVolume):
                 settings = actor.get_editor_property('settings')
                 settings.set_editor_property('override_auto_exposure_apply_physical_camera_exposure', True)

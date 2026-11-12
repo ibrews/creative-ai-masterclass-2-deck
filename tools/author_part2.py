@@ -245,6 +245,17 @@ def write_support():
 
 def build():
     write_support()
+    proof_images = {'starter': ('01-daylight.png', 'Native Unreal baseline: three paper towers, two bridges and the canal.'),
+                    'dusk': ('02-dusk.png', 'The same native scene with dusk lighting and warm lanterns.'),
+                    'festival': ('03-festival.png', 'Native festival map with trees, benches, boats and hanging lanterns.'),
+                    'sequence': ('04-wide.png', 'Wide camera in the saved native cinematic map.'),
+                    'camera': ('05-bridge.png', 'The bridge camera view, captured in Unreal Editor.'),
+                    'render': ('06-sculpture.png', 'Sculpture detail view from the native cinematic map.')}
+    for l in lessons:
+        if l['id'] in proof_images:
+            filename, caption = proof_images[l['id']]
+            if (ROOT / 'images' / 'part2' / filename).exists():
+                l.update(image='images/part2/' + filename, caption=caption)
     (ROOT/'classroom/lessons.json').write_text(json.dumps(lessons, indent=2, ensure_ascii=False)+'\n')
     groups = {}
     for l in lessons:
@@ -258,6 +269,9 @@ def build():
             c = dict(title=f'{idx:02} · '+l['title'], subtitle=l['subtitle'],
                      bullets=[escape(x) for x in l['actions']], notes=notes, guideStep=l['id'],
                      example=dict(label='Your route',lines=l['plate']))
+            if l['image']:
+                c['img'] = l['image']
+                c.pop('example', None)
             # Short action summaries on screen; full instructions stay in notes and workbook.
             c['bullets'] = [escape(x.split('. ')[0]+'.') for x in l['actions']]
             cases.append(c)

@@ -153,7 +153,7 @@ def build(stage='starter'):
                 mesh('SW_Window_%d_%d_%d' % (i, level, dx), (x + dx, 108, level * 75), (38, 8, 36), gold)
         # Pair of sloped planes forms a folded paper roof. Deliberately readable construction.
         for side in [-1, 1]:
-            mesh('SW_Roof_%d_%d' % (i, side), (x + side * 70, 220, h + 32), (165, 250, 12), brass, rotation=(side * 30, 0, 0))
+            mesh('SW_Roof_%d_%d' % (i, side), (x + side * 70, 220, h + 32), (165, 250, 12), brass, rotation=(-side * 30, 0, 0))
     for bx in [-490, 490]:
         mesh('SW_Bridge_%d' % bx, (bx, -170, 12), (180, 530, 25), ivory)
         for dx in [-88, 88]:
