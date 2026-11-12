@@ -32,6 +32,9 @@ def package(mode, output):
     content = project / 'Unreal' / 'Content' / 'SmallWorlds'
     if mode == 'starter' and content.exists():
         shutil.rmtree(content)  # only our new packaging copy, never the source project
+    if mode == 'finished':
+        config = project / 'Unreal' / 'Config' / 'DefaultEngine.ini'
+        config.write_text(config.read_text().replace('EditorStartupMap=/Engine/Maps/Entry', 'EditorStartupMap=/Game/SmallWorlds/Maps/04_Cinematic'))
     if mode == 'finished' and not list(content.rglob('*.umap')):
         raise SystemExit('No native maps: refusing a Finished package')
     deck = project / 'Deck'

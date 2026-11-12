@@ -18,7 +18,7 @@ env "UE-LocalDataCachePath=$CLASS_OUTPUT/ddc" bash "$CLASS_LEASE" run \
   --project "$CLASS_SOURCE/workshop/Unreal" \
   --engine "$CLASS_ENGINE" \
   --purpose "Build four original classroom maps and capture six views" \
-  --disk-path "$CLASS_OUTPUT" --reserve-gib 4 \
+  --disk-path "$CLASS_OUTPUT" --reserve-gib "${CLASS_RESERVE_GIB:-4}" \
   -- "$CLASS_ENGINE/Engine/Binaries/Win64/UnrealEditor-Cmd.exe" \
   "$CLASS_SOURCE/workshop/Unreal/PaperCity.uproject" \
   -unattended -nosplash -RenderOffscreen -NoSound -NoLiveCoding \
