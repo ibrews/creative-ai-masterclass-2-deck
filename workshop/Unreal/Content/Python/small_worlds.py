@@ -216,7 +216,7 @@ def build(stage='starter'):
     pp.set_editor_property('settings', settings)
     cams = [camera('SW_Cam_Wide', (1850, -2450, 1500), (0, 0, 170), 38),
             camera('SW_Cam_Bridge', (-1000, -1350, 370), (-400, 20, 140), 40),
-            camera('SW_Cam_Sculpture', (530, -750, 310), (0, -210, 175), 45)]
+            camera('SW_Cam_Sculpture', (530, -750, 310), (0, -210, 175), 38)]
     if stage == 'cinematic':
         sequence(cams, sculpture)
     LEVELS.save_current_level()
