@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import time
+import math
 import traceback
 import unreal as ue
 
@@ -21,11 +22,14 @@ for stage, map_name in [('starter', '01_PaperCity'), ('dusk', '02_Dusk'), ('fest
     if os.environ.get('SMALL_WORLDS_FROM_SAVED') == '1':
         sw.LEVELS.load_level(sw.ROOT + '/Maps/' + map_name)
         for actor in sw.ACTORS.get_all_level_actors():
+            if actor.get_actor_label() in ['SW_LanternPost_2', 'SW_LanternCap_2', 'SW_Lantern_2', 'SW_LanternLight_2']:
+                loc = actor.get_actor_location()
+                actor.set_actor_location(ue.Vector(loc.x, -585 if isinstance(actor, ue.PointLight) else -600, loc.z), False, True)
             if actor.get_actor_label() == 'SW_FloatingSculpture':
                 actor.static_mesh_component.set_static_mesh(sw.MESHES['Cube'])
             if actor.get_actor_label().startswith('SW_Roof_'):
                 side = int(actor.get_actor_label().rsplit('_', 1)[1])
-                actor.set_actor_rotation(ue.Rotator(-side * 30, 0, 0), False)
+                actor.set_actor_rotation(ue.MathLibrary.find_look_at_rotation(ue.Vector(0, 0, 0), ue.Vector(1, 0, -side * math.tan(math.radians(30)))), False)
             if isinstance(actor, ue.PointLight):
                 comp = actor.get_component_by_class(ue.PointLightComponent)
                 festival_light = actor.get_actor_label().startswith('SW_FestivalLight_')

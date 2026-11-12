@@ -21,7 +21,7 @@ lesson('01 · Get ready', 'start', 'Choose your starting point', 'A self-paced r
     'Starting from scratch: use the Starter project. Exploring the completed work: use the Finished project and open Unreal/PaperCity.uproject. Keep the original download as your recovery copy.',
     'You can follow every numbered step without Alex. The slide deck is the teaching view; this workbook contains the full instructions. Last week’s kit is optional because the source Paper City scene is included.'
 ], '', 'The folder contains Actions, Unreal, SourceAssets, Studio and Recipes. Studio/design.json identifies brief SW-18.', 'If you only see a web preview, extract the complete folder. If you missed Part 1, use the included files and begin here.',
-       ['Small Worlds · Part 2', 'Actions/    Run these inside Unreal', 'Unreal/     PaperCity.uproject', 'SourceAssets/  Part 1 scene', 'Studio/     Design + your notes', 'Recipes/    Reference + recovery'])
+       ['Small Worlds · Part 2', 'Actions/    Run these inside Unreal', 'Unreal/     PaperCity.uproject', 'SourceAssets/  Part 1 scene', 'Studio/     Design + your notes', 'Recipes/    Reference + recovery'], links=[('Class downloads', 'https://drive.google.com/drive/folders/1KRlqQv1tcr6ADRweYq-Z56itprH5UknJ')])
 
 lesson('01 · Get ready', 'accounts', 'Bring one assistant and Unreal', 'Use the account you already have.', [
     'Open Codex or Claude Desktop in its local coding workspace. Sign in to an account that can read and edit a local folder. An account subscription may be needed; no paid API key is required by this workshop.',

@@ -153,7 +153,8 @@ def build(stage='starter'):
                 mesh('SW_Window_%d_%d_%d' % (i, level, dx), (x + dx, 108, level * 75), (38, 8, 36), gold)
         # Pair of sloped planes forms a folded paper roof. Deliberately readable construction.
         for side in [-1, 1]:
-            mesh('SW_Roof_%d_%d' % (i, side), (x + side * 70, 220, h + 32), (165, 250, 12), brass, rotation=(-side * 30, 0, 0))
+            roof_actor = mesh('SW_Roof_%d_%d' % (i, side), (x + side * 70, 220, h + 32), (165, 250, 12), brass)
+            roof_actor.set_actor_rotation(ue.MathLibrary.find_look_at_rotation(ue.Vector(0, 0, 0), ue.Vector(1, 0, -side * math.tan(math.radians(30)))), False)
     for bx in [-490, 490]:
         mesh('SW_Bridge_%d' % bx, (bx, -170, 12), (180, 530, 25), ivory)
         for dx in [-88, 88]:
@@ -162,11 +163,12 @@ def build(stage='starter'):
                 mesh('SW_Post_%d_%d_%d' % (bx, dx, by), (bx + dx, by, 55), (10, 10, 100), jade)
     # Reusable prop recipe: a lantern is a post, cap and emissive globe.
     for i, x in enumerate([-750, -250, 250, 750]):
-        mesh('SW_LanternPost_%d' % i, (x, -470, 130), (10, 10, 260), brass, 'Cylinder')
-        mesh('SW_LanternCap_%d' % i, (x, -470, 270), (60, 60, 15), brass)
-        mesh('SW_Lantern_%d' % i, (x, -470, 238), (38, 38, 50), gold, 'Sphere')
+        ly = -600 if i == 2 else -470
+        mesh('SW_LanternPost_%d' % i, (x, ly, 130), (10, 10, 260), brass, 'Cylinder')
+        mesh('SW_LanternCap_%d' % i, (x, ly, 270), (60, 60, 15), brass)
+        mesh('SW_Lantern_%d' % i, (x, ly, 238), (38, 38, 50), gold, 'Sphere')
         if dusk:
-            light('SW_LanternLight_%d' % i, (x, -455, 235), cfg['lantern_intensity'], (255, 157, 67), 500)
+            light('SW_LanternLight_%d' % i, (x, ly + 15, 235), cfg['lantern_intensity'], (255, 157, 67), 500)
     sculpture = mesh('SW_FloatingSculpture', (0, -210, 160), (115, 115, 115), cyan, 'Cube', (0, 45, 0))
     mesh('SW_SculpturePlinth', (0, -210, 25), (170, 170, 35), ivory, 'Cylinder')
     if festival:
