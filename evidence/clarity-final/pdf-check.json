@@ -1,0 +1,225 @@
+{
+  "stats": [
+    {
+      "page": 1,
+      "words": 273,
+      "min_top": 47.399997875000054,
+      "max_bottom": 659.24997253125,
+      "outside": []
+    },
+    {
+      "page": 2,
+      "words": 187,
+      "min_top": 47.399997874999826,
+      "max_bottom": 734.9999693749999,
+      "outside": []
+    },
+    {
+      "page": 3,
+      "words": 246,
+      "min_top": 47.39999787499971,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 4,
+      "words": 171,
+      "min_top": 47.39999787500017,
+      "max_bottom": 734.9999693750001,
+      "outside": []
+    },
+    {
+      "page": 5,
+      "words": 242,
+      "min_top": 47.39999787500017,
+      "max_bottom": 734.9999693750001,
+      "outside": []
+    },
+    {
+      "page": 6,
+      "words": 228,
+      "min_top": 47.39999787500017,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 7,
+      "words": 198,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693750005,
+      "outside": []
+    },
+    {
+      "page": 8,
+      "words": 201,
+      "min_top": 47.39999787499971,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 9,
+      "words": 197,
+      "min_top": 47.39999787499971,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 10,
+      "words": 197,
+      "min_top": 47.39999787499971,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 11,
+      "words": 195,
+      "min_top": 47.39999787499971,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 12,
+      "words": 209,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 13,
+      "words": 175,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 14,
+      "words": 195,
+      "min_top": 47.3999978749988,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 15,
+      "words": 200,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 16,
+      "words": 224,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 17,
+      "words": 234,
+      "min_top": 47.3999978749988,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 18,
+      "words": 181,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 19,
+      "words": 195,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 20,
+      "words": 232,
+      "min_top": 47.3999978749988,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 21,
+      "words": 216,
+      "min_top": 47.3999978749988,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 22,
+      "words": 184,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 23,
+      "words": 183,
+      "min_top": 47.399997874996984,
+      "max_bottom": 734.999969374996,
+      "outside": []
+    },
+    {
+      "page": 24,
+      "words": 216,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 25,
+      "words": 231,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 26,
+      "words": 192,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 27,
+      "words": 188,
+      "min_top": 47.39999787500062,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 28,
+      "words": 182,
+      "min_top": 47.399997874996984,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    },
+    {
+      "page": 29,
+      "words": 188,
+      "min_top": 47.399997874996984,
+      "max_bottom": 734.9999693749996,
+      "outside": []
+    }
+  ],
+  "links": [
+    {
+      "page": 2,
+      "uri": "https://drive.google.com/drive/folders/1KRlqQv1tcr6ADRweYq-Z56itprH5UknJ"
+    },
+    {
+      "page": 3,
+      "uri": "https://www.unrealengine.com/download"
+    },
+    {
+      "page": 3,
+      "uri": "https://openai.com/codex/"
+    },
+    {
+      "page": 3,
+      "uri": "https://claude.com/download"
+    }
+  ]
+}

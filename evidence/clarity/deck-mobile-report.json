@@ -1,0 +1,31 @@
+{
+  "url": "http://localhost:8793/",
+  "viewport": "390x844",
+  "slides": 66,
+  "verdict": "PASS",
+  "failedBecause": [],
+  "problemSlides": [],
+  "unexpectedErrors": [],
+  "unexpectedFailedRequests": [],
+  "expectedNoise": [
+    {
+      "line": "console: Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8793/notes-config.json",
+      "expected": "notes-config-404"
+    },
+    {
+      "line": "console: Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8793/notes-config.json",
+      "expected": "notes-config-404"
+    },
+    {
+      "line": "http://localhost:8793/notes-config.json :: HTTP 404",
+      "expected": "notes-config-404"
+    },
+    {
+      "line": "http://localhost:8793/notes-config.json :: HTTP 404",
+      "expected": "notes-config-404"
+    }
+  ],
+  "expectedNoiseAbsent": [],
+  "ytLoadedAtEnd": 0,
+  "videosChecked": 0
+}

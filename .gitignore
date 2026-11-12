@@ -23,3 +23,17 @@ tools/providers.json
 # deck import/roundtrip tool outputs — regenerated on demand
 tools/imported-*.json
 tools/palette-*.css
+
+# Native editor caches and local QA captures
+workshop/Unreal/Intermediate/
+workshop/Unreal/DerivedDataCache/
+workshop/Unreal/Saved/
+evidence/clarity/f-*/
+evidence/clarity/*-sheet*.png
+evidence/*.pdf
+evidence/fort-model-cache-manifests.json
+
+# Large rendered review working sheets stay local; JSON reports are committed.
+evidence/clarity-final/**/*.png
+evidence/clarity-final/**/*.jpg
+evidence/clarity-final/**/*.pdf

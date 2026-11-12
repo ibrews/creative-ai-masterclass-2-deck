@@ -21,7 +21,12 @@
       "Recipes/    Reference + recovery"
     ],
     "image": "",
-    "links": [],
+    "links": [
+      [
+        "Class downloads",
+        "https://drive.google.com/drive/folders/1KRlqQv1tcr6ADRweYq-Z56itprH5UknJ"
+      ]
+    ],
     "notes": ""
   },
   {
@@ -173,9 +178,10 @@
       "Canal + lanterns",
       "Saved baseline"
     ],
-    "image": "",
+    "image": "images/part2/01-daylight.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "Native Unreal baseline: three paper towers, two bridges and the canal."
   },
   {
     "group": "02 · Build the world",
@@ -243,9 +249,10 @@
       "Same camera + same crop",
       "Your visual verdict"
     ],
-    "image": "",
+    "image": "images/part2/02-dusk.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "The same native scene with dusk lighting and warm lanterns."
   },
   {
     "group": "02 · Build the world",
@@ -291,9 +298,10 @@
       "Boats + stepping stones",
       "One coherent scene"
     ],
-    "image": "",
+    "image": "images/part2/03-festival.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "Native festival map with trees, benches, boats and hanging lanterns."
   },
   {
     "group": "03 · Direct the AI",
@@ -406,9 +414,10 @@
       "192–287 · Sculpture",
       "24 fps × 12 s = 288 frames"
     ],
-    "image": "",
+    "image": "images/part2/04-wide.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "Wide camera in the saved native cinematic map."
   },
   {
     "group": "04 · Make it move",
@@ -428,9 +437,10 @@
       "Shot 2: 96 / 144 / 191",
       "Shot 3: 192 / 240 / 287"
     ],
-    "image": "",
+    "image": "images/part2/05-bridge.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "The bridge camera view, captured in Unreal Editor."
   },
   {
     "group": "04 · Make it move",
@@ -451,9 +461,10 @@
       "1280 × 720 · 24 fps",
       "PNG frames → inspect → encode"
     ],
-    "image": "",
+    "image": "images/part2/06-sculpture.png",
     "links": [],
-    "notes": ""
+    "notes": "",
+    "caption": "Sculpture detail view from the native cinematic map."
   },
   {
     "group": "04 · Make it move",

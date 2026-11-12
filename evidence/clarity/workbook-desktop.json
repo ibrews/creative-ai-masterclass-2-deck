@@ -1,0 +1,356 @@
+{
+  "text": "Skip to contents\nCREATIVE AI MASTERCLASS\nPART 2 · STUDENT WORKBOOK\n\nLET IT RUN IN UNREAL\n\nSmall Worlds Workshop\n\nBuild a paper city in Unreal Engine 5.9 Preview. Light it for dusk, add a lantern festival, animate a sculpture and render a three-shot cinematic. Every step includes exact actions, a prompt, a check and a recovery path.\n\nPart 1 source scene · Today’s brief is SW-18\nContents\nPrint workbook\n01 · GET READY\n01\nChoose your starting point\n02\nBring one assistant and Unreal\n03\nGive the assistant the whole folder\n04\nWrite a small job before running it\n05\nOpen the supplied Unreal project\n06\nRun a harmless Python check\n02 · BUILD THE WORLD\n07\nBuild the daylight baseline\n08\nCheck scale before polishing\n09\nInspect the material library\n10\nMake a dusk lighting variant\n11\nTurn one prop into a reusable recipe\n12\nBuild the lantern festival\n03 · DIRECT THE AI\n13\nGive feedback the agent can act on\n14\nRequest a batch with a fixed budget\n15\nCompare with the original Blender scene\n16\nChoose how AI reaches the editor\n04 · MAKE IT MOVE\n17\nCreate the 12-second cinematic\n18\nReview the start, middle and end\n19\nRender a short image sequence\n20\nTurn frames into a review video\n05 · LET IT RUN\n21\nSave a checkpoint another chat can use\n22\nTest a fresh chat\n23\nPractice one recoverable failure\n24\nGive a longer job a real boundary\n25\nSeparate checks from your verdict\n06 · KEEP CREATING\n26\nBuild three more worlds from the same kit\n27\nAdd effects as a separate experiment\n28\nLeave yourself a route back\n01 · GET READY\nSTEP 01 / 28\nChoose your starting point\n\nA self-paced route from a small brief to a saved Unreal cinematic.\n\nDownload and extract the Part 2 workshop ZIP from the class folder. Open Start Here.html in the extracted folder. Work on a copy, not inside a ZIP preview.\nStarting from scratch: use the Starter project. Exploring the completed work: use the Finished project and open Unreal/PaperCity.uproject. Keep the original download as your recovery copy.\nYou can follow every numbered step without Alex. The slide deck is the teaching view; this workbook contains the full instructions. Last week’s kit is optional because the source Paper City scene is included.\nSmall Worlds · Part 2\nActions/    Run these inside Unreal\nUnreal/     PaperCity.uproject\nSourceAssets/  Part 1 scene\nStudio/     Design + your notes\nRecipes/    Reference + recovery\nCheck your work\n\nThe folder contains Actions, Unreal, SourceAssets, Studio and Recipes. Studio/design.json identifies brief SW-18.\n\nIf you get stuck\n\nIf you only see a web preview, extract the complete folder. If you missed Part 1, use the included files and begin here.\n\n↑ Contents\nNext step →\n01 · GET READY\nSTEP 02 / 28\nBring one assistant and Unreal\n\nUse the account you already have.\n\nOpen Codex or Claude Desktop in its local coding workspace. Sign in to an account that can read and edit a local folder. An account subscription may be needed; no paid API key is required by this workshop.\nInstall Unreal Engine 5.9 Preview using Epic Games Launcher if available to your account and operating system. This edition was prepared for 5.9.0 Preview, changelist 60351404. Allow time for the large download.\nKeep a working older Unreal installation. A 5.9-saved project is not an older-version starter. If your platform lacks this Preview, follow the workbook and inspect the reference media; do not convert your only production project.\n\nGet Unreal Engine\nGet Codex\nGet Claude Desktop\n\nTarget: Unreal Engine 5.9 Preview\nOne local coding assistant\nNo headset\nNo paid asset pack\nNo paid API key\nPrompt to copy\nCopy prompt\nRead only: identify my operating system, installed Unreal versions, available space and whether this app can access the workshop folder. Report what is verified and what needs a local check. Do not install software or change my other projects.\nCheck your work\n\nYou know the exact engine you will open and the local workshop location.\n\nIf you get stuck\n\nIf 5.9 is unavailable, stop the native steps here and read the reference route. Do not claim the Unreal scripts ran in a browser or in system Python.\n\n↑ Contents\nNext step →\n01 · GET READY\nSTEP 03 / 28\nGive the assistant the whole folder\n\nIts working directory matters.\n\nIn Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\nBrief SW-18\n200 / 300 / 400 cm\nStudio/design.json\nActions/01_build_starter.py\nPrompt to copy\nCopy prompt\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\nCheck your work\n\nIt reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nIf you get stuck\n\nReopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content.\n\n↑ Contents\nNext step →\n01 · GET READY\nSTEP 04 / 28\nWrite a small job before running it\n\nGive the agent a finish line it can check.\n\nOpen Studio/job-template.md. Replace the bracketed fields with your own goal and limits. Use the sample goal below if this is your first attempt.\nPermit edits only in this workshop copy. Choose a time limit, a retry limit and whether new downloads or paid services are allowed.\nAsk for a plan before the first write. Read it and authorize the bounded job. The assistant must report actual evidence rather than filling in a successful receipt in advance.\nGoal\nInputs + allowed files\nBudget + retry limit\nCheckpoint + recovery\nEvidence + your verdict\nPrompt to copy\nCopy prompt\nDraft Studio/my-job.md for this goal: build Paper City in Unreal, make a dusk variant, add a lantern festival and create a 12-second sequence. Only use this workshop and built-in Unreal assets. Budget: 30 minutes of active agent work, at most two retries per failed step, no paid services or downloads. Preserve prior maps. Finish with saved maps, verification output and a list of visual checks for me. Show the plan before running it.\nCheck your work\n\nThe job names allowed files, budget, stop conditions and the output you will inspect.\n\nIf you get stuck\n\nShrink a broad request such as “make it amazing” to one visible change with a comparison image. Keep stretch ideas in a separate list.\n\n↑ Contents\nNext step →\n01 · GET READY\nSTEP 05 / 28\nOpen the supplied Unreal project\n\nA Blueprint-only project avoids a compiler setup.\n\nIn the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.\nThe project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.\nOn a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).\nPaperCity.uproject\nBlueprint-only\nBuilt-in editor plugins\nNo third-party plugin required\nPrompt to copy\nCopy prompt\nHelp me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.\nCheck your work\n\nYou have the PaperCity editor open and an Output Log with no missing required plugin error.\n\nIf you get stuck\n\nIf the project asks to compile C++ or reports a third-party plugin, you opened the wrong folder. This project has no C++ module and requires no AI bridge plugin.\n\n↑ Contents\nNext step →\n01 · GET READY\nSTEP 06 / 28\nRun a harmless Python check\n\nUnreal Python runs inside the editor.\n\nIn the Output Log input, keep the normal console command mode and enter: py import unreal; print(unreal.SystemLibrary.get_engine_version()). Press Enter.\nLook for the printed engine version in the log. A system terminal cannot import Unreal’s editor module.\nFor action files, use Tools → Execute Python Script and browse to the numbered file in Actions. If that menu is absent, use the console form: py \"FULL/PATH/TO/Actions/00_check_environment.py\". Replace FULL/PATH/TO with your extracted workshop location; use forward slashes.\nOutput Log console\npy \"…/Actions/00_check_environment.py\"\nExpected: SMALL_WORLDS_ENVIRONMENT\nPrompt to copy\nCopy prompt\nExplain how to run Actions/00_check_environment.py inside my already-open Unreal editor. Give me the exact py command with my local file path, using forward slashes. Do not run it in system Python. Wait for me to paste its log result.\nCheck your work\n\nThe log prints SMALL_WORLDS_ENVIRONMENT with the engine version and workshop path.\n\nIf you get stuck\n\nIf you see “No module named unreal”, the command ran in the wrong Python. If the script file is missing, remove the ZIP from the path and select the extracted Actions file.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 07 / 28\nBuild the daylight baseline\n\nGenerate native actors from a readable recipe.\n\nIn Unreal choose Tools → Execute Python Script and select Actions/01_build_starter.py. This creates /Game/SmallWorlds/Maps/01_PaperCity.\nWait for SMALL_WORLDS_PASS in Output Log. In Content Browser open Content → SmallWorlds → Maps. Double-click 01_PaperCity if necessary.\nIn the Outliner search SW_Tower. Count three towers. Select SW_Cam_Wide and use Pilot from its context menu to inspect the overall composition. Press Ctrl+S / Cmd+S to save.\n01_PaperCity\nThree towers\nTwo bridges\nCanal + lanterns\nSaved baseline\nPrompt to copy\nCopy prompt\nRead the starter builder and Studio/design.json. Explain what Actions/01_build_starter.py will create and how it avoids replacing an existing map. Then give me its exact Unreal console command. After I run it, help me inspect the actual log and actor list.\nCheck your work\n\nThree towers, two bridges, a canal, lamps and a cyan sculpture are visible. The log records the map and actor count.\n\nIf you get stuck\n\nIf it says the map already exists, open it instead of rerunning. Preserve it by copying the whole workshop before a fresh build. If a script fails, read the first traceback before retrying.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 08 / 28\nCheck scale before polishing\n\nUnreal scene units are centimeters.\n\nSelect SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n100 cm cube × Z scale\n2 = 200 cm\n3 = 300 cm\n4 = 400 cm\nPrompt to copy\nCopy prompt\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\nCheck your work\n\nTower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nIf you get stuck\n\nA 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 09 / 28\nInspect the material library\n\nSeparate the shape from its surface.\n\nOpen Content → SmallWorlds → Materials. Open M_Jade and inspect Base Color, Roughness and Metallic in the graph.\nSelect a bridge rail, inspect its material slot and confirm it uses M_Jade. Compare the rough paper towers with the glossier canal.\nAsk your assistant for one bounded material variation. Duplicate the material in Content Browser before editing. Apply the duplicate to one selected rail and compare it with the untouched bridge.\nMesh → material slot\nBase Color\nRoughness\nMetallic\nDuplicate before editing\nPrompt to copy\nCopy prompt\nPropose one jade-rail material variation with an exact Base Color, Roughness and Metallic value. Keep the paper walls and canal unchanged. Tell me how to duplicate M_Jade and apply the duplicate to only one bridge rail. I will inspect before accepting it.\nCheck your work\n\nOne rail uses your duplicate material; the original M_Jade and the other bridge stay available for comparison.\n\nIf you get stuck\n\nIf every rail changed, you edited the shared material. Restore its prior values, duplicate it and apply the duplicate to a single actor.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 10 / 28\nMake a dusk lighting variant\n\nChange the light while preserving the daylight map.\n\nRun Actions/02_build_dusk.py. It creates 02_Dusk as a separate map with warmer key light, emissive lanterns and point lights.\nOpen 01_PaperCity and 02_Dusk in turn. Use the same SW_Cam_Wide view for both. Wait for shader compilation and exposure to settle.\nCapture both views with the same viewport size using your operating system screenshot tool. Save them in Studio/evidence and record which version you prefer.\n01_PaperCity → baseline\n02_Dusk → warm lamps\nSame camera + same crop\nYour visual verdict\nPrompt to copy\nCopy prompt\nRead the two stage definitions. Before I run 02_build_dusk.py, predict which lighting settings will change. After I supply matching screenshots and the log, compare shadow direction, lantern visibility, highlights and tower readability. Separate observations from suggestions.\nCheck your work\n\nBoth maps exist. The dusk view has visible warm lanterns and readable towers. Your verdict is recorded with the compared filenames.\n\nIf you get stuck\n\nIf the view is black, confirm you are looking through a camera, not below the plinth. Check exposure and lights in the saved map before raising every intensity.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 11 / 28\nTurn one prop into a reusable recipe\n\nA lantern has a small, understandable construction.\n\nIn small_worlds.py find the loop that creates SW_LanternPost, SW_LanternCap, SW_Lantern and SW_LanternLight. Read the dimensions and labels together.\nAsk the assistant to describe a new prop with the same clarity: component shapes, dimensions, materials and placement. Choose a bench, plant, kiosk or boat.\nHave it write the recipe into Studio/prop-proposal.md before it edits code. Require a unique actor prefix so the result can be found and removed as one scoped experiment.\nProp = labeled parts\nDimensions in cm\nMaterials\nPlacement\nAcceptance view\nPrompt to copy\nCopy prompt\nDesign an original small ticket kiosk for this paper city using built-in cubes, cylinders and cones. Give dimensions in centimeters, material choices, labeled parts and a placement that leaves both bridges clear. Save the proposal in Studio/prop-proposal.md. Do not build until I choose the design.\nCheck your work\n\nYou can explain every component and find where the prop will stand. No paid asset purchase is needed.\n\nIf you get stuck\n\nIf the proposal needs an unavailable model or API, ask for a built-in-shape version first. Record generated asset provenance if you later use another tool.\n\n↑ Contents\nNext step →\n02 · BUILD THE WORLD\nSTEP 12 / 28\nBuild the lantern festival\n\nUse repetition to make a richer scene.\n\nRun Actions/03_build_festival.py. Open 03_LanternFestival.\nInspect the added paper trees, benches, hanging lanterns, stepping stones and boats. Find each type in the Outliner by its SW_ prefix.\nLook through all three SW_Cam cameras. Check that bridges stay readable and that trees do not cover the towers. Save a wide view and a detail view.\nTrees\nBenches\nHanging lanterns\nBoats + stepping stones\nOne coherent scene\nPrompt to copy\nCopy prompt\nRead the festival stage. List the added prop families and their actor prefixes. After I run it, guide me through a wide, bridge and sculpture inspection. Ask me to reject any placement that blocks a bridge or hides the focal point.\nCheck your work\n\nThe festival map contains repeated, individually labeled props and still reads as the same city.\n\nIf you get stuck\n\nIf it is cluttered, hide a single prop family in the Outliner first. Compare that change before deleting or rebuilding anything.\n\n↑ Contents\nNext step →\n03 · DIRECT THE AI\nSTEP 13 / 28\nGive feedback the agent can act on\n\nName the visual problem and protect what works.\n\nPick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\nName the protected elements: tower heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\nObservation\nOne allowed change\nProtected choices\nSame comparison view\nAccept or reject\nPrompt to copy\nCopy prompt\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\nCheck your work\n\nThe revision changes one named problem and preserves your protected choices.\n\nIf you get stuck\n\nIf the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change.\n\n↑ Contents\nNext step →\n03 · DIRECT THE AI\nSTEP 14 / 28\nRequest a batch with a fixed budget\n\nMake several ideas, then choose.\n\nAsk for three written variations first: quiet gallery, night market and sculptural park. Keep the towers and bridges as shared constraints.\nChoose one to build in a separate map. Limit the job to a fixed prop count and a small number of material colors.\nRequire the output list and a screenshot before the agent starts another variation. A batch is a set of reviewable alternatives, not permission for endless generation.\nQuiet gallery\nNight market\nSculpture park\nChoose → build → inspect\nPrompt to copy\nCopy prompt\nPropose three variants of Paper City: quiet gallery, night market and sculpture park. For each, give exactly three prop families, a three-color palette and one hero-camera idea. Use built-in geometry. Do not build yet. I will choose one, then authorize at most 12 new props in a separate map with a 10-minute budget.\nCheck your work\n\nThree distinct proposals can be compared before using compute or changing files.\n\nIf you get stuck\n\nIf all three descriptions are vague adjectives, ask for object counts, placement coordinates and a specific focal point.\n\n↑ Contents\nNext step →\n03 · DIRECT THE AI\nSTEP 15 / 28\nCompare with the original Blender scene\n\nUnderstand what survived the engine handoff.\n\nOpen SourceAssets/Paper City.blend in Blender if installed, or inspect the included source postcard. This is the Part 1 starting scene, not a claim about every live-class edit.\nThe native Unreal recipe is a deliberate reinterpretation: three towers, folded roofs, a canal and jade rails, expanded into a festival. It is not a lossless import.\nOptional: drag SourceAssets/Paper City.glb into an empty Content Browser folder in a duplicate project. Review the import options, scale, materials and hierarchy. Compare imported geometry with the native recipe; do not replace the finished map.\nSource scene → handoff\nUnits + axes\nMaterials + hierarchy\nRebuild ≠ lossless import\nPrompt to copy\nCopy prompt\nCompare the included Part 1 source assets with the Unreal construction recipe. Identify what is preserved, what is rebuilt and what needs checking after a GLB import: units, axes, material slots, transparency and object hierarchy. Do not call the native reconstruction a lossless import.\nCheck your work\n\nYou can distinguish an imported mesh from a native reconstruction and list the handoff checks.\n\nIf you get stuck\n\nIf GLB import is unavailable in your editor configuration, keep it optional. The main workshop uses built-in Unreal meshes and does not depend on that importer.\n\n↑ Contents\nNext step →\n03 · DIRECT THE AI\nSTEP 16 / 28\nChoose how AI reaches the editor\n\nThe same job can use a script or a direct tool connection.\n\nThe required path uses the local coding assistant to prepare files and you to run the numbered script in Unreal. It works without a third-party bridge.\nAn instructor with an installed, tested ue5-mcp connection can inspect actors, edit the scene and capture it directly. Ask for a read-only actor query first, then one bounded write in a duplicate map.\nUE 5.9 also includes experimental native tool infrastructure. Installed plugins determine which tools are present. Do not assume the built-in server exposes every operation from another bridge.\nLocal assistant → script → Unreal\nConnected assistant → native tools → Unreal\nBoth need visible verification\nPrompt to copy\nCopy prompt\nFirst tell me which Unreal tools this chat actually has. If none, use the script-and-manual-run route. If connected, perform a read-only query for the current map and SW_Tower actors, report actual values and stop. Do not infer connectivity from a plugin file on disk.\nCheck your work\n\nThe agent identifies its actual connection and can show a real query result or clearly use the manual route.\n\nIf you get stuck\n\nA server health response proves transport, not editing. Test one harmless read before giving write authority. Do not publish an unauthenticated editor port to the internet.\n\n↑ Contents\nNext step →\n04 · MAKE IT MOVE\nSTEP 17 / 28\nCreate the 12-second cinematic\n\nThree shots and one animated sculpture.\n\nRun Actions/04_build_cinematic.py. It creates 04_Cinematic and Content/SmallWorlds/Cinematics/LS_LanternFestival.\nOpen the new map, then double-click LS_LanternFestival in Content Browser. In Sequencer enable the camera-cut view button on the Camera Cuts track.\nScrub frames 0, 96 and 192. You should see wide, bridge and sculpture cameras. Scrub between keys to inspect the floating sculpture and camera movement.\n0–95 · Wide\n96–191 · Bridge\n192–287 · Sculpture\n24 fps × 12 s = 288 frames\nPrompt to copy\nCopy prompt\nExplain Actions/04_build_cinematic.py before I run it. Identify the three camera cuts, the 24 fps frame ranges and the animated sculpture. After I run it, help me inspect the cut track and transform keys. Do not claim rendered motion from key counts alone.\nCheck your work\n\nThe sequence lasts 288 frames at 24 fps, with three four-second shots. The sculpture moves and rotates when scrubbed.\n\nIf you get stuck\n\nIf the viewport stays on your free camera, enable Sequencer’s camera-cut lock. If the sequence already exists, open it rather than overwriting it.\n\n↑ Contents\nNext step →\n04 · MAKE IT MOVE\nSTEP 18 / 28\nReview the start, middle and end\n\nA camera move must hold its composition.\n\nFor the first shot inspect frames 0, 48 and 95. For the second inspect 96, 144 and 191. For the third inspect 192, 240 and 287.\nAt each frame check the focal subject, foreground intersections, lantern visibility and whether the frame clips a roof or sculpture.\nIf a move fails, duplicate the sequence and shorten its travel before adding more keys. Save nine frame captures or a contact sheet for your review.\nShot 1: 0 / 48 / 95\nShot 2: 96 / 144 / 191\nShot 3: 192 / 240 / 287\nPrompt to copy\nCopy prompt\nMake me a nine-frame inspection checklist for LS_LanternFestival: start, middle and end of each shot. For each, I will mark framing, clipping, focal subject and lighting. If a shot fails, propose the smallest camera-key adjustment and preserve the original sequence.\nCheck your work\n\nAll three samples in each shot have been inspected. A keyframe existing is separate from good composition.\n\nIf you get stuck\n\nIf a subject leaves the frame, reduce translation or retarget the end rotation in the duplicate sequence. Recheck all three samples.\n\n↑ Contents\nNext step →\n04 · MAKE IT MOVE\nSTEP 19 / 28\nRender a short image sequence\n\nUse frames first so a failed encode does not waste a render.\n\nOpen Window → Cinematics → Movie Render Queue. Add LS_LanternFestival. Confirm the job’s map is 04_Cinematic.\nOpen the job settings. Add or keep Deferred Rendering and PNG Sequence. In Output choose a new folder inside Studio/renders, set 1280 × 720 and 24 fps, and keep the sequence frame range. Use Anti-Aliasing engine warm-up if effects need time to initialize.\nRender locally. Wait for completion, then open the first, middle and last frames. Keep the Output Log if the render reports an error. The optional command-line encode recipe is in Recipes/04-render.md.\nMap: 04_Cinematic\nSequence: LS_LanternFestival\n1280 × 720 · 24 fps\nPNG frames → inspect → encode\nPrompt to copy\nCopy prompt\nHelp me configure one local Movie Render Queue job for LS_LanternFestival in map 04_Cinematic: 1280×720, 24 fps, PNG frames, a new Studio/renders folder and the sequence’s 288-frame range. Explain the settings I must inspect. Do not start an overnight render or overwrite prior frames.\nCheck your work\n\nA new folder contains the rendered frame sequence. You inspected images from all three cuts.\n\nIf you get stuck\n\nIf every frame uses one camera, check the saved Camera Cuts track and job sequence. If the render is much brighter than the viewport, compare exposure and cinematic scalability before adjusting lights.\n\n↑ Contents\nNext step →\n04 · MAKE IT MOVE\nSTEP 20 / 28\nTurn frames into a review video\n\nInspect the movie after encoding.\n\nIf FFmpeg is already installed, ask the assistant to inspect the actual image filenames and form an encode command from that pattern. Do not assume a filename that is not present.\nUse H.264, yuv420p and 24 fps for the review MP4. Keep the original frames and use a new output filename.\nPlay the full movie. Check the cut boundaries and sculpture motion, then seek to the last frame. Record any visual defect separately from decode success.\nRendered frames\nActual filename pattern\nH.264 · yuv420p · 24 fps\nDecode + human viewing\nPrompt to copy\nCopy prompt\nRead the filenames in my Studio/renders folder. If FFmpeg is installed, encode the 24 fps PNG sequence to a new H.264 yuv420p MP4 without deleting frames or replacing another video. Show the exact input pattern. Validate decode, duration and dimensions, then ask me to inspect the complete movie.\nCheck your work\n\nYou have a playable review MP4 and an actual decode result. Your visual verdict names any remaining issue.\n\nIf you get stuck\n\nIf filenames contain gaps, repair the render or explicitly choose a correct continuous range. Do not hide missing frames by silently looping a still.\n\n↑ Contents\nNext step →\n05 · LET IT RUN\nSTEP 21 / 28\nSave a checkpoint another chat can use\n\nMemory needs concrete state.\n\nOpen Studio/project-memory.md. Record the accepted map, sequence, engine version, design choices and evidence paths.\nWrite one sentence explaining why you kept a choice. Include a nickname or design reason that a new agent cannot guess from general knowledge.\nName exactly one next action and its stop condition. Keep rejected alternatives so the next chat does not rebuild them.\nGoal + accepted state\nWhy this choice\nRejected alternatives\nEvidence paths\nNext action + stop\nPrompt to copy\nCopy prompt\nUpdate Studio/project-memory.md from the work we actually completed. Record engine version, saved map and sequence, accepted choices, rejected alternatives, actual verification results and evidence filenames. My private design reason is: [write your own reason]. Next action: [one action]. Do not record acceptance I have not given.\nCheck your work\n\nThe note names a real saved state and an unambiguous next action.\n\nIf you get stuck\n\nIf it only says “made progress,” replace that with map paths, values, filenames and a concrete next step.\n\n↑ Contents\nNext step →\n05 · LET IT RUN\nSTEP 22 / 28\nTest a fresh chat\n\nMake continuity observable.\n\nSave the Unreal project and your notes. Start a new local chat in the same workshop folder.\nDo not paste the old conversation. Ask the new agent to read the memory and report the private design reason, accepted map and next action.\nOpen the cited files yourself. If the answer is wrong, repair the note or path and repeat. Keep the failed answer as useful evidence.\nFresh chat\nRead saved note\nRecall private reason\nCheck citations\nResume one step\nPrompt to copy\nCopy prompt\nRead AGENTS.md and Studio/project-memory.md. Without editing anything, tell me the accepted map, sequence, private design reason, last actual check and exact next action. Cite each source. If a fact is absent, say it is absent instead of guessing.\nCheck your work\n\nThe new agent recovers your actual reason and state from files.\n\nIf you get stuck\n\nIf it recites generic advice, ask it to open the exact note. If it invents a value, compare its answer with the cited text.\n\n↑ Contents\nNext step →\n05 · LET IT RUN\nSTEP 23 / 28\nPractice one recoverable failure\n\nUse a copy so the exercise cannot destroy your baseline.\n\nMake a full duplicate of the Starter workshop. In that duplicate only, ask the agent to change the JSON key lantern_intensity to lantern_intensity_typo.\nRun the dusk action in the duplicate. Inspect the traceback. It should name the missing lantern_intensity key. Preserve the log before fixing it.\nRestore the correct key from the original design file. Use a fresh duplicate before running again because the failed action may already have created a partial map. Record the failure, repair and rerun result.\nControlled typo\nRead first traceback\nPreserve partial state\nRestore input\nRetry in clean copy\nPrompt to copy\nCopy prompt\nIn my designated failure-exercise copy only, rename lantern_intensity to lantern_intensity_typo in Studio/design.json. Explain the expected KeyError and partial-map risk. Do not run other jobs. After I provide the traceback, restore the key from the reference file and prepare a clean retry copy; do not overwrite the partial map.\nCheck your work\n\nYou identified a specific cause, preserved evidence and repaired it without deleting your good scene.\n\nIf you get stuck\n\nIf your copy already contains 02_Dusk, the existing-map guard will stop earlier. Start with the Starter package for this exercise.\n\n↑ Contents\nNext step →\n05 · LET IT RUN\nSTEP 24 / 28\nGive a longer job a real boundary\n\nThe finish line stays visible while you are away.\n\nChoose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\nOne extension\nExact files + map\nTime + retries\nMilestone evidence\nKnown limits\nPrompt to copy\nCopy prompt\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\nCheck your work\n\nThe agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nIf you get stuck\n\nIf the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized.\n\n↑ Contents\nNext step →\n05 · LET IT RUN\nSTEP 25 / 28\nSeparate checks from your verdict\n\nA successful command is only part of a useful result.\n\nRun the current-map verifier and inspect its actual output. Confirm all four maps and the sequence open after saving.\nPlay the sequence and your rendered movie. Compare the nine camera samples and both lighting versions.\nWrite your own acceptance statement in Studio/receipt-template.md: accepted, accepted with named issues, or rejected. List the exact artifact and reason. The assistant may record your words after you decide.\nStructure\nSaved reopen\nVisual comparison\nFull video viewing\nYour verdict\nPrompt to copy\nCopy prompt\nPrepare a completion receipt from actual files and log results. Separate structural checks, visual checks and my acceptance. List the engine, four map paths, sequence, render folder, video if present, known issues and next action. Leave the human verdict pending until I provide it.\nCheck your work\n\nThe receipt identifies a real artifact and distinguishes machine checks from your decision.\n\nIf you get stuck\n\nIf a check is missing, mark it unverified and perform it. Do not convert an intended command into evidence that it ran.\n\n↑ Contents\nNext step →\n06 · KEEP CREATING\nSTEP 26 / 28\nBuild three more worlds from the same kit\n\nChange the brief while keeping the method.\n\nChoose one: a floating library, a desert observatory or a rainy street market. Start in a new workshop copy or a separate project.\nAsk for a small palette, reusable prop recipes, a focal point and three camera compositions. Require a baseline before effects.\nRun one complete loop: brief, build, inspect, revise, save, restart. Do not launch all three just because they are listed here.\nFloating library\nDesert observatory\nRainy street market\nSame complete loop\nPrompt to copy\nCopy prompt\nDraft a bounded brief for a [floating library / desert observatory / rainy street market] using built-in Unreal geometry. Include three prop recipes, dimensions, palette, lighting intention, a focal point and three camera views. Give me a five-step build plan and measurable checks. Do not generate yet.\nCheck your work\n\nYour new world has specific objects and a clear first milestone.\n\nIf you get stuck\n\nIf the first milestone cannot be inspected quickly, reduce the object count and postpone particles or external assets.\n\n↑ Contents\nNext step →\n06 · KEEP CREATING\nSTEP 27 / 28\nAdd effects as a separate experiment\n\nStart with a visible, reversible change.\n\nDuplicate the festival map. Choose one optional effect: drifting particles, a fountain or moving fog.\nAsk your agent to identify the installed tools and a supported route before creating an effect. Keep Niagara and new experimental features outside the required path.\nInspect the effect during playback and in a short render with adequate warm-up. A component existing in the Outliner does not prove visible motion.\nOptional experiment\nDuplicate map\nPlayback + render\nWarm-up\nRollback\nPrompt to copy\nCopy prompt\nIn a duplicate map, propose one subtle drifting-particle effect that preserves the paper-city style. First inspect available Niagara tooling and version support. Explain playback, warm-up, render and rollback checks. Do not change the accepted scene or install plugins.\nCheck your work\n\nOne effect is visibly present in playback and a short rendered test, or clearly remains an unverified proposal.\n\nIf you get stuck\n\nIf it disappears in a render, inspect simulation warm-up and camera framing before increasing particle counts.\n\n↑ Contents\nNext step →\n06 · KEEP CREATING\nSTEP 28 / 28\nLeave yourself a route back\n\nFinish with files you can reopen.\n\nKeep your accepted project, source recipe, design JSON, notes, screenshots and receipt together. Exclude caches from a sharing copy.\nClose the editor, reopen the accepted map and sequence, and repeat one visual check. Keep the original class download separate from your modified copy.\nReturn to this workbook at the first missing checkpoint whenever you resume. Bring your best result and one precise failure to office hours.\nAccepted project\nSource + design\nEvidence + receipt\nClean sharing copy\nReopen check\nPrompt to copy\nCopy prompt\nInventory my workshop and prepare a sharing copy with project Content, Config, action scripts, design file, source assets, notes and evidence. Exclude DerivedDataCache, Intermediate and regenerable Saved caches. Preserve the working project. List files before packaging and verify the extracted copy opens.\nCheck your work\n\nYou have an accepted state, a readable receipt and a verified route to reopen it.\n\nIf you get stuck\n\nIf the copy cannot open, fix missing project content or plugin requirements before calling it a usable handoff.\n\n↑ Contents",
+  "width": 1920,
+  "scrollWidth": 1920,
+  "links": [
+    {
+      "text": "Skip to contents",
+      "href": "#contents"
+    },
+    {
+      "text": "01Choose your starting point",
+      "href": "#start"
+    },
+    {
+      "text": "02Bring one assistant and Unreal",
+      "href": "#accounts"
+    },
+    {
+      "text": "03Give the assistant the whole folder",
+      "href": "#open-folder"
+    },
+    {
+      "text": "04Write a small job before running it",
+      "href": "#contract"
+    },
+    {
+      "text": "05Open the supplied Unreal project",
+      "href": "#open-unreal"
+    },
+    {
+      "text": "06Run a harmless Python check",
+      "href": "#python-check"
+    },
+    {
+      "text": "07Build the daylight baseline",
+      "href": "#starter"
+    },
+    {
+      "text": "08Check scale before polishing",
+      "href": "#units"
+    },
+    {
+      "text": "09Inspect the material library",
+      "href": "#materials"
+    },
+    {
+      "text": "10Make a dusk lighting variant",
+      "href": "#dusk"
+    },
+    {
+      "text": "11Turn one prop into a reusable recipe",
+      "href": "#prop-recipe"
+    },
+    {
+      "text": "12Build the lantern festival",
+      "href": "#festival"
+    },
+    {
+      "text": "13Give feedback the agent can act on",
+      "href": "#art-direction"
+    },
+    {
+      "text": "14Request a batch with a fixed budget",
+      "href": "#batch"
+    },
+    {
+      "text": "15Compare with the original Blender scene",
+      "href": "#handoff"
+    },
+    {
+      "text": "16Choose how AI reaches the editor",
+      "href": "#bridge"
+    },
+    {
+      "text": "17Create the 12-second cinematic",
+      "href": "#sequence"
+    },
+    {
+      "text": "18Review the start, middle and end",
+      "href": "#camera"
+    },
+    {
+      "text": "19Render a short image sequence",
+      "href": "#render"
+    },
+    {
+      "text": "20Turn frames into a review video",
+      "href": "#encode"
+    },
+    {
+      "text": "21Save a checkpoint another chat can use",
+      "href": "#checkpoint"
+    },
+    {
+      "text": "22Test a fresh chat",
+      "href": "#restart"
+    },
+    {
+      "text": "23Practice one recoverable failure",
+      "href": "#failure"
+    },
+    {
+      "text": "24Give a longer job a real boundary",
+      "href": "#long-job"
+    },
+    {
+      "text": "25Separate checks from your verdict",
+      "href": "#acceptance"
+    },
+    {
+      "text": "26Build three more worlds from the same kit",
+      "href": "#stretch-worlds"
+    },
+    {
+      "text": "27Add effects as a separate experiment",
+      "href": "#stretch-effects"
+    },
+    {
+      "text": "28Leave yourself a route back",
+      "href": "#next"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#accounts"
+    },
+    {
+      "text": "Get Unreal Engine",
+      "href": "https://www.unrealengine.com/download"
+    },
+    {
+      "text": "Get Codex",
+      "href": "https://openai.com/codex/"
+    },
+    {
+      "text": "Get Claude Desktop",
+      "href": "https://claude.com/download"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#open-folder"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#contract"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#open-unreal"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#python-check"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#starter"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#units"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#materials"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#dusk"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#prop-recipe"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#festival"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#art-direction"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#batch"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#handoff"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#bridge"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#sequence"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#camera"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#render"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#encode"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#checkpoint"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#restart"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#failure"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#long-job"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#acceptance"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#stretch-worlds"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#stretch-effects"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    },
+    {
+      "text": "Next step →",
+      "href": "#next"
+    },
+    {
+      "text": "↑ Contents",
+      "href": "#contents"
+    }
+  ],
+  "overflow": []
+}

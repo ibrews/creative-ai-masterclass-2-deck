@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-11-12T04:41:11.560571+00:00",
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "platform": "Windows, D3D12, RTX 5090",
+  "source_builder_commit": "58049cd",
+  "starter": "Empty generated-content directory before build; four stages and six captures passed.",
+  "saved_reopen": "Second process; all four saved maps, RGB light colors and sequence structure passed.",
+  "movie": {
+    "frames": 288,
+    "fps": 24,
+    "seconds": 12,
+    "width": 1280,
+    "height": 720,
+    "sha256": "79de9128986588f83c247944a8a19ad9e3712c771064f354603127c311a069cf",
+    "decode": "PASS on Windows and macOS",
+    "visual_review": "All six native views; start, middle and end of all three shots inspected."
+  },
+  "native_files": [
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Cinematics/LS_LanternFestival.uasset",
+      "sha256": "2f214c96f43b2478e12d740e18c6351df5844ab8f82d884df80d1519d6ace9df"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/01_PaperCity.umap",
+      "sha256": "0f85dbde500837a807e1661d1c991c9c0bc4cc7c56df8646fd60360505aab878"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/02_Dusk.umap",
+      "sha256": "12e99013a571d9e33bba284106942bd98c08228d30b10bd408116b783adbe713"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/03_LanternFestival.umap",
+      "sha256": "b56a9c58839c88378753968b7d64469a1d958b8a2d590fc457fc7f12e2ea8bdf"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/04_Cinematic.umap",
+      "sha256": "818c55b8c106c26ee254cd7d0a086bd30d0218815c9d4a8e51ebf683487bf798"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Brass.uasset",
+      "sha256": "86d03eaf1adcffd1dd60a71187fc2a2e3521befd0eba7310b5e9f6a97970b3e7"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Canal.uasset",
+      "sha256": "d2f9f9852a8b7baa2a37cde972b2332ee227dc338f74076adb3f9192b8e7bacf"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Ivory.uasset",
+      "sha256": "a3608b2a932a9bf1cd07d3e1899b85a719bb9a67db8bc766c1744e6c3bd27404"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Jade.uasset",
+      "sha256": "34ed48da02f85b6b6c6428a8aca4e6abca14c1323a9d91cbae0613d79446cf59"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_LanternGlowDay.uasset",
+      "sha256": "82209ec3f8d7abb8ea73d22a3bcd14a40998880523351bd779459faf96438baf"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_LanternGlowDusk.uasset",
+      "sha256": "d4c0a87648119c4f856ab601cd79e3db0dd6f7b2a469d29af0c91583cb833131"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Quay.uasset",
+      "sha256": "33d9620921523b4bb000ba718023df4e2147efd7db7509b35bf9504fbdeedcb7"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Sage.uasset",
+      "sha256": "38392e685a49d3783c1ae424e3316be76a279ae1035739d09ee4b306e010d9b3"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Sculpture.uasset",
+      "sha256": "31eac5ebd7413269495dac3ccede0b8d3b4dd8e647a46dc81f533b6bfb9f9525"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Terracotta.uasset",
+      "sha256": "16fe3cfa2db173af6bb9aeef3b92a064100eed4020f1c5fa9eac28f0f2454953"
+    }
+  ],
+  "rendered_review": {
+    "reviewer": "Independent read-only preview agent",
+    "desktop": "1920x1080, 68 slides, PASS",
+    "phone": "390x844, 68 slides, PASS",
+    "workbook": "29 PDF pages, offline HTML anchors and images, PASS"
+  },
+  "pdfs": {
+    "Workbook": {
+      "pages": 29,
+      "bytes": 6600455
+    },
+    "Slides": {
+      "pages": 67,
+      "bytes": 9538823
+    }
+  },
+  "limitations": [
+    "Other operating systems and engine versions unverified.",
+    "Human artistic acceptance remains separate from structural and rendered checks."
+  ]
+}

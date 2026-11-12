@@ -2,7 +2,7 @@
 
 **Alex Coulombe Presents · Thursday, November 12, 2026 · 11 a.m.–1 p.m. Eastern.**
 
-Build a paper city in Unreal Engine 5.9 Preview, light it for dusk, add a lantern festival, animate a sculpture and create a three-shot cinematic. The teaching deck and offline student workbook share 28 ordered steps. Each step includes actions, a copyable AI prompt where useful, an expected result and a recovery path.
+Build a paper city in Unreal Engine 5.9 Preview, light it for dusk, add a lantern festival, animate a sculpture and create a three-shot cinematic. The teaching deck and offline student workbook share 28 ordered steps. The deck includes the native result and a lighting comparison before those steps. Each step includes actions, a copyable AI prompt where useful, an expected result and a recovery path.
 
 [Open the Spatial Deck](https://ibrews.github.io/creative-ai-masterclass-2-deck/) · [Read the student workbook](https://ibrews.github.io/creative-ai-masterclass-2-deck/classroom/start-here.html) · [Last week’s deck](https://ibrews.github.io/creative-ai-masterclass-1-deck/)
 
@@ -33,6 +33,14 @@ The complete route is the default; a two-hour class can focus on setup, native s
 - `evidence/` holds actual validation records. Source code and plans are not proof that a native scene rendered.
 
 The target is **UE 5.9.0 Preview, changelist 60351404 on Windows**. Other platforms and versions require a local check. Unreal Python is editor-only; the generated scene and animation are native assets. The included Part 1 Blender/GLB source is a starting scene. The native festival is a reinterpretation, not a lossless import or neural text-to-3D generation.
+
+## Validation
+
+The empty Starter was built in Windows UE 5.9.0 CL60351404. A second editor process reopened all four saved maps and checked the sequence; Movie Render Queue produced 288 frames at 24 fps. The supplied 12-second MP4 decoded without errors. Six native views and each shot’s start, middle and end were inspected.
+
+A separate rendered review passed all 68 slides at desktop and phone sizes, the offline HTML workbook and the 29-page workbook PDF. Windows 5.9 was tested; macOS and other engine versions remain unverified. Native proof records are in `evidence/`.
+
+[Download the Starter, Finished project, PDFs and movie](https://drive.google.com/drive/folders/1KRlqQv1tcr6ADRweYq-Z56itprH5UknJ). Each complete offline package includes a file manifest.
 
 ## Credits
 
