@@ -39,10 +39,10 @@ def package(mode, output, forage_plugin, eca_plugin, second_brain, brain_hash):
     sample = project / 'Unreal' / 'Content' / 'ForageBetaSample'
     if mode == 'starter' and sample.exists():
         shutil.rmtree(sample)
-    for name, source in [('ForageBeta', forage_plugin)]:
-        if not (source / (name + '.uplugin')).is_file():
+    for plugin_name, source in [('ForageBeta', forage_plugin)]:
+        if not (source / (plugin_name + '.uplugin')).is_file():
             raise SystemExit('Missing plugin descriptor: ' + str(source))
-        copy_tree(source, project / 'Unreal' / 'Plugins' / name, EXCLUDE - {'Binaries'})
+        copy_tree(source, project / 'Unreal' / 'Plugins' / plugin_name, EXCLUDE - {'Binaries'})
     uproject = project / 'Unreal' / 'PaperCity.uproject'
     descriptor = json.loads(uproject.read_text())
     descriptor['Plugins'] += [dict(Name=n, Enabled=True) for n in ['ForageBeta']]

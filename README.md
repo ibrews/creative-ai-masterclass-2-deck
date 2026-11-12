@@ -45,7 +45,7 @@ An independent rendered review passed all **101 slides** at desktop and phone si
 - `tools/build_student_workbook.py` builds the self-contained HTML; copy it to `workshop/Start Here.html`.
 - `small_worlds.py` and `harbor_kit.py` own native authoring; existing output maps are protected.
 - `workshop/Unreal/Plugins/HarborWorkshop` supplies the original native MCP toolset.
-- `tools/export_classroom.mjs` exports PDFs. `tools/package_workshop.py` requires the exact reviewed second-brain manifest and the supplied Forage plugin, excludes caches, and verifies every archived hash.
+- `tools/export_classroom.mjs` exports PDFs. `tools/package_workshop.py` requires the exact reviewed second-brain manifest and the supplied Forage plugin, excludes caches, preserves distinct Starter/Finished archive names, and verifies every archived hash.
 - `evidence/` contains bounded proof records. `promo/` contains editable promo-video composition sources; `images/promo` and `media/promo` contain the signup assets.
 
 ## Credits

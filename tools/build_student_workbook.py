@@ -265,7 +265,7 @@ def build(source, output):
 {''.join(sections)}
 </main><script>{SCRIPT}</script></body></html>
 """
-    output.write_text(html, encoding="utf-8")
+    output.write_text("\n".join(line.rstrip() for line in html.splitlines()) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
