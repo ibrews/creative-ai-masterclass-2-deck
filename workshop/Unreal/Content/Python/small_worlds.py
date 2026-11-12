@@ -167,7 +167,7 @@ def build(stage='starter'):
         mesh('SW_Lantern_%d' % i, (x, -470, 238), (38, 38, 50), gold, 'Sphere')
         if dusk:
             light('SW_LanternLight_%d' % i, (x, -455, 235), cfg['lantern_intensity'], (255, 157, 67), 500)
-    sculpture = mesh('SW_FloatingSculpture', (0, -210, 160), (115, 115, 115), cyan, 'Cone', (0, 45, 0))
+    sculpture = mesh('SW_FloatingSculpture', (0, -210, 160), (115, 115, 115), cyan, 'Cube', (0, 45, 0))
     mesh('SW_SculpturePlinth', (0, -210, 25), (170, 170, 35), ivory, 'Cylinder')
     if festival:
         for i, x in enumerate([-760, -250, 250, 760]):
