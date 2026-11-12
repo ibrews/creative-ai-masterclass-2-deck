@@ -1,0 +1,8 @@
+{
+  "brief_id": "SW-18",
+  "title": "Paper City: Lantern Festival",
+  "tower_heights_cm": [200, 300, 400],
+  "lantern_glow": 3.0,
+  "lantern_intensity": 1400.0,
+  "exposure_bias": 1.0
+}

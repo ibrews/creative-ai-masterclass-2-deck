@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.9",
+  "Category": "Education",
+  "Description": "Small Worlds: AI for Unreal Engine, Alex Coulombe Presents",
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true},
+    {"Name": "EditorScriptingUtilities", "Enabled": true},
+    {"Name": "SequencerScripting", "Enabled": true},
+    {"Name": "MovieRenderPipeline", "Enabled": true}
+  ]
+}

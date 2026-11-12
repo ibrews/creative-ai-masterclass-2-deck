@@ -32,7 +32,7 @@
 :look .lesson-ey{justify-content:center;gap:.8em;margin-bottom:var(--s3);font-size:var(--t-label)}
 :look .ey-badge{color:var(--acc-1)!important}
 :look .ey-badge i{font-style:normal}
-:look .ey-badge .n::before{content:'Part\00a0'}
+:look .ey-badge .n::before{content:'Chapter\00a0'}
 :look .ey-badge .of{display:none}
 :look .ey-yr{color:var(--ink)}
 :look .ey-sep{color:var(--acc-1)}

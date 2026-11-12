@@ -69,7 +69,7 @@ figcaption { color: var(--muted); margin-top: .5em; }
 .toc li + li { margin-top: .25em; }
 .toc a { display: grid; grid-template-columns: 1.5em 1fr; gap: .25em; align-items: baseline; color: var(--ink); font-size: .95em; line-height: 1.15; }
 .toc a span { color: var(--red); font-weight: 700; }
-.button { background: var(--ink); color: var(--sheet); border: 1px solid var(--ink); padding: .55em .85em; cursor: pointer; font-weight: 600; }
+.button { background: var(--ink); color: var(--sheet); border: 1px solid var(--ink); border-radius: 8px; padding: .55em .85em; cursor: pointer; font-weight: 600; }
 .button:hover { background: var(--red); }
 .lesson { margin-top: 4rem; }
 .lesson-header { margin: 1.3em 0 1em; }
@@ -78,11 +78,11 @@ figcaption { color: var(--muted); margin-top: .5em; }
 .work ol { padding-left: 1.35em; }
 .work li { padding-left: .15em; margin-bottom: .55em; }
 .work li::marker { color: var(--red); font-weight: bold; }
-.plate { background: #ede3ce; border: 1px solid var(--ink); padding: 1em; }
+.plate { border-radius: 12px; background: #ede3ce; border: 1px solid var(--ink); padding: 1em; }
 .plate pre { white-space: pre-wrap; font: .71em/1.62 ui-monospace, Menlo, Consolas, monospace; margin: 0; }
 .illustration img { width: 100%; display: block; border: 1px solid var(--faint); }
 .references { margin: .45em 0 0; display: flex; gap: .2em .8em; flex-wrap: wrap; font-size: .9em; }
-.prompt { background: var(--sheet); border: 1px solid var(--faint); border-left: 4px solid var(--red); padding: .7em 1em .85em; margin-top: 1em; }
+.prompt { border-radius: 12px; background: var(--sheet); border: 1px solid var(--faint); border-left: 4px solid var(--red); padding: .7em 1em .85em; margin-top: 1em; }
 .prompt-head { display: flex; align-items: center; gap: .8em; flex-wrap: wrap; justify-content: space-between; margin-bottom: .4em; }
 .prompt pre { font: .8em/1.5 ui-monospace, Menlo, Consolas, monospace; margin: 0; white-space: pre-wrap; }
 .status { font: .7em/1.3 system-ui, sans-serif; }
@@ -249,16 +249,16 @@ def build(source, output):
         sections.append(render_lesson(lesson, index, total, next_id))
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Small Worlds Workshop · Part 1 desktop workbook</title>
+<title>Small Worlds Workshop · Part 2 Unreal workbook</title>
 <style>{font_styles()}\n{STYLE}</style></head>
 <body><a class="skip" href="#contents">Skip to contents</a><main>
 <section class="cover" aria-labelledby="cover-title">
-<div class="runhead"><span>Creative AI Masterclass</span><span>Part 1 · Student workbook</span></div>
-<header class="cover-hero"><div><p class="small">Set up from scratch</p>
+<div class="runhead"><span>Creative AI Masterclass</span><span>Part 2 · Student workbook</span></div>
+<header class="cover-hero"><div><p class="small">Let it run in Unreal</p>
 <h1 id="cover-title">Small Worlds Workshop</h1>
-<p class="deck">Give your desktop assistant an exhibition brief. Together you’ll build a gallery, revise a paper city in Blender and open it to visitors in Godot.</p></div>
+<p class="deck">Build a paper city in Unreal Engine 5.9 Preview. Light it for dusk, add a lantern festival, animate a sculpture and render a three-shot cinematic. Every step includes exact actions, a prompt, a check and a recovery path.</p></div>
 <figure><img src="{data_uri('images/desktop-class/paper-city.png')}" alt="Three folded-roof towers and a footbridge in a miniature paper city.">
-<figcaption>Paper City · Starter scene for brief SW-17</figcaption></figure></header>
+<figcaption>Part 1 source scene · Today’s brief is SW-18</figcaption></figure></header>
 <nav id="contents" class="toc" aria-labelledby="contents-title"><div class="toc-header"><h2 id="contents-title">Contents</h2>
 <button class="button" id="print" type="button" hidden>Print workbook</button></div>
 <div class="toc-grid">{table_of_contents(lessons)}</div></nav></section>

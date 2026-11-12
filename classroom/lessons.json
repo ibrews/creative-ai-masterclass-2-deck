@@ -1,49 +1,55 @@
 [
   {
-    "group": "Set up",
-    "id": "unpack",
-    "title": "Open the class folder",
-    "subtitle": "Begin here even if your computer has no creative apps installed.",
+    "group": "01 · Get ready",
+    "id": "start",
+    "title": "Choose your starting point",
+    "subtitle": "A self-paced route from a small brief to a saved Unreal cinematic.",
     "actions": [
-      "In the Google Drive folder shared with your class, download Small Worlds Workshop – Part 1 student kit – 2026-11-05.zip. One-class students use this same download.",
-      "In Downloads, double-click the ZIP on Mac. On Windows, right-click it, choose Extract All, then Extract. Move the extracted Small Worlds Workshop folder somewhere easy to find, such as Documents.",
-      "Open the folder that contains Brain, Skills, Studio and Creative. Double-click Start Here.html to read and copy every prompt offline. Keep that folder window open."
+      "Download and extract the Part 2 workshop ZIP from the class folder. Open Start Here.html in the extracted folder. Work on a copy, not inside a ZIP preview.",
+      "Starting from scratch: use the Starter project. Exploring the completed work: use the Finished project and open Unreal/PaperCity.uproject. Keep the original download as your recovery copy.",
+      "You can follow every numbered step without Alex. The slide deck is the teaching view; this workbook contains the full instructions. Last week’s kit is optional because the source Paper City scene is included."
     ],
     "prompt": "",
-    "check": "You can open Studio/show-brief.md in a text editor. Its first lines identify the Small Worlds exhibition and brief SW-17.",
-    "fix": "If you see a ZIP preview, extract it first. If Drive asks for access, switch to the Google account that received the class folder or request access there. ACP membership is unnecessary.",
-    "image": "",
+    "check": "The folder contains Actions, Unreal, SourceAssets, Studio and Recipes. Studio/design.json identifies brief SW-18.",
+    "fix": "If you only see a web preview, extract the complete folder. If you missed Part 1, use the included files and begin here.",
     "plate": [
-      "Small Worlds Workshop",
-      "  Start Here.html",
-      "  Brain/     Course recipes",
-      "  Studio/    Your work",
-      "  Skills/    Two skill folders",
-      "  Creative/  Blender + Godot + Android"
+      "Small Worlds · Part 2",
+      "Actions/    Run these inside Unreal",
+      "Unreal/     PaperCity.uproject",
+      "SourceAssets/  Part 1 scene",
+      "Studio/     Design + your notes",
+      "Recipes/    Reference + recovery"
     ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Set up",
-    "id": "get-assistant",
-    "title": "Install one desktop assistant",
-    "subtitle": "Choose whichever account you already use.",
+    "group": "01 · Get ready",
+    "id": "accounts",
+    "title": "Bring one assistant and Unreal",
+    "subtitle": "Use the account you already have.",
     "actions": [
-      "Codex: download the official desktop app for your operating system. On versions labeled ChatGPT, choose Codex from the app menu after signing in.",
-      "Claude: download Claude Desktop for your operating system, open it, sign in and select Code. You need an account with access to the local coding workspace.",
-      "Mac: open the downloaded installer and follow its instructions (drag the app into Applications if prompted). Windows: run the downloaded installer or use the official Store link. Open the installed app."
+      "Open Codex or Claude Desktop in its local coding workspace. Sign in to an account that can read and edit a local folder. An account subscription may be needed; no paid API key is required by this workshop.",
+      "Install Unreal Engine 5.9 Preview using Epic Games Launcher if available to your account and operating system. This edition was prepared for 5.9.0 Preview, changelist 60351404. Allow time for the large download.",
+      "Keep a working older Unreal installation. A 5.9-saved project is not an older-version starter. If your platform lacks this Preview, follow the workbook and inspect the reference media; do not convert your only production project."
     ],
-    "prompt": "",
-    "check": "You have a desktop window with a new local project or session option. You only need one assistant.",
-    "fix": "If you are in a browser chat, switch to the installed desktop app. If your account does not offer a local workspace, use the other supported app or pair with someone who has access. The class requires no paid API key.",
-    "image": "",
+    "prompt": "Read only: identify my operating system, installed Unreal versions, available space and whether this app can access the workshop folder. Report what is verified and what needs a local check. Do not install software or change my other projects.",
+    "check": "You know the exact engine you will open and the local workshop location.",
+    "fix": "If 5.9 is unavailable, stop the native steps here and read the reference route. Do not claim the Unreal scripts ran in a browser or in system Python.",
     "plate": [
-      "Choose one",
-      "Codex · Local project",
-      "Claude Desktop · Code / Local"
+      "Target: Unreal Engine 5.9 Preview",
+      "One local coding assistant",
+      "No headset",
+      "No paid asset pack",
+      "No paid API key"
     ],
+    "image": "",
     "links": [
+      [
+        "Get Unreal Engine",
+        "https://www.unrealengine.com/download"
+      ],
       [
         "Get Codex",
         "https://openai.com/codex/"
@@ -56,374 +62,610 @@
     "notes": ""
   },
   {
-    "group": "Set up",
-    "id": "open-project",
-    "title": "Give it the workshop folder",
-    "subtitle": "A local project lets the assistant work on the same files you can see.",
+    "group": "01 · Get ready",
+    "id": "open-folder",
+    "title": "Give the assistant the whole folder",
+    "subtitle": "Its working directory matters.",
     "actions": [
-      "Codex: choose Open folder or Add project. Select Small Worlds Workshop, choose Local, and start a chat in that project. If the project exists without a folder, use its menu → Edit project → Add folder.",
-      "Claude Desktop: select Code → New session. Choose the local environment (your computer), then the project folder control and Small Worlds Workshop. Work directly in this folder.",
-      "Send the prompt below. Keep the course reference in Brain and your own files in Studio. When the app asks for access, check that it names this workshop."
+      "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.",
+      "Open a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.",
+      "Check that it can name real files. A browser chat with pasted screenshots does not have the same local file access."
     ],
-    "prompt": "Read only. List the four workshop folders in my current project. Open Studio/show-brief.md and tell me its brief ID and working title. Cite the file. Do not change anything.",
-    "check": "It finds Brain, Studio, Skills and Creative, and reads SW-17, Paper City at Dusk, from the brief.",
-    "fix": "If it asks you to paste the file, reports an empty project or sees only Brain, reopen the enclosing Small Worlds Workshop folder. Start a fresh local chat there and repeat the check.",
-    "image": "",
+    "prompt": "Read AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.",
+    "check": "It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.",
+    "fix": "Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content.",
     "plate": [
-      "Select the enclosing folder",
-      "Small Worlds Workshop",
-      "     └── Studio/show-brief.md"
+      "Brief SW-18",
+      "200 / 300 / 400 cm",
+      "Studio/design.json",
+      "Actions/01_build_starter.py"
     ],
-    "links": [
-      [
-        "Codex projects",
-        "https://learn.chatgpt.com/docs/projects"
-      ],
-      [
-        "Claude local sessions",
-        "https://code.claude.com/docs/en/desktop"
-      ]
-    ],
-    "notes": ""
-  },
-  {
-    "group": "Set up",
-    "id": "install",
-    "title": "Get the software you need",
-    "subtitle": "Start the downloads now. Keep reading while the creative apps install.",
-    "actions": [
-      "First send the inventory prompt. The gallery needs Python 3.11 or newer; your assistant will run the included scripts. For today’s 3D route use Blender and Godot 4 Standard. Use stable desktop releases for your operating system and processor.",
-      "Python and Blender: use their official downloads below. Mac: open the Python installer package and install Blender in Applications. Windows: run each installer; enable the Python launcher or PATH option if offered.",
-      "Godot: download Standard (GDScript). Unzip the download. On Mac, move Godot into Applications; on Windows, open the extracted editor executable. Start each app once. Then return to your assistant for the version check."
-    ],
-    "prompt": "Check this computer for Python 3.11+, Blender and Godot 4 Standard. Report each version you actually found and each missing item. Help me install only the missing tools for my OS and processor from the official sites. Describe what you will install and wait for my OK. If you cannot use the installer, guide me through its buttons one at a time. After installation, verify each version again. Skip Unreal and Android Studio for now.",
-    "check": "The assistant identifies a working Python 3.11+ interpreter. Blender opens its startup scene and Godot opens its Project Manager. You can continue the reading and skills steps while either editor downloads.",
-    "fix": "If Python is installed but still missing in the assistant, close and reopen the desktop app and project. If school or work policy blocks installation, ask your administrator; the included render and starter files let you follow the visual examples.",
     "image": "",
-    "plate": [
-      "Core  ·  Python 3.11+",
-      "Creative  ·  Blender + Godot 4",
-      "Later  ·  Android Studio if desired"
-    ],
-    "links": [
-      [
-        "Python installers",
-        "https://www.python.org/downloads/"
-      ],
-      [
-        "Blender downloads",
-        "https://www.blender.org/download/"
-      ],
-      [
-        "Godot downloads",
-        "https://godotengine.org/download/"
-      ]
-    ],
+    "links": [],
     "notes": ""
   },
   {
-    "group": "Set up",
-    "id": "android-choice",
-    "title": "Decide whether to start Android Studio",
-    "subtitle": "Optional now; you can finish the Blender and Godot work without it.",
+    "group": "01 · Get ready",
+    "id": "contract",
+    "title": "Write a small job before running it",
+    "subtitle": "Give the agent a finish line it can check.",
     "actions": [
-      "If Android Studio is already installed, let your assistant check it. If you want the phone follow-on and have time, start its official installer and Standard setup wizard now.",
-      "For this project the Android SDK Manager needs Android 15 / API 35. A first sync downloads Gradle dependencies. An emulator may also require a large system image and virtualization.",
-      "Give this setup a personal time limit. If it stalls or asks for a long system-image download, return to the workshop. The optional Android project is in your ZIP for later."
+      "Open Studio/job-template.md. Replace the bracketed fields with your own goal and limits. Use the sample goal below if this is your first attempt.",
+      "Permit edits only in this workshop copy. Choose a time limit, a retry limit and whether new downloads or paid services are allowed.",
+      "Ask for a plan before the first write. Read it and authorize the bounded job. The assistant must report actual evidence rather than filling in a successful receipt in advance."
     ],
-    "prompt": "I want the optional Android Studio track. Check whether Android Studio, SDK Platform 35 and a phone or existing emulator are available. Estimate the remaining downloads from the installer. Help me install the missing pieces from Google only after I approve. If this will interrupt the class, help me defer it.",
-    "check": "You have either chosen “later” or opened Android Studio and checked the SDK. Both choices let you continue.",
-    "fix": "For a first install, follow the setup wizard’s platform-specific steps and use its size estimates. A prepared physical Android device can avoid downloading an emulator image.",
+    "prompt": "Draft Studio/my-job.md for this goal: build Paper City in Unreal, make a dusk variant, add a lantern festival and create a 12-second sequence. Only use this workshop and built-in Unreal assets. Budget: 30 minutes of active agent work, at most two retries per failed step, no paid services or downloads. Preserve prior maps. Finish with saved maps, verification output and a list of visual checks for me. Show the plan before running it.",
+    "check": "The job names allowed files, budget, stop conditions and the output you will inspect.",
+    "fix": "Shrink a broad request such as “make it amazing” to one visible change with a comparison image. Keep stretch ideas in a separate list.",
+    "plate": [
+      "Goal",
+      "Inputs + allowed files",
+      "Budget + retry limit",
+      "Checkpoint + recovery",
+      "Evidence + your verdict"
+    ],
     "image": "",
-    "plate": [
-      "For today",
-      "Blender → Godot",
-      "Phone postcard → optional"
-    ],
-    "links": [
-      [
-        "Android Studio and setup wizard",
-        "https://developer.android.com/studio/install"
-      ]
-    ],
-    "notes": ""
-  },
-  {
-    "group": "Second brain",
-    "id": "how-brain",
-    "title": "Connect the second brain",
-    "subtitle": "The assistant reads your course files when it needs an answer. Your private note carries decisions forward.",
-    "actions": [
-      "Open Brain/start-here/README.md yourself. Look at the ID and title above the first heading. A course recipe has a stable ID, a review status and a path.",
-      "Send the prompt. It establishes where to look for course methods, where the project brief lives and where your agent may save work.",
-      "Open Studio/project-memory.md. Pick a visitor nickname of your own. Tell the assistant to record it, your goal and the starting checkpoint there. Keep Brain unchanged."
-    ],
-    "prompt": "Use Brain as my read-only ACP Second Brain. For course questions, open the relevant page, then cite its ID and relative path. For this exhibition, use Studio/show-brief.md. My work goes in Studio. Read Brain/start-here/README.md and Brain/start-here/private-project-memory.md. Explain what belongs in Studio/project-memory.md. Wait for my chosen visitor nickname before writing it.",
-    "check": "It finds SB-01-start and SB-01-memory. Your own nickname and goal appear inside Studio/project-memory.md after you supply them.",
-    "fix": "If the answer sounds generic, ask it to quote the page title and show the exact path. A new chat can reread the folder; a fact left only in chat can disappear on restart.",
-    "image": "images/ch1-home.svg",
-    "plate": [],
     "links": [],
     "notes": ""
   },
   {
-    "group": "Second brain",
-    "id": "quiz",
-    "title": "Ask three questions with known answers",
-    "subtitle": "Send these one at a time. Check the file behind each answer.",
+    "group": "01 · Get ready",
+    "id": "open-unreal",
+    "title": "Open the supplied Unreal project",
+    "subtitle": "A Blueprint-only project avoids a compiler setup.",
     "actions": [
-      "Recovery: “The gallery stopped after one exhibit with exit 75. If the input matches, what exact command resumes it? What if the input changed? Cite the recipe.”",
-      "Restart: “I closed the original chat. Which three things should I give a fresh session, and what should it report before doing any work? Cite the recipe.”",
-      "Exhibit: “What is the wall-label archive code, where does the visitor start and how high are the three roofs? Cite the show brief.”"
+      "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.",
+      "The project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.",
+      "On a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu)."
     ],
-    "prompt": "Answer each question from Brain or Studio/show-brief.md. For each, open the file, name its ID and path, and tell me what evidence I should check. Do not run the recovery commands or edit anything.",
-    "check": "Recovery: JOB-01-recover, troubleshooting/recover-an-interrupted-job.md; python3 build.py --output interrupted --resume for matching inputs, fresh output for changed inputs. Restart: SB-01-resume, start-here/resume-after-restart.md; resume recipe, private note and relevant contract or receipt. Brief SW-17: MOTH-27, Lantern Gate, 2 / 3 / 4 meters.",
-    "fix": "For an incorrect answer, open the cited file together and ask again. As a fourth test, ask for the visitor nickname you picked. It should read your private note and spell it correctly.",
+    "prompt": "Help me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.",
+    "check": "You have the PaperCity editor open and an Output Log with no missing required plugin error.",
+    "fix": "If the project asks to compile C++ or reports a third-party plugin, you opened the wrong folder. This project has no C++ module and requires no AI bridge plugin.",
+    "plate": [
+      "PaperCity.uproject",
+      "Blueprint-only",
+      "Built-in editor plugins",
+      "No third-party plugin required"
+    ],
     "image": "",
-    "plate": [
-      "Recovery · JOB-01-recover",
-      "Restart · SB-01-resume",
-      "Exhibition · SW-17"
-    ],
     "links": [],
     "notes": ""
   },
   {
-    "group": "Skills",
-    "id": "compare",
-    "title": "What does a skill add?",
-    "subtitle": "The second brain supplies the answer. A skill tells your agent how to do a repeatable job with it.",
+    "group": "01 · Get ready",
+    "id": "python-check",
+    "title": "Run a harmless Python check",
+    "subtitle": "Unreal Python runs inside the editor.",
     "actions": [
-      "In Finder or Explorer open Skills/acp-recipe-check/SKILL.md. Read the instructions for finding a source and reporting what needs a local check.",
-      "Open Skills/acp-gallery-change/SKILL.md. Notice the required baseline, permitted edit, verification step and receipt.",
-      "Compare those files to Studio/show-brief.md. The brief owns the wall code and the design choices. The skill owns the procedure for using a brief. Your approval gives the agent permission to act."
+      "In the Output Log input, keep the normal console command mode and enter: py import unreal; print(unreal.SystemLibrary.get_engine_version()). Press Enter.",
+      "Look for the printed engine version in the log. A system terminal cannot import Unreal’s editor module.",
+      "For action files, use Tools → Execute Python Script and browse to the numbered file in Actions. If that menu is absent, use the console form: py \"FULL/PATH/TO/Actions/00_check_environment.py\". Replace FULL/PATH/TO with your extracted workshop location; use forward slashes."
     ],
-    "prompt": "Read the two SKILL.md files under Skills. Explain which skill you would use to answer a recovery question and which you would use to carry out an approved title edit. Do not install or run them yet.",
-    "check": "It chooses acp-recipe-check for source-grounded questions and acp-gallery-change for the build-and-verify workflow.",
-    "fix": "If it claims a skill is already installed, ask for the installed file path. The visible Skills folder holds the source copies delivered with class.",
+    "prompt": "Explain how to run Actions/00_check_environment.py inside my already-open Unreal editor. Give me the exact py command with my local file path, using forward slashes. Do not run it in system Python. Wait for me to paste its log result.",
+    "check": "The log prints SMALL_WORLDS_ENVIRONMENT with the engine version and workshop path.",
+    "fix": "If you see “No module named unreal”, the command ran in the wrong Python. If the script file is missing, remove the ZIP from the path and select the extracted Actions file.",
+    "plate": [
+      "Output Log console",
+      "py \"…/Actions/00_check_environment.py\"",
+      "Expected: SMALL_WORLDS_ENVIRONMENT"
+    ],
     "image": "",
-    "plate": [
-      "Brain/     Reviewed recipes",
-      "Studio/    Brief + decisions",
-      "Skills/    Reusable procedures"
-    ],
     "links": [],
     "notes": ""
   },
   {
-    "group": "Skills",
-    "id": "install-skills",
-    "title": "Install both skills in this project",
-    "subtitle": "Choose the destination for the desktop app you opened.",
+    "group": "02 · Build the world",
+    "id": "starter",
+    "title": "Build the daylight baseline",
+    "subtitle": "Generate native actors from a readable recipe.",
     "actions": [
-      "Stay in the project chat. Use the prompt below and replace APP with Codex or Claude. Review its proposed destination before allowing the copy.",
-      "Codex installs to .agents/skills/. Claude Desktop Code installs to .claude/skills/. Each skill needs its own folder with SKILL.md immediately inside.",
-      "Start a new local chat in the same project. In Codex type $ and look for acp-recipe-check; in Claude Code type /acp-recipe-check. Also look for acp-gallery-change."
+      "In Unreal choose Tools → Execute Python Script and select Actions/01_build_starter.py. This creates /Game/SmallWorlds/Maps/01_PaperCity.",
+      "Wait for SMALL_WORLDS_PASS in Output Log. In Content Browser open Content → SmallWorlds → Maps. Double-click 01_PaperCity if necessary.",
+      "In the Outliner search SW_Tower. Count three towers. Select SW_Cam_Wide and use Pilot from its context menu to inspect the overall composition. Press Ctrl+S / Cmd+S to save."
     ],
-    "prompt": "I am using APP. Install acp-recipe-check and acp-gallery-change from this project’s Skills folder into the project skill directory for my app only. Copy each complete folder. If a destination already exists, compare it and stop before replacing anything. Show me the two final SKILL.md paths. Do not change global settings.",
-    "check": "For example, Codex shows .agents/skills/acp-recipe-check/SKILL.md; Claude shows .claude/skills/acp-recipe-check/SKILL.md. Both names should be discoverable in the fresh session.",
-    "fix": "If names are missing, verify this project is the current folder and check for a doubled path such as skills/Skills/. Reopen the project and start another chat. Reading the source file manually is a fallback while you repair discovery.",
+    "prompt": "Read the starter builder and Studio/design.json. Explain what Actions/01_build_starter.py will create and how it avoids replacing an existing map. Then give me its exact Unreal console command. After I run it, help me inspect the actual log and actor list.",
+    "check": "Three towers, two bridges, a canal, lamps and a cyan sculpture are visible. The log records the map and actor count.",
+    "fix": "If it says the map already exists, open it instead of rerunning. Preserve it by copying the whole workshop before a fresh build. If a script fails, read the first traceback before retrying.",
+    "plate": [
+      "01_PaperCity",
+      "Three towers",
+      "Two bridges",
+      "Canal + lanterns",
+      "Saved baseline"
+    ],
     "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "02 · Build the world",
+    "id": "units",
+    "title": "Check scale before polishing",
+    "subtitle": "Unreal scene units are centimeters.",
+    "actions": [
+      "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.",
+      "Compare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.",
+      "Run Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture."
+    ],
+    "prompt": "Check the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.",
+    "check": "Tower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.",
+    "fix": "A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing.",
     "plate": [
-      "Project only",
-      "Codex     .agents/skills/",
-      "Claude    .claude/skills/",
-      "Each name → SKILL.md"
+      "100 cm cube × Z scale",
+      "2 = 200 cm",
+      "3 = 300 cm",
+      "4 = 400 cm"
     ],
-    "links": [
-      [
-        "Codex skills",
-        "https://developers.openai.com/codex/skills"
-      ],
-      [
-        "Claude Code skills",
-        "https://code.claude.com/docs/en/skills"
-      ]
-    ],
-    "notes": ""
-  },
-  {
-    "group": "Skills",
-    "id": "invoke",
-    "title": "Use the installed lookup skill",
-    "subtitle": "See what changes when the assistant follows a procedure.",
-    "actions": [
-      "Select the skill you just installed: $acp-recipe-check in Codex or /acp-recipe-check in Claude Code. Add the question below and send it.",
-      "Open its cited page in Brain. Compare its answer against that page. Look for the local check as well as the explanation.",
-      "Ask a second question: “What color did the curator approve for a fourth tower?” The brief specifies three towers. A useful answer identifies the missing decision."
-    ],
-    "prompt": "Use the installed acp-recipe-check skill. My gallery baseline is already in output/. Where should my one-title revision be built, how do I verify it and who decides if it looks right? Give the course source, your answer and what I should check locally.",
-    "check": "It cites CLASS-01-part1 in Brain/workflows/part-1-exercise.md, uses output-edited, verifies that folder and leaves visual approval with you.",
-    "fix": "If it starts editing, stop and invoke the read-only skill explicitly in a fresh project chat. If it guesses the fourth tower color, ask it to show the exact line in SW-17.",
-    "image": "images/ch1-permission.svg",
-    "plate": [],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Gallery lab",
-    "id": "baseline",
-    "title": "Ask your agent to build the baseline",
-    "subtitle": "You send the request. The desktop assistant runs the included Python tools.",
+    "group": "02 · Build the world",
+    "id": "materials",
+    "title": "Inspect the material library",
+    "subtitle": "Separate the shape from its surface.",
     "actions": [
-      "In your project chat paste the prompt. The workbook already includes a private copy at Studio/local-gallery; leave Brain/examples alone.",
-      "Review the proposed actions. Allow the build and verifier inside this workspace. Ask for the actual final output line and the path to the page.",
-      "In Finder or Explorer open Studio → local-gallery → output → index.html. Double-click it. Count the cards, inspect the order and tell the assistant whether you accept this baseline."
+      "Open Content → SmallWorlds → Materials. Open M_Jade and inspect Base Color, Roughness and Metallic in the graph.",
+      "Select a bridge rail, inspect its material slot and confirm it uses M_Jade. Compare the rough paper towers with the glossier canal.",
+      "Ask your assistant for one bounded material variation. Duplicate the material in Content Browser before editing. Apply the duplicate to one selected rail and compare it with the untouched bridge."
     ],
-    "prompt": "In Studio/local-gallery use an available Python 3.11+ interpreter to run build.py --output output, then verify.py --output output. Preserve any existing output. Report the actual verifier result and give me the local HTML path. Do not edit exhibits.json. Wait for me to inspect the page.",
-    "check": "The checker says PASS: 3 exhibits. The browser shows Small Worlds Gallery with Paper City, Moon Garden, then Quiet Machine. Your agent can now record your baseline decision in Studio/project-memory.md.",
-    "fix": "If the page already exists, inspect it and ask the agent to verify it against unchanged inputs. If Python is missing, return to the software step. The included screenshot is a reference while you troubleshoot.",
-    "image": "images/first-run/gallery.png",
-    "plate": [],
+    "prompt": "Propose one jade-rail material variation with an exact Base Color, Roughness and Metallic value. Keep the paper walls and canal unchanged. Tell me how to duplicate M_Jade and apply the duplicate to only one bridge rail. I will inspect before accepting it.",
+    "check": "One rail uses your duplicate material; the original M_Jade and the other bridge stay available for comparison.",
+    "fix": "If every rail changed, you edited the shared material. Restore its prior values, duplicate it and apply the duplicate to a single actor.",
+    "plate": [
+      "Mesh → material slot",
+      "Base Color",
+      "Roughness",
+      "Metallic",
+      "Duplicate before editing"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Gallery lab",
-    "id": "edit",
-    "title": "Turn your own brief into one edit",
-    "subtitle": "The skill reads a local commission and produces a reviewable result.",
+    "group": "02 · Build the world",
+    "id": "dusk",
+    "title": "Make a dusk lighting variant",
+    "subtitle": "Change the light while preserving the daylight map.",
     "actions": [
-      "Invoke $acp-gallery-change in Codex or /acp-gallery-change in Claude. Add the prompt below. Before allowing the edit, check its file list.",
-      "The permitted input is Studio/local-gallery/exhibits.json. Expect a fresh output-edited folder and a private receipt. Keep the accepted baseline in output.",
-      "Open both HTML files side by side. Check the new first title and the two unchanged exhibits. Tell the assistant your verdict and why; have it update your private note."
+      "Run Actions/02_build_dusk.py. It creates 02_Dusk as a separate map with warmer key light, emissive lanterns and point lights.",
+      "Open 01_PaperCity and 02_Dusk in turn. Use the same SW_Cam_Wide view for both. Wait for shader compilation and exposure to settle.",
+      "Capture both views with the same viewport size using your operating system screenshot tool. Save them in Studio/evidence and record which version you prefer."
     ],
-    "prompt": "Use the installed acp-gallery-change skill and brief SW-17. I approve one edit: change only the displayed title for paper-city to the title in my brief. Keep its ID, the other cards and their order. Build and verify a fresh output-edited, write Studio/receipt.md, then stop for my visual decision. Budget one edit and one correction.",
-    "check": "output/index.html still says Paper City. output-edited/index.html says Paper City at Dusk. The receipt separates the verifier result from your decision.",
-    "fix": "If output-edited exists from an earlier attempt, agree on a new folder first. If the checker passes but the title is wrong, record a rejection and keep the last accepted baseline.",
-    "image": "images/desktop-class/edited-gallery.png",
-    "plate": [],
+    "prompt": "Read the two stage definitions. Before I run 02_build_dusk.py, predict which lighting settings will change. After I supply matching screenshots and the log, compare shadow direction, lantern visibility, highlights and tower readability. Separate observations from suggestions.",
+    "check": "Both maps exist. The dusk view has visible warm lanterns and readable towers. Your verdict is recorded with the compared filenames.",
+    "fix": "If the view is black, confirm you are looking through a camera, not below the plinth. Check exposure and lights in the saved map before raising every intensity.",
+    "plate": [
+      "01_PaperCity → baseline",
+      "02_Dusk → warm lamps",
+      "Same camera + same crop",
+      "Your visual verdict"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Gallery lab",
-    "id": "restart",
-    "title": "Prove a fresh chat can resume",
-    "subtitle": "Let the next session recover something it could not know from general training.",
+    "group": "02 · Build the world",
+    "id": "prop-recipe",
+    "title": "Turn one prop into a reusable recipe",
+    "subtitle": "A lantern has a small, understandable construction.",
     "actions": [
-      "Have the current session save the nickname, accepted output path, your reason and the next safe step in Studio/project-memory.md. Open the note and verify those details.",
-      "Start a new chat in the same local project. Leave the old conversation closed. Paste the prompt without repeating your nickname or verdict.",
-      "Compare the answer with your note. If the assistant guessed, fix the missing field in the note and repeat the test in a new chat."
+      "In small_worlds.py find the loop that creates SW_LanternPost, SW_LanternCap, SW_Lantern and SW_LanternLight. Read the dimensions and labels together.",
+      "Ask the assistant to describe a new prop with the same clarity: component shapes, dimensions, materials and placement. Choose a bench, plant, kiosk or boat.",
+      "Have it write the recipe into Studio/prop-proposal.md before it edits code. Require a unique actor prefix so the result can be found and removed as one scoped experiment."
     ],
-    "prompt": "Read only Brain/start-here/resume-after-restart.md, Studio/project-memory.md and Studio/receipt.md. What is my visitor nickname, which output did I accept, why, and what is the next safe action? Cite the exact files. If my decision is missing, say so. Do not build anything.",
-    "check": "It returns your chosen nickname, your actual verdict and an action inside the recorded limits. You can now resume independently after a break.",
-    "fix": "If it merely repeats the original goal, check you opened the same extracted folder. If your client recalls old chats, give it a new fact in the file and ask it to point to that field.",
-    "image": "images/ch3-memory.svg",
-    "plate": [],
+    "prompt": "Design an original small ticket kiosk for this paper city using built-in cubes, cylinders and cones. Give dimensions in centimeters, material choices, labeled parts and a placement that leaves both bridges clear. Save the proposal in Studio/prop-proposal.md. Do not build until I choose the design.",
+    "check": "You can explain every component and find where the prop will stand. No paid asset purchase is needed.",
+    "fix": "If the proposal needs an unavailable model or API, ask for a built-in-shape version first. Record generated asset provenance if you later use another tool.",
+    "plate": [
+      "Prop = labeled parts",
+      "Dimensions in cm",
+      "Materials",
+      "Placement",
+      "Acceptance view"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Blender and Godot",
-    "id": "scene",
-    "title": "Open the scene described by your brief",
-    "subtitle": "The Blender exercise starts with an inspectable scene and ends with your own revision.",
+    "group": "02 · Build the world",
+    "id": "festival",
+    "title": "Build the lantern festival",
+    "subtitle": "Use repetition to make a richer scene.",
     "actions": [
-      "Open Blender. Choose File → Open, navigate to Creative/Starting-Scene/Paper City.blend and open it. Choose the supplied scene if Blender asks whether to save the empty default scene.",
-      "In camera view find the Lantern Gate, one footbridge and three towers. Use the Outliner search for “Tower” to locate walls and folded roofs. Open Creative/Starting-Scene/Postcard.png beside Blender for the reference render.",
-      "Ask the assistant to read the brief and compare the proposed edit with the available source. Stop after the plan."
+      "Run Actions/03_build_festival.py. Open 03_LanternFestival.",
+      "Inspect the added paper trees, benches, hanging lanterns, stepping stones and boats. Find each type in the Outliner by its SW_ prefix.",
+      "Look through all three SW_Cam cameras. Check that bridges stay readable and that trees do not cover the towers. Save a wide view and a detail view."
     ],
-    "prompt": "Read Studio/show-brief.md and Creative/build_scene.py. Tell me what SW-17 says about tower heights, bridge rails and camera framing. Show which one parameter can change the rails to jade, and propose a new output folder under Studio. Do not run Blender yet.",
-    "check": "It identifies the three roof heights (2, 3 and 4 m), vermilion → jade, fixed framing, and the builder’s --rails jade parameter.",
-    "fix": "If the scene opens gray, use Material Preview or compare the PNG. If Blender is unavailable, continue with the starter render and move to Godot using the supplied city model.",
-    "image": "images/desktop-class/paper-city.png",
-    "plate": [],
+    "prompt": "Read the festival stage. List the added prop families and their actor prefixes. After I run it, guide me through a wide, bridge and sculpture inspection. Ask me to reject any placement that blocks a bridge or hides the focal point.",
+    "check": "The festival map contains repeated, individually labeled props and still reads as the same city.",
+    "fix": "If it is cluttered, hide a single prop family in the Outliner first. Compare that change before deleting or rebuilding anything.",
+    "plate": [
+      "Trees",
+      "Benches",
+      "Hanging lanterns",
+      "Boats + stepping stones",
+      "One coherent scene"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Blender and Godot",
-    "id": "make-scene",
-    "title": "Build the jade-rail version",
-    "subtitle": "Commission the change in plain language and compare the two renders.",
+    "group": "03 · Direct the AI",
+    "id": "art-direction",
+    "title": "Give feedback the agent can act on",
+    "subtitle": "Name the visual problem and protect what works.",
     "actions": [
-      "Return to the assistant chat and paste the prompt. Allow only the supplied builder, your installed Blender and the fresh destination.",
-      "Open Studio/Jade/Postcard.png next to Creative/Starting-Scene/Postcard.png. Zoom into the footbridge: the two rails should turn green.",
-      "Open Studio/Jade/Paper City.blend. Confirm the same three towers and composition. Tell your assistant whether to accept the revision and save that decision."
+      "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”",
+      "Name the protected elements: tower heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.",
+      "Ask for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence."
     ],
-    "prompt": "Run the supplied Creative/build_scene.py with the installed Blender in background mode, using --out Studio/Jade and --rails jade after the script argument separator. Work from the workshop root. Do not overwrite an existing folder. Report Blender’s exit result and the three files created. Keep the baseline intact.",
-    "check": "Studio/Jade contains Paper City.blend, Paper City.glb and Postcard.png. The bridge rails changed; the roof heights, gate and camera framing agree with the starting render.",
-    "fix": "If Blender is missing, use the official installer in the software step. If Studio/Jade already exists, agree on a fresh path and use that name in the following steps. If the render failed, keep the log and baseline.",
-    "image": "images/desktop-class/jade.png",
-    "plate": [],
+    "prompt": "The hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.",
+    "check": "The revision changes one named problem and preserves your protected choices.",
+    "fix": "If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change.",
+    "plate": [
+      "Observation",
+      "One allowed change",
+      "Protected choices",
+      "Same comparison view",
+      "Accept or reject"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Blender and Godot",
-    "id": "play",
-    "title": "Run your exhibit in Godot",
-    "subtitle": "The starter viewer already has a camera, lighting and visitor controls.",
+    "group": "03 · Direct the AI",
+    "id": "batch",
+    "title": "Request a batch with a fixed budget",
+    "subtitle": "Make several ideas, then choose.",
     "actions": [
-      "Open Godot 4 Standard. In Project Manager choose Import, browse to Creative/GodotGallery/project.godot and select Import & Edit (or Import, then Edit). Wait for the GLB import.",
-      "Press the Play Project triangle (F5). Click Orbit left and Orbit right. Click Read wall label to reveal the code, then click Hide wall label.",
-      "Stop the running project (F8). Ask your assistant where the imported model lives, and which copy you should edit to preserve the working starter."
+      "Ask for three written variations first: quiet gallery, night market and sculptural park. Keep the towers and bridges as shared constraints.",
+      "Choose one to build in a separate map. Limit the job to a fixed prop count and a small number of material colors.",
+      "Require the output list and a screenshot before the agent starts another variation. A batch is a set of reviewable alternatives, not permission for endless generation."
     ],
-    "prompt": "Inspect Creative/GodotGallery without changing anything. Which file supplies the 3D city, which file defines the visitor controls, and which button reveals our archive code? Cite the paths and predict what I should see on first launch.",
-    "check": "You see the vermilion rails and all three towers. Orbit changes the view. The wall label reveals MOTH-27. The model is art/city.glb and the button behavior is in gallery.gd.",
-    "fix": "If Godot shows its empty project list, import project.godot rather than the GLB. If the view is blank, wait for import, then run the main project with F5. The project uses the Compatibility renderer.",
-    "image": "images/desktop-class/godot.png",
-    "plate": [],
+    "prompt": "Propose three variants of Paper City: quiet gallery, night market and sculpture park. For each, give exactly three prop families, a three-color palette and one hero-camera idea. Use built-in geometry. Do not build yet. I will choose one, then authorize at most 12 new props in a separate map with a 10-minute budget.",
+    "check": "Three distinct proposals can be compared before using compute or changing files.",
+    "fix": "If all three descriptions are vague adjectives, ask for object counts, placement coordinates and a specific focal point.",
+    "plate": [
+      "Quiet gallery",
+      "Night market",
+      "Sculpture park",
+      "Choose → build → inspect"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "Blender and Godot",
+    "group": "03 · Direct the AI",
     "id": "handoff",
-    "title": "Carry your revision into the visitor experience",
-    "subtitle": "Make the handoff in a private copy, then test it as a visitor.",
+    "title": "Compare with the original Blender scene",
+    "subtitle": "Understand what survived the engine handoff.",
     "actions": [
-      "Stop Godot playback and send the prompt. If you used a different revision folder, substitute it for Studio/Jade.",
-      "Return to Godot Project Manager. Import Studio/Godot-Jade/project.godot and run this copy with F5. Orbit until the bridge rails are visible.",
-      "Open the wall label. Compare its code with SW-17. Record two verdicts in Studio/receipt.md: one for the imported geometry/material, one for the interaction."
+      "Open SourceAssets/Paper City.blend in Blender if installed, or inspect the included source postcard. This is the Part 1 starting scene, not a claim about every live-class edit.",
+      "The native Unreal recipe is a deliberate reinterpretation: three towers, folded roofs, a canal and jade rails, expanded into a festival. It is not a lossless import.",
+      "Optional: drag SourceAssets/Paper City.glb into an empty Content Browser folder in a duplicate project. Review the import options, scale, materials and hierarchy. Compare imported geometry with the native recipe; do not replace the finished map."
     ],
-    "prompt": "Copy Creative/GodotGallery to a new Studio/Godot-Jade folder, omitting generated .godot caches. In that copy only, replace art/city.glb with Studio/Jade/Paper City.glb. Keep the original project and its scripts intact. Tell me which project.godot to open next.",
-    "check": "The private Godot project shows jade rails, three towers and a working MOTH-27 reveal. You have taken an exhibition brief through a source-aware agent, Blender and a playable scene.",
-    "fix": "If the rails still look red, check which project window you launched and ask the assistant to compare the two GLB hashes. Focus the Godot editor so it can reimport the replacement.",
-    "image": "images/desktop-class/godot-jade.png",
-    "plate": [],
+    "prompt": "Compare the included Part 1 source assets with the Unreal construction recipe. Identify what is preserved, what is rebuilt and what needs checking after a GLB import: units, axes, material slots, transparency and object hierarchy. Do not call the native reconstruction a lossless import.",
+    "check": "You can distinguish an imported mesh from a native reconstruction and list the handoff checks.",
+    "fix": "If GLB import is unavailable in your editor configuration, keep it optional. The main workshop uses built-in Unreal meshes and does not depend on that importer.",
+    "plate": [
+      "Source scene → handoff",
+      "Units + axes",
+      "Materials + hierarchy",
+      "Rebuild ≠ lossless import"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   },
   {
-    "group": "After class",
-    "id": "phone",
-    "title": "Optional: make an Android postcard",
-    "subtitle": "Use the same Blender render in a small tappable Android experience.",
+    "group": "03 · Direct the AI",
+    "id": "bridge",
+    "title": "Choose how AI reaches the editor",
+    "subtitle": "The same job can use a script or a direct tool connection.",
     "actions": [
-      "If Android Studio is ready, ask your assistant to prepare the private copy below. Open Android Studio → Open, choose Studio/Android-Jade (the folder containing settings.gradle), then wait for Gradle sync.",
-      "If prompted, use Android Studio’s bundled JDK and install SDK Platform 35. Choose app in the run configuration and an available Android device in the device selector. Click Run ▶.",
-      "Tap Read wall label. Compare the image with your jade render and the code with the brief. You may leave this step for another day."
+      "The required path uses the local coding assistant to prepare files and you to run the numbered script in Unreal. It works without a third-party bridge.",
+      "An instructor with an installed, tested ue5-mcp connection can inspect actors, edit the scene and capture it directly. Ask for a read-only actor query first, then one bounded write in a duplicate map.",
+      "UE 5.9 also includes experimental native tool infrastructure. Installed plugins determine which tools are present. Do not assume the built-in server exposes every operation from another bridge."
     ],
-    "prompt": "Copy Creative/AndroidPostcard to a fresh Studio/Android-Jade. Replace only app/src/main/res/drawable-nodpi/postcard.png in that copy with Studio/Jade/Postcard.png. Tell me how to open this project in Android Studio. If the SDK or device is missing, explain the next click and wait for my choice.",
-    "check": "The app is a 2D postcard of your 3D scene. Tapping its button reveals MOTH-27. The Gradle project and starting image are included in the student kit.",
-    "fix": "If the device menu is empty, open Tools → Device Manager to create a virtual phone, or use a permitted physical Android phone with USB debugging. Defer if downloads exceed your time budget. A successful build alone does not verify the tap.",
-    "image": "images/desktop-class/jade.png",
-    "plate": [],
-    "links": [
-      [
-        "Android Studio: build and run",
-        "https://developer.android.com/studio/run"
-      ]
+    "prompt": "First tell me which Unreal tools this chat actually has. If none, use the script-and-manual-run route. If connected, perform a read-only query for the current map and SW_Tower actors, report actual values and stop. Do not infer connectivity from a plugin file on disk.",
+    "check": "The agent identifies its actual connection and can show a real query result or clearly use the manual route.",
+    "fix": "A server health response proves transport, not editing. Test one harmless read before giving write authority. Do not publish an unauthenticated editor port to the internet.",
+    "plate": [
+      "Local assistant → script → Unreal",
+      "Connected assistant → native tools → Unreal",
+      "Both need visible verification"
     ],
+    "image": "",
+    "links": [],
     "notes": ""
   },
   {
-    "group": "After class",
-    "id": "next",
-    "title": "Bring a decision to Part 2",
-    "subtitle": "Wednesday, November 11 · 11 a.m. ET · Let It Run",
+    "group": "04 · Make it move",
+    "id": "sequence",
+    "title": "Create the 12-second cinematic",
+    "subtitle": "Three shots and one animated sculpture.",
     "actions": [
-      "Repeat the gallery task once with a different small change and a fresh output. Bring your private summary: what you asked for, what the checker said, and what you accepted.",
-      "Save one friction point. For example: the agent found the file but missed the accepted version; or the model imported but the rail material changed.",
-      "Next week we will turn that single-job contract into a longer run with a budget, checkpoints and a recovery gate. We will revisit the scene handoff with Unreal in the deeper dive."
+      "Run Actions/04_build_cinematic.py. It creates 04_Cinematic and Content/SmallWorlds/Cinematics/LS_LanternFestival.",
+      "Open the new map, then double-click LS_LanternFestival in Content Browser. In Sequencer enable the camera-cut view button on the Camera Cuts track.",
+      "Scrub frames 0, 96 and 192. You should see wide, bridge and sculpture cameras. Scrub between keys to inspect the floating sculpture and camera movement."
     ],
-    "prompt": "Using my current memory and receipt, draft a Part 2 job proposal for comparing my Godot city with an Unreal import. Include the allowed inputs, a first checkpoint, time or retry budget, a stop condition and what I must inspect. Do not start it or install Unreal today.",
-    "check": "You have your own skill-enabled agent, cited workflow answers, two gallery pages, a restart note and a playable Godot project if you completed the creative route.",
-    "fix": "If you stopped early, resume at the first missing artifact. Your grade is the evidence you can show: a source, an output you inspected and a next step another session can find.",
-    "image": "images/ch3-loop.svg",
-    "plate": [],
+    "prompt": "Explain Actions/04_build_cinematic.py before I run it. Identify the three camera cuts, the 24 fps frame ranges and the animated sculpture. After I run it, help me inspect the cut track and transform keys. Do not claim rendered motion from key counts alone.",
+    "check": "The sequence lasts 288 frames at 24 fps, with three four-second shots. The sculpture moves and rotates when scrubbed.",
+    "fix": "If the viewport stays on your free camera, enable Sequencer’s camera-cut lock. If the sequence already exists, open it rather than overwriting it.",
+    "plate": [
+      "0–95 · Wide",
+      "96–191 · Bridge",
+      "192–287 · Sculpture",
+      "24 fps × 12 s = 288 frames"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "04 · Make it move",
+    "id": "camera",
+    "title": "Review the start, middle and end",
+    "subtitle": "A camera move must hold its composition.",
+    "actions": [
+      "For the first shot inspect frames 0, 48 and 95. For the second inspect 96, 144 and 191. For the third inspect 192, 240 and 287.",
+      "At each frame check the focal subject, foreground intersections, lantern visibility and whether the frame clips a roof or sculpture.",
+      "If a move fails, duplicate the sequence and shorten its travel before adding more keys. Save nine frame captures or a contact sheet for your review."
+    ],
+    "prompt": "Make me a nine-frame inspection checklist for LS_LanternFestival: start, middle and end of each shot. For each, I will mark framing, clipping, focal subject and lighting. If a shot fails, propose the smallest camera-key adjustment and preserve the original sequence.",
+    "check": "All three samples in each shot have been inspected. A keyframe existing is separate from good composition.",
+    "fix": "If a subject leaves the frame, reduce translation or retarget the end rotation in the duplicate sequence. Recheck all three samples.",
+    "plate": [
+      "Shot 1: 0 / 48 / 95",
+      "Shot 2: 96 / 144 / 191",
+      "Shot 3: 192 / 240 / 287"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "04 · Make it move",
+    "id": "render",
+    "title": "Render a short image sequence",
+    "subtitle": "Use frames first so a failed encode does not waste a render.",
+    "actions": [
+      "Open Window → Cinematics → Movie Render Queue. Add LS_LanternFestival. Confirm the job’s map is 04_Cinematic.",
+      "Open the job settings. Add or keep Deferred Rendering and PNG Sequence. In Output choose a new folder inside Studio/renders, set 1280 × 720 and 24 fps, and keep the sequence frame range. Use Anti-Aliasing engine warm-up if effects need time to initialize.",
+      "Render locally. Wait for completion, then open the first, middle and last frames. Keep the Output Log if the render reports an error. The optional command-line encode recipe is in Recipes/04-render.md."
+    ],
+    "prompt": "Help me configure one local Movie Render Queue job for LS_LanternFestival in map 04_Cinematic: 1280×720, 24 fps, PNG frames, a new Studio/renders folder and the sequence’s 288-frame range. Explain the settings I must inspect. Do not start an overnight render or overwrite prior frames.",
+    "check": "A new folder contains the rendered frame sequence. You inspected images from all three cuts.",
+    "fix": "If every frame uses one camera, check the saved Camera Cuts track and job sequence. If the render is much brighter than the viewport, compare exposure and cinematic scalability before adjusting lights.",
+    "plate": [
+      "Map: 04_Cinematic",
+      "Sequence: LS_LanternFestival",
+      "1280 × 720 · 24 fps",
+      "PNG frames → inspect → encode"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "04 · Make it move",
+    "id": "encode",
+    "title": "Turn frames into a review video",
+    "subtitle": "Inspect the movie after encoding.",
+    "actions": [
+      "If FFmpeg is already installed, ask the assistant to inspect the actual image filenames and form an encode command from that pattern. Do not assume a filename that is not present.",
+      "Use H.264, yuv420p and 24 fps for the review MP4. Keep the original frames and use a new output filename.",
+      "Play the full movie. Check the cut boundaries and sculpture motion, then seek to the last frame. Record any visual defect separately from decode success."
+    ],
+    "prompt": "Read the filenames in my Studio/renders folder. If FFmpeg is installed, encode the 24 fps PNG sequence to a new H.264 yuv420p MP4 without deleting frames or replacing another video. Show the exact input pattern. Validate decode, duration and dimensions, then ask me to inspect the complete movie.",
+    "check": "You have a playable review MP4 and an actual decode result. Your visual verdict names any remaining issue.",
+    "fix": "If filenames contain gaps, repair the render or explicitly choose a correct continuous range. Do not hide missing frames by silently looping a still.",
+    "plate": [
+      "Rendered frames",
+      "Actual filename pattern",
+      "H.264 · yuv420p · 24 fps",
+      "Decode + human viewing"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "05 · Let it run",
+    "id": "checkpoint",
+    "title": "Save a checkpoint another chat can use",
+    "subtitle": "Memory needs concrete state.",
+    "actions": [
+      "Open Studio/project-memory.md. Record the accepted map, sequence, engine version, design choices and evidence paths.",
+      "Write one sentence explaining why you kept a choice. Include a nickname or design reason that a new agent cannot guess from general knowledge.",
+      "Name exactly one next action and its stop condition. Keep rejected alternatives so the next chat does not rebuild them."
+    ],
+    "prompt": "Update Studio/project-memory.md from the work we actually completed. Record engine version, saved map and sequence, accepted choices, rejected alternatives, actual verification results and evidence filenames. My private design reason is: [write your own reason]. Next action: [one action]. Do not record acceptance I have not given.",
+    "check": "The note names a real saved state and an unambiguous next action.",
+    "fix": "If it only says “made progress,” replace that with map paths, values, filenames and a concrete next step.",
+    "plate": [
+      "Goal + accepted state",
+      "Why this choice",
+      "Rejected alternatives",
+      "Evidence paths",
+      "Next action + stop"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "05 · Let it run",
+    "id": "restart",
+    "title": "Test a fresh chat",
+    "subtitle": "Make continuity observable.",
+    "actions": [
+      "Save the Unreal project and your notes. Start a new local chat in the same workshop folder.",
+      "Do not paste the old conversation. Ask the new agent to read the memory and report the private design reason, accepted map and next action.",
+      "Open the cited files yourself. If the answer is wrong, repair the note or path and repeat. Keep the failed answer as useful evidence."
+    ],
+    "prompt": "Read AGENTS.md and Studio/project-memory.md. Without editing anything, tell me the accepted map, sequence, private design reason, last actual check and exact next action. Cite each source. If a fact is absent, say it is absent instead of guessing.",
+    "check": "The new agent recovers your actual reason and state from files.",
+    "fix": "If it recites generic advice, ask it to open the exact note. If it invents a value, compare its answer with the cited text.",
+    "plate": [
+      "Fresh chat",
+      "Read saved note",
+      "Recall private reason",
+      "Check citations",
+      "Resume one step"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "05 · Let it run",
+    "id": "failure",
+    "title": "Practice one recoverable failure",
+    "subtitle": "Use a copy so the exercise cannot destroy your baseline.",
+    "actions": [
+      "Make a full duplicate of the Starter workshop. In that duplicate only, ask the agent to change the JSON key lantern_intensity to lantern_intensity_typo.",
+      "Run the dusk action in the duplicate. Inspect the traceback. It should name the missing lantern_intensity key. Preserve the log before fixing it.",
+      "Restore the correct key from the original design file. Use a fresh duplicate before running again because the failed action may already have created a partial map. Record the failure, repair and rerun result."
+    ],
+    "prompt": "In my designated failure-exercise copy only, rename lantern_intensity to lantern_intensity_typo in Studio/design.json. Explain the expected KeyError and partial-map risk. Do not run other jobs. After I provide the traceback, restore the key from the reference file and prepare a clean retry copy; do not overwrite the partial map.",
+    "check": "You identified a specific cause, preserved evidence and repaired it without deleting your good scene.",
+    "fix": "If your copy already contains 02_Dusk, the existing-map guard will stop earlier. Start with the Starter package for this exercise.",
+    "plate": [
+      "Controlled typo",
+      "Read first traceback",
+      "Preserve partial state",
+      "Restore input",
+      "Retry in clean copy"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "05 · Let it run",
+    "id": "long-job",
+    "title": "Give a longer job a real boundary",
+    "subtitle": "The finish line stays visible while you are away.",
+    "actions": [
+      "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.",
+      "Specify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.",
+      "Ask for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues."
+    ],
+    "prompt": "In a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.",
+    "check": "The agent can explain when to continue, checkpoint, stop or ask you for a required action.",
+    "fix": "If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized.",
+    "plate": [
+      "One extension",
+      "Exact files + map",
+      "Time + retries",
+      "Milestone evidence",
+      "Known limits"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "05 · Let it run",
+    "id": "acceptance",
+    "title": "Separate checks from your verdict",
+    "subtitle": "A successful command is only part of a useful result.",
+    "actions": [
+      "Run the current-map verifier and inspect its actual output. Confirm all four maps and the sequence open after saving.",
+      "Play the sequence and your rendered movie. Compare the nine camera samples and both lighting versions.",
+      "Write your own acceptance statement in Studio/receipt-template.md: accepted, accepted with named issues, or rejected. List the exact artifact and reason. The assistant may record your words after you decide."
+    ],
+    "prompt": "Prepare a completion receipt from actual files and log results. Separate structural checks, visual checks and my acceptance. List the engine, four map paths, sequence, render folder, video if present, known issues and next action. Leave the human verdict pending until I provide it.",
+    "check": "The receipt identifies a real artifact and distinguishes machine checks from your decision.",
+    "fix": "If a check is missing, mark it unverified and perform it. Do not convert an intended command into evidence that it ran.",
+    "plate": [
+      "Structure",
+      "Saved reopen",
+      "Visual comparison",
+      "Full video viewing",
+      "Your verdict"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "06 · Keep creating",
+    "id": "stretch-worlds",
+    "title": "Build three more worlds from the same kit",
+    "subtitle": "Change the brief while keeping the method.",
+    "actions": [
+      "Choose one: a floating library, a desert observatory or a rainy street market. Start in a new workshop copy or a separate project.",
+      "Ask for a small palette, reusable prop recipes, a focal point and three camera compositions. Require a baseline before effects.",
+      "Run one complete loop: brief, build, inspect, revise, save, restart. Do not launch all three just because they are listed here."
+    ],
+    "prompt": "Draft a bounded brief for a [floating library / desert observatory / rainy street market] using built-in Unreal geometry. Include three prop recipes, dimensions, palette, lighting intention, a focal point and three camera views. Give me a five-step build plan and measurable checks. Do not generate yet.",
+    "check": "Your new world has specific objects and a clear first milestone.",
+    "fix": "If the first milestone cannot be inspected quickly, reduce the object count and postpone particles or external assets.",
+    "plate": [
+      "Floating library",
+      "Desert observatory",
+      "Rainy street market",
+      "Same complete loop"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "06 · Keep creating",
+    "id": "stretch-effects",
+    "title": "Add effects as a separate experiment",
+    "subtitle": "Start with a visible, reversible change.",
+    "actions": [
+      "Duplicate the festival map. Choose one optional effect: drifting particles, a fountain or moving fog.",
+      "Ask your agent to identify the installed tools and a supported route before creating an effect. Keep Niagara and new experimental features outside the required path.",
+      "Inspect the effect during playback and in a short render with adequate warm-up. A component existing in the Outliner does not prove visible motion."
+    ],
+    "prompt": "In a duplicate map, propose one subtle drifting-particle effect that preserves the paper-city style. First inspect available Niagara tooling and version support. Explain playback, warm-up, render and rollback checks. Do not change the accepted scene or install plugins.",
+    "check": "One effect is visibly present in playback and a short rendered test, or clearly remains an unverified proposal.",
+    "fix": "If it disappears in a render, inspect simulation warm-up and camera framing before increasing particle counts.",
+    "plate": [
+      "Optional experiment",
+      "Duplicate map",
+      "Playback + render",
+      "Warm-up",
+      "Rollback"
+    ],
+    "image": "",
+    "links": [],
+    "notes": ""
+  },
+  {
+    "group": "06 · Keep creating",
+    "id": "next",
+    "title": "Leave yourself a route back",
+    "subtitle": "Finish with files you can reopen.",
+    "actions": [
+      "Keep your accepted project, source recipe, design JSON, notes, screenshots and receipt together. Exclude caches from a sharing copy.",
+      "Close the editor, reopen the accepted map and sequence, and repeat one visual check. Keep the original class download separate from your modified copy.",
+      "Return to this workbook at the first missing checkpoint whenever you resume. Bring your best result and one precise failure to office hours."
+    ],
+    "prompt": "Inventory my workshop and prepare a sharing copy with project Content, Config, action scripts, design file, source assets, notes and evidence. Exclude DerivedDataCache, Intermediate and regenerable Saved caches. Preserve the working project. List files before packaging and verify the extracted copy opens.",
+    "check": "You have an accepted state, a readable receipt and a verified route to reopen it.",
+    "fix": "If the copy cannot open, fix missing project content or plugin requirements before calling it a usable handoff.",
+    "plate": [
+      "Accepted project",
+      "Source + design",
+      "Evidence + receipt",
+      "Clean sharing copy",
+      "Reopen check"
+    ],
+    "image": "",
     "links": [],
     "notes": ""
   }
