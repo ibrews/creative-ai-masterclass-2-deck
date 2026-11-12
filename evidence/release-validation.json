@@ -1,100 +1,174 @@
 {
-  "verified_at": "2026-11-12T04:41:11.560571+00:00",
-  "engine": "5.9.0-60351404+++UE5+Release-5.9",
-  "platform": "Windows, D3D12, RTX 5090",
-  "source_builder_commit": "58049cd",
-  "starter": "Empty generated-content directory before build; four stages and six captures passed.",
-  "saved_reopen": "Second process; all four saved maps, RGB light colors and sequence structure passed.",
-  "movie": {
-    "frames": 288,
-    "fps": 24,
-    "seconds": 12,
-    "width": 1280,
-    "height": 720,
-    "sha256": "79de9128986588f83c247944a8a19ad9e3712c771064f354603127c311a069cf",
-    "decode": "PASS on Windows and macOS",
-    "visual_review": "All six native views; start, middle and end of all three shots inspected."
+  "verified_at": "2026-11-12T06:12:08.340964+00:00",
+  "engine": "5.9.0 CL60351404",
+  "platform": "Windows, D3D12, RTX5090",
+  "maps": 6,
+  "sequences": 2,
+  "workbook_steps": 43,
+  "slides_including_settings": 101,
+  "workbook_pdf_pages": 45,
+  "slide_pdf_pages": 100,
+  "native_proof": {
+    "empty_generated_content_before_build": true,
+    "native_mcp_generation": "PASS for all stages",
+    "first_three_stall_remix": "PASS",
+    "saved_reopen": "PASS in separate process",
+    "forage_practice_import": "3 actual native files; mesh referenced by the city",
+    "harbor": "64 placements,12 recipes,484 authored actors",
+    "bridge_rotations": "Six horizontal decks, yaw90, PASS",
+    "mrq": "Two jobs,576 PNG frames, PASS",
+    "native_only_shutdown": "Clean LogExit, no assertion/fatal; ECABridge disabled"
   },
+  "movies": [
+    {
+      "name": "paper-city",
+      "sha256": "8090df0ab220c6f97646370feee6cb3eda5281262d8c746a0b30d3deec21ee79",
+      "frames": 288,
+      "fps": 24,
+      "seconds": 12,
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "PASS on Fort and Mac",
+      "visual": "Start, middle and end of all three shots inspected"
+    },
+    {
+      "name": "harbor-city",
+      "sha256": "3df1dd74b3a52220d0758886f4095d3405f392efa3ba97332dcc9bfd4ff010f1",
+      "frames": 288,
+      "fps": 24,
+      "seconds": 12,
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "PASS on Fort and Mac",
+      "visual": "Start, middle and end of all three shots inspected"
+    }
+  ],
   "native_files": [
     {
+      "path": "workshop/Unreal/Content/ForageBetaSample/M_ForageToken.uasset",
+      "sha256": "01c88b36e9b262faae40bc3447d4bec9d3ff5f17f67c4867eb324581677a7bac"
+    },
+    {
+      "path": "workshop/Unreal/Content/ForageBetaSample/SM_ForageToken.uasset",
+      "sha256": "0c8e040846de7c3972204238ecd4ed6b51ed8a209f159752f614ed059c08b2aa"
+    },
+    {
+      "path": "workshop/Unreal/Content/ForageBetaSample/T_ForageToken.uasset",
+      "sha256": "4ee709392b7d779d15558df51e5e3b86c75fe69c0a26b7d645b7632e0402dc49"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Cinematics/LS_HarborCity.uasset",
+      "sha256": "80bb8947ca8d4c119751b7d465a9c57141ae1801be76b452e65f126da14596c1"
+    },
+    {
       "path": "workshop/Unreal/Content/SmallWorlds/Cinematics/LS_LanternFestival.uasset",
-      "sha256": "2f214c96f43b2478e12d740e18c6351df5844ab8f82d884df80d1519d6ace9df"
+      "sha256": "58f2f25ee289c526af9fa1b0a6555e74f287f607c3fbb9c218120fc0c4da0083"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Maps/01_PaperCity.umap",
-      "sha256": "0f85dbde500837a807e1661d1c991c9c0bc4cc7c56df8646fd60360505aab878"
+      "sha256": "873ada67a1cecfa191ffce8b4ea002930f454054b556262cc016e7734182f606"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Maps/02_Dusk.umap",
-      "sha256": "12e99013a571d9e33bba284106942bd98c08228d30b10bd408116b783adbe713"
+      "sha256": "5796199bd47576e546fc30711512bbf1c84158504496c430ae2a1b976871b000"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Maps/03_LanternFestival.umap",
-      "sha256": "b56a9c58839c88378753968b7d64469a1d958b8a2d590fc457fc7f12e2ea8bdf"
+      "sha256": "244f984e1aabc5b573819ca6b8f36d7de1e9414c76bb98abf01b724a9eeb7903"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Maps/04_Cinematic.umap",
-      "sha256": "818c55b8c106c26ee254cd7d0a086bd30d0218815c9d4a8e51ebf683487bf798"
+      "sha256": "87613912f555eff44ab9fc2dc46e11da3cf2066b6497f73746e530f2532f8964"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/05_HarborCity.umap",
+      "sha256": "55adcfca09ce0c891d36649355325280403d261cd2bb919b8fa395deb80f5fcc"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Maps/06_KitGallery.umap",
+      "sha256": "38c877857418e7d1e1507451cf289287015639e15752a3d29c5cdf3e42aec1ec"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Brass.uasset",
-      "sha256": "86d03eaf1adcffd1dd60a71187fc2a2e3521befd0eba7310b5e9f6a97970b3e7"
+      "sha256": "91a220f83ab5f4d15a320413718b99f50031da8682008651caa02807612633c1"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Canal.uasset",
-      "sha256": "d2f9f9852a8b7baa2a37cde972b2332ee227dc338f74076adb3f9192b8e7bacf"
+      "sha256": "2b6ed8612be2cba54746cb8efe8fc69328cadae10278c3741efbff0f5fe343fb"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_HarborRose.uasset",
+      "sha256": "39caebaf1672f3736ee1f769e85524af75621085f96fbd8d30c1392a934e0cdf"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_HarborTeal.uasset",
+      "sha256": "786a52983ab5e18e92daeeb7c34b056194eb4b9da20b885e8631d1e437f78a3c"
+    },
+    {
+      "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_HarborWarm.uasset",
+      "sha256": "41aebe12897ab14d9cf24ede6c02e023684d7c513fe160e4fb8b2bbc71a77362"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Ivory.uasset",
-      "sha256": "a3608b2a932a9bf1cd07d3e1899b85a719bb9a67db8bc766c1744e6c3bd27404"
+      "sha256": "63180cc5ea5d4d3acbb09fadda3adee5778a8d4265bd97f120f5f6647e7660fc"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Jade.uasset",
-      "sha256": "34ed48da02f85b6b6c6428a8aca4e6abca14c1323a9d91cbae0613d79446cf59"
+      "sha256": "62f9c38efd654fbcee1e48662f58ba4d0d5aee6f4740498b56f94bcef23e3546"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_LanternGlowDay.uasset",
-      "sha256": "82209ec3f8d7abb8ea73d22a3bcd14a40998880523351bd779459faf96438baf"
+      "sha256": "79f2735d1e2ee276b6749dc05fc13811ee3daa8bc3b0f836791d51ed7fee116e"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_LanternGlowDusk.uasset",
-      "sha256": "d4c0a87648119c4f856ab601cd79e3db0dd6f7b2a469d29af0c91583cb833131"
+      "sha256": "114b6950e2b063a10cfc266c941528eebf0e570bb78ee60bf56467e4b9d380a5"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Quay.uasset",
-      "sha256": "33d9620921523b4bb000ba718023df4e2147efd7db7509b35bf9504fbdeedcb7"
+      "sha256": "e64efa10ccb772b07190204075abf9bd660cd2a2e6e1731f6fe059525717ee84"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Sage.uasset",
-      "sha256": "38392e685a49d3783c1ae424e3316be76a279ae1035739d09ee4b306e010d9b3"
+      "sha256": "f5638edb104998d1e3838fea59e9f40bcf5f8546369ccf77a3b2976756b944b9"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Sculpture.uasset",
-      "sha256": "31eac5ebd7413269495dac3ccede0b8d3b4dd8e647a46dc81f533b6bfb9f9525"
+      "sha256": "4ffe6930d585214d37e85b304a992e4a0aff6c517dcbcea0cb4b77c4c9c8b170"
     },
     {
       "path": "workshop/Unreal/Content/SmallWorlds/Materials/M_Terracotta.uasset",
-      "sha256": "16fe3cfa2db173af6bb9aeef3b92a064100eed4020f1c5fa9eac28f0f2454953"
+      "sha256": "6390fde706b62d5bd1fcf9354485317df5e05bab19fa12791a43ac7b1f5b1484"
     }
   ],
   "rendered_review": {
     "reviewer": "Independent read-only preview agent",
-    "desktop": "1920x1080, 68 slides, PASS",
-    "phone": "390x844, 68 slides, PASS",
-    "workbook": "29 PDF pages, offline HTML anchors and images, PASS"
+    "slides": "101 desktop and phone: no overflow/bad images",
+    "workbook": "45 pages, all step/checkpoint pages fit, destinations resolve",
+    "offline": "No broken images/anchors/overflow",
+    "manual_movie": "Plays normally; automated sweeps assume autoplay and flag the intentionally paused player."
   },
-  "pdfs": {
-    "Workbook": {
-      "pages": 29,
-      "bytes": 6600455
-    },
-    "Slides": {
-      "pages": 67,
-      "bytes": 9538823
-    }
+  "second_brain": {
+    "new_unreal_techniques": 16,
+    "allowlisted_files": 49,
+    "generated_identity_files": 2,
+    "staged_manifest_sha256": "2059e86dcc0cf8494ba890e875b43287bfb43524beda2c97d041ff58c08c3ec2",
+    "privacy_context_and_render_review": "PASS",
+    "tests": "40 connector +7 gallery PASS",
+    "optional_connector": "macOS/Linux; Windows uses local files or offline HTML"
   },
-  "limitations": [
-    "Other operating systems and engine versions unverified.",
-    "Human artistic acceptance remains separate from structural and rendered checks."
+  "promo": {
+    "card": "AI-assisted graphic based on the actual native city capture",
+    "video": "20s,1080x1920,30fps, actual native cinematic footage; silent social cut"
+  },
+  "limits": [
+    "Other engine/platform configurations and external-agent account setup need local checks.",
+    "Optional Canvas/cloud generation documented, not universally exercised.",
+    "Optional ECABridge had one post-MRQ shutdown assertion; required route leaves it disabled.",
+    "Human artistic acceptance remains separate."
   ]
 }

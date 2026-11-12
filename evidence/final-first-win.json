@@ -1,0 +1,100 @@
+[
+  {
+    "method": "duplicate_city",
+    "arguments": {
+      "variant_name": "07_MyHarbor"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"/Game/SmallWorlds/Maps/07_MyHarbor\"}"
+        }
+      ],
+      "structuredContent": {
+        "returnValue": "/Game/SmallWorlds/Maps/07_MyHarbor"
+      }
+    }
+  },
+  {
+    "method": "add_part",
+    "arguments": {
+      "part_id": "market_stall",
+      "x": -600.0,
+      "y": -2050.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "name": "HK_MyMarket_1"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"[\\\"HK_MyMarket_1\\\", \\\"HK_MyMarket_1__awning\\\", \\\"HK_MyMarket_1__post-125-75\\\", \\\"HK_MyMarket_1__post-12575\\\", \\\"HK_MyMarket_1__post125-75\\\", \\\"HK_MyMarket_1__post12575\\\", \\\"HK_MyMarket_1__stripe-100\\\", \\\"HK_MyMarket_1__stripe-50\\\", \\\"HK_MyMarket_1__stripe0\\\", \\\"HK_MyMarket_1__stripe50\\\", \\\"HK_MyMarket_1__stripe100\\\", \\\"HK_MyMarket_1__produce-70\\\", \\\"HK_MyMarket_1__produce0\\\", \\\"HK_MyMarket_1__produce70\\\"]\"}"
+        }
+      ],
+      "structuredContent": {
+        "returnValue": "[\"HK_MyMarket_1\", \"HK_MyMarket_1__awning\", \"HK_MyMarket_1__post-125-75\", \"HK_MyMarket_1__post-12575\", \"HK_MyMarket_1__post125-75\", \"HK_MyMarket_1__post12575\", \"HK_MyMarket_1__stripe-100\", \"HK_MyMarket_1__stripe-50\", \"HK_MyMarket_1__stripe0\", \"HK_MyMarket_1__stripe50\", \"HK_MyMarket_1__stripe100\", \"HK_MyMarket_1__produce-70\", \"HK_MyMarket_1__produce0\", \"HK_MyMarket_1__produce70\"]"
+      }
+    }
+  },
+  {
+    "method": "add_part",
+    "arguments": {
+      "part_id": "market_stall",
+      "x": 0.0,
+      "y": -2050.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "name": "HK_MyMarket_2"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"[\\\"HK_MyMarket_2\\\", \\\"HK_MyMarket_2__awning\\\", \\\"HK_MyMarket_2__post-125-75\\\", \\\"HK_MyMarket_2__post-12575\\\", \\\"HK_MyMarket_2__post125-75\\\", \\\"HK_MyMarket_2__post12575\\\", \\\"HK_MyMarket_2__stripe-100\\\", \\\"HK_MyMarket_2__stripe-50\\\", \\\"HK_MyMarket_2__stripe0\\\", \\\"HK_MyMarket_2__stripe50\\\", \\\"HK_MyMarket_2__stripe100\\\", \\\"HK_MyMarket_2__produce-70\\\", \\\"HK_MyMarket_2__produce0\\\", \\\"HK_MyMarket_2__produce70\\\"]\"}"
+        }
+      ],
+      "structuredContent": {
+        "returnValue": "[\"HK_MyMarket_2\", \"HK_MyMarket_2__awning\", \"HK_MyMarket_2__post-125-75\", \"HK_MyMarket_2__post-12575\", \"HK_MyMarket_2__post125-75\", \"HK_MyMarket_2__post12575\", \"HK_MyMarket_2__stripe-100\", \"HK_MyMarket_2__stripe-50\", \"HK_MyMarket_2__stripe0\", \"HK_MyMarket_2__stripe50\", \"HK_MyMarket_2__stripe100\", \"HK_MyMarket_2__produce-70\", \"HK_MyMarket_2__produce0\", \"HK_MyMarket_2__produce70\"]"
+      }
+    }
+  },
+  {
+    "method": "add_part",
+    "arguments": {
+      "part_id": "market_stall",
+      "x": 600.0,
+      "y": -2050.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "name": "HK_MyMarket_3"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"[\\\"HK_MyMarket_3\\\", \\\"HK_MyMarket_3__awning\\\", \\\"HK_MyMarket_3__post-125-75\\\", \\\"HK_MyMarket_3__post-12575\\\", \\\"HK_MyMarket_3__post125-75\\\", \\\"HK_MyMarket_3__post12575\\\", \\\"HK_MyMarket_3__stripe-100\\\", \\\"HK_MyMarket_3__stripe-50\\\", \\\"HK_MyMarket_3__stripe0\\\", \\\"HK_MyMarket_3__stripe50\\\", \\\"HK_MyMarket_3__stripe100\\\", \\\"HK_MyMarket_3__produce-70\\\", \\\"HK_MyMarket_3__produce0\\\", \\\"HK_MyMarket_3__produce70\\\"]\"}"
+        }
+      ],
+      "structuredContent": {
+        "returnValue": "[\"HK_MyMarket_3\", \"HK_MyMarket_3__awning\", \"HK_MyMarket_3__post-125-75\", \"HK_MyMarket_3__post-12575\", \"HK_MyMarket_3__post125-75\", \"HK_MyMarket_3__post12575\", \"HK_MyMarket_3__stripe-100\", \"HK_MyMarket_3__stripe-50\", \"HK_MyMarket_3__stripe0\", \"HK_MyMarket_3__stripe50\", \"HK_MyMarket_3__stripe100\", \"HK_MyMarket_3__produce-70\", \"HK_MyMarket_3__produce0\", \"HK_MyMarket_3__produce70\"]"
+      }
+    }
+  },
+  {
+    "method": "save_current_scene",
+    "arguments": {},
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"/Game/SmallWorlds/Maps/07_MyHarbor.07_MyHarbor\"}"
+        }
+      ],
+      "structuredContent": {
+        "returnValue": "/Game/SmallWorlds/Maps/07_MyHarbor.07_MyHarbor"
+      }
+    }
+  }
+]

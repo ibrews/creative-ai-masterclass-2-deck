@@ -1,0 +1,249 @@
+{
+  "toolsets": {
+    "editor_toolset.toolsets.python_scripting.PythonScriptingTools": {
+      "name": "editor_toolset.toolsets.python_scripting.PythonScriptingTools",
+      "version": "1.0",
+      "description": "Executes arbitrary, unsandboxed Python in the editor with full access to the\n    `unreal` module, and looks up that module's API.\n\n    Use this to call tools from a script with call_tool, chaining dependent calls and\n    reducing large results before they return, and to reach the unreal API where no\n    tool exposes the needed functionality or option, or when the user asks for a\n    custom Python script.",
+      "tools": [
+        {
+          "description": "Returns the documentation of a registered tool, or of a type, function, method, or property in the `unreal` Python API.\n\nPass a toolset or full tool name, a top-level name ('EditorActorSubsystem',\n'log'), or a qualified 'Class.member'. A toolset returns its description\nand the signature of each of its tools. A tool returns its signature,\ndescription, and parameters. A function or member returns its signature and full\ndocumentation. A type returns its description, then one line for each\neditor property (inherited ones included), enum value, and method it\ndeclares, and how many methods it inherits from each base; get_symbol on\n'Type.member' or on a base gives the details. A struct only tools use\nreturns its fields and the tools that use it.",
+          "name": "editor_toolset.toolsets.python_scripting.PythonScriptingTools.get_symbol",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Toolset or full tool name, top-level type or function name, a struct a tool signature names, or a qualified 'Class.member'."
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "returnValue": {
+                "type": "string",
+                "description": "The documentation, or the assembled type API index."
+              }
+            },
+            "required": [
+              "returnValue"
+            ]
+          },
+          "annotations": {
+            "accessMode": "read"
+          }
+        },
+        {
+          "description": "Searches the registered tools and the `unreal` Python API for types, functions, methods, and properties.\n\nSearches what this editor session provides, so every result exists here. Feed\na result's qualified_name to get_symbol to read it.",
+          "name": "editor_toolset.toolsets.python_scripting.PythonScriptingTools.search_symbols",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "type": "string",
+                "description": "Case-insensitive regular expression. Empty matches everything.",
+                "default": ""
+              },
+              "max_results": {
+                "type": "integer",
+                "description": "Maximum number of matches to return.",
+                "default": 100
+              },
+              "match": {
+                "type": "string",
+                "title": "ApiSymbolMatch",
+                "enum": [
+                  "NAME",
+                  "SIGNATURE",
+                  "DOCUMENTATION"
+                ],
+                "description": "What to match the pattern against: the symbol's own NAME, its SIGNATURE, or also its DOCUMENTATION (a type's includes its editor properties). A tool's signature includes its toolset; a member's does not include its class.",
+                "default": "SIGNATURE"
+              },
+              "kinds": {
+                "description": "Only return symbols of these kinds. Empty returns all.",
+                "default": null,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "title": "ApiSymbolKind",
+                  "enum": [
+                    "CLASS",
+                    "STRUCT",
+                    "ENUM",
+                    "DELEGATE",
+                    "FUNCTION",
+                    "METHOD",
+                    "PROPERTY",
+                    "TOOL"
+                  ]
+                }
+              },
+              "accepts": {
+                "type": "string",
+                "description": "Only return functions, methods, and tools with a parameter of this type, and writable properties of it, alone or inside a container such as Array[...].",
+                "default": ""
+              },
+              "returns": {
+                "type": "string",
+                "description": "Only return functions, methods, and tools that return this type, and properties of it, alone or inside a container.",
+                "default": ""
+              }
+            },
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "returnValue": {
+                "title": "ApiSymbolSearch",
+                "description": "The best matches first, capped at max_results: a tool, type, or function named exactly the pattern; then other matches in a name, a tool's toolset included; then signature matches; then documentation matches. Within each, tools come first, then functions and methods, types, properties, enum and delegate types and members, and deprecated symbols; then whole words before parts of words. Ties go to the shorter name, then sort by name.",
+                "type": "object",
+                "properties": {
+                  "total_matches": {
+                    "type": "integer",
+                    "description": "How many symbols matched, including any beyond max_results.",
+                    "default": 0
+                  },
+                  "symbols": {
+                    "type": "array",
+                    "items": {
+                      "title": "ApiSymbol",
+                      "type": "object",
+                      "properties": {
+                        "obtained_with": {
+                          "type": "string",
+                          "description": "For a subsystem type, the free function that returns its instance, or None when none is active. Empty for everything else.",
+                          "default": ""
+                        },
+                        "signature": {
+                          "type": "string",
+                          "description": "The symbol in one line.",
+                          "default": ""
+                        },
+                        "qualified_name": {
+                          "type": "string",
+                          "description": "'Owner.member' for methods and properties; the bare name for types and free functions; the full tool name for a tool, which call_tool takes. Pass this to get_symbol.",
+                          "default": ""
+                        },
+                        "kind": {
+                          "type": "string",
+                          "title": "ApiSymbolKind",
+                          "enum": [
+                            "CLASS",
+                            "STRUCT",
+                            "ENUM",
+                            "DELEGATE",
+                            "FUNCTION",
+                            "METHOD",
+                            "PROPERTY",
+                            "TOOL"
+                          ],
+                          "description": "What the symbol is.",
+                          "default": "CLASS"
+                        }
+                      }
+                    },
+                    "description": "The best matches, best first, at most max_results of them.",
+                    "default": []
+                  }
+                }
+              }
+            },
+            "required": [
+              "returnValue"
+            ]
+          },
+          "annotations": {
+            "accessMode": "read"
+          }
+        },
+        {
+          "description": "Runs a Python script in the editor's interpreter on the game thread.\n\nIMPORTANT: Call `read_me` once per conversation before using this tool,\nfor full usage instructions -- including how to compose other tools and\nyield control during long-running work. Look up each `unreal` API with\nsearch_symbols or get_symbol before calling it.",
+          "name": "editor_toolset.toolsets.python_scripting.PythonScriptingTools.execute_python",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "script": {
+                "title": "CodeBlock",
+                "description": "Code block whose content is the Python source to execute. May contain top-level `await`.",
+                "type": "object",
+                "properties": {
+                  "content": {
+                    "type": "string",
+                    "description": "The source text of the code block.",
+                    "default": ""
+                  },
+                  "language": {
+                    "type": "string",
+                    "title": "ECodeBlockLanguage",
+                    "enum": [
+                      "Unspecified",
+                      "Cpp",
+                      "Verse",
+                      "Python",
+                      "Markdown",
+                      "HTML",
+                      "CSS",
+                      "JavaScript",
+                      "TypeScript"
+                    ],
+                    "description": "The language the content is written in. Value display names: Cpp = \"C++\".",
+                    "default": "Unspecified"
+                  }
+                }
+              }
+            },
+            "required": [
+              "script"
+            ],
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "returnValue": {
+                "type": "string",
+                "description": "Value of the result."
+              }
+            },
+            "required": [
+              "returnValue"
+            ]
+          },
+          "annotations": {
+            "accessMode": "execute"
+          }
+        },
+        {
+          "description": "Usage instructions for execute_python. Call this once per conversation\nbefore using execute_python.\n\nExplains the execution environment (namespace, async/await, composing\nother tools) and, only when relevant, the spatial coordinate-conversion\nhelpers available in the current editor session.",
+          "name": "editor_toolset.toolsets.python_scripting.PythonScriptingTools.read_me",
+          "inputSchema": {
+            "type": "object",
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "returnValue": {
+                "type": "string",
+                "description": "Usage instructions as plain text."
+              }
+            },
+            "required": [
+              "returnValue"
+            ]
+          },
+          "annotations": {
+            "accessMode": "read"
+          }
+        }
+      ]
+    }
+  },
+  "errors": {}
+}

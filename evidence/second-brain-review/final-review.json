@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "manifest_sha256": "2059e86dcc0cf8494ba890e875b43287bfb43524beda2c97d041ff58c08c3ec2",
+  "fixed": [
+    "UE09 asset path wraps at390px without horizontal overflow",
+    "Navigation clears search and reveals target card on desktop and mobile"
+  ],
+  "stage_integrity": "49declared files plus2generated identities; no extra/missing files, hash mismatches, hidden files or symlinks",
+  "privacy": "Prior reviewed content unchanged except CSS wrapping and filter-reset navigation; no private pattern hits",
+  "observed_model": "UNKNOWN"
+}

@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"{\\\"HK_ForageToken_Hero\\\": \\\"<Struct 'Vector' (0x0000024436CBFF88) {x: 0.000000, y: 0.000000, z: 650.000000}>\\\", \\\"HK_MyMarket_1\\\": \\\"<Struct 'Vector' (0x0000024436CBFF88) {x: -600.000000, y: -2050.000000, z: 60.000000}>\\\", \\\"HK_MyMarket_2\\\": \\\"<Struct 'Vector' (0x0000024436CBFF88) {x: 0.000000, y: -2050.000000, z: 60.000000}>\\\", \\\"HK_MyMarket_3\\\": \\\"<Struct 'Vector' (0x0000024436CBFF88) {x: 600.000000, y: -2050.000000, z: 60.000000}>\\\"}\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "{\"HK_ForageToken_Hero\": \"<Struct 'Vector' (0x0000024436CBFF88) {x: 0.000000, y: 0.000000, z: 650.000000}>\", \"HK_MyMarket_1\": \"<Struct 'Vector' (0x0000024436CBFF88) {x: -600.000000, y: -2050.000000, z: 60.000000}>\", \"HK_MyMarket_2\": \"<Struct 'Vector' (0x0000024436CBFF88) {x: 0.000000, y: -2050.000000, z: 60.000000}>\", \"HK_MyMarket_3\": \"<Struct 'Vector' (0x0000024436CBFF88) {x: 600.000000, y: -2050.000000, z: 60.000000}>\"}"
+  }
+}

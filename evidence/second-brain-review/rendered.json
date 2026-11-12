@@ -1,0 +1,220 @@
+{
+  "desktop": {
+    "cards": [
+      {
+        "id": "engine-identity",
+        "title": "Match the project, engine and plugin build",
+        "overflow": []
+      },
+      {
+        "id": "mcp-tools",
+        "title": "Four MCP tools can expose a whole editor",
+        "overflow": []
+      },
+      {
+        "id": "agent-panel",
+        "title": "Run your own agent in Unreal Assistant",
+        "overflow": []
+      },
+      {
+        "id": "editor-python",
+        "title": "Run editor Python in the editor",
+        "overflow": []
+      },
+      {
+        "id": "python-result",
+        "title": "Return useful data from native execute_python",
+        "overflow": []
+      },
+      {
+        "id": "rotator",
+        "title": "Use named Rotator arguments",
+        "overflow": []
+      },
+      {
+        "id": "light-colors",
+        "title": "Keep FColor and LinearColor distinct",
+        "overflow": []
+      },
+      {
+        "id": "units",
+        "title": "Build to dimensions, not guessed scales",
+        "overflow": []
+      },
+      {
+        "id": "asset-paths",
+        "title": "Use real Unreal asset paths",
+        "overflow": []
+      },
+      {
+        "id": "forage",
+        "title": "Preview a Forage selection before import",
+        "overflow": []
+      },
+      {
+        "id": "camera-exposure",
+        "title": "Diagnose a black camera view",
+        "overflow": []
+      },
+      {
+        "id": "async-capture",
+        "title": "Let Unreal tick before a screenshot",
+        "overflow": []
+      },
+      {
+        "id": "sequencer",
+        "title": "Check the actual camera cuts and duration",
+        "overflow": []
+      },
+      {
+        "id": "mrq",
+        "title": "Verify the movie, not just the queue",
+        "overflow": []
+      },
+      {
+        "id": "bridge-results",
+        "title": "Read tool output and verify the scene",
+        "overflow": []
+      },
+      {
+        "id": "save-reopen",
+        "title": "A saved reopen is a real checkpoint",
+        "overflow": []
+      }
+    ],
+    "width": 1920,
+    "scrollWidth": 1920,
+    "badAnchors": 0,
+    "links": [
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/run-external-ai-agents-in-the-unreal-assistant-panel-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://www.alexcoulombepresents.com/lab/forage",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematic-camera-cut-track-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/en-us/unreal-engine/movie-render-pipeline-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor"
+    ],
+    "Rotator": "2 of 16 techniques",
+    "black camera": "1 of 16 techniques",
+    "unfindable-xyz": "0 of 16 techniques",
+    "reset": "16 of 16 techniques"
+  },
+  "mobile": {
+    "cards": [
+      {
+        "id": "engine-identity",
+        "title": "Match the project, engine and plugin build",
+        "overflow": []
+      },
+      {
+        "id": "mcp-tools",
+        "title": "Four MCP tools can expose a whole editor",
+        "overflow": []
+      },
+      {
+        "id": "agent-panel",
+        "title": "Run your own agent in Unreal Assistant",
+        "overflow": []
+      },
+      {
+        "id": "editor-python",
+        "title": "Run editor Python in the editor",
+        "overflow": []
+      },
+      {
+        "id": "python-result",
+        "title": "Return useful data from native execute_python",
+        "overflow": []
+      },
+      {
+        "id": "rotator",
+        "title": "Use named Rotator arguments",
+        "overflow": []
+      },
+      {
+        "id": "light-colors",
+        "title": "Keep FColor and LinearColor distinct",
+        "overflow": []
+      },
+      {
+        "id": "units",
+        "title": "Build to dimensions, not guessed scales",
+        "overflow": []
+      },
+      {
+        "id": "asset-paths",
+        "title": "Use real Unreal asset paths",
+        "overflow": []
+      },
+      {
+        "id": "forage",
+        "title": "Preview a Forage selection before import",
+        "overflow": []
+      },
+      {
+        "id": "camera-exposure",
+        "title": "Diagnose a black camera view",
+        "overflow": []
+      },
+      {
+        "id": "async-capture",
+        "title": "Let Unreal tick before a screenshot",
+        "overflow": []
+      },
+      {
+        "id": "sequencer",
+        "title": "Check the actual camera cuts and duration",
+        "overflow": []
+      },
+      {
+        "id": "mrq",
+        "title": "Verify the movie, not just the queue",
+        "overflow": []
+      },
+      {
+        "id": "bridge-results",
+        "title": "Read tool output and verify the scene",
+        "overflow": []
+      },
+      {
+        "id": "save-reopen",
+        "title": "A saved reopen is a real checkpoint",
+        "overflow": []
+      }
+    ],
+    "width": 390,
+    "scrollWidth": 445,
+    "badAnchors": 0,
+    "links": [
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/run-external-ai-agents-in-the-unreal-assistant-panel-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://www.alexcoulombepresents.com/lab/forage",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematic-camera-cut-track-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/en-us/unreal-engine/movie-render-pipeline-in-unreal-engine",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+      "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor"
+    ],
+    "Rotator": "2 of 16 techniques",
+    "black camera": "1 of 16 techniques",
+    "unfindable-xyz": "0 of 16 techniques",
+    "reset": "16 of 16 techniques"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"[\\\"HK_MyMarket_3\\\", \\\"HK_MyMarket_3__awning\\\", \\\"HK_MyMarket_3__post-125-75\\\", \\\"HK_MyMarket_3__post-12575\\\", \\\"HK_MyMarket_3__post125-75\\\", \\\"HK_MyMarket_3__post12575\\\", \\\"HK_MyMarket_3__stripe-100\\\", \\\"HK_MyMarket_3__stripe-50\\\", \\\"HK_MyMarket_3__stripe0\\\", \\\"HK_MyMarket_3__stripe50\\\", \\\"HK_MyMarket_3__stripe100\\\", \\\"HK_MyMarket_3__produce-70\\\", \\\"HK_MyMarket_3__produce0\\\", \\\"HK_MyMarket_3__produce70\\\"]\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "[\"HK_MyMarket_3\", \"HK_MyMarket_3__awning\", \"HK_MyMarket_3__post-125-75\", \"HK_MyMarket_3__post-12575\", \"HK_MyMarket_3__post125-75\", \"HK_MyMarket_3__post12575\", \"HK_MyMarket_3__stripe-100\", \"HK_MyMarket_3__stripe-50\", \"HK_MyMarket_3__stripe0\", \"HK_MyMarket_3__stripe50\", \"HK_MyMarket_3__stripe100\", \"HK_MyMarket_3__produce-70\", \"HK_MyMarket_3__produce0\", \"HK_MyMarket_3__produce70\"]"
+  }
+}

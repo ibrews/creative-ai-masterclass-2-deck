@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"{\\\"map\\\": \\\"/Game/SmallWorlds/Maps/05_HarborCity\\\", \\\"placements\\\": 64, \\\"actors\\\": 484, \\\"forage_mesh\\\": \\\"/Game/ForageBetaSample/SM_ForageToken.SM_ForageToken\\\", \\\"part_types\\\": 12}\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "{\"map\": \"/Game/SmallWorlds/Maps/05_HarborCity\", \"placements\": 64, \"actors\": 484, \"forage_mesh\": \"/Game/ForageBetaSample/SM_ForageToken.SM_ForageToken\", \"part_types\": 12}"
+  }
+}

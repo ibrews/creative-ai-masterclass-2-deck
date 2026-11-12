@@ -1,0 +1,38 @@
+{
+  "verdict": "PASS_WITH_SWEEP_MEDIA_FALSE_POSITIVE",
+  "slides": 101,
+  "viewports": [
+    "1920x1080",
+    "390x844"
+  ],
+  "layout": {
+    "overflow": 0,
+    "broken_images": 0,
+    "unexpected_console_errors": 0
+  },
+  "workbook": {
+    "pages": 45,
+    "steps": 43,
+    "all_pages_visually_reviewed": true,
+    "blank_or_orphan_pages": 0,
+    "bad_named_destinations": 0,
+    "prior_pagination_defects": "fixed"
+  },
+  "offline_guide": {
+    "steps": 43,
+    "broken_images": 0,
+    "broken_anchors": 0,
+    "horizontal_overflow": 0
+  },
+  "deck_workbook_links": {
+    "checked": 88,
+    "invalid": 0
+  },
+  "slide_pdf": {
+    "pages": 100,
+    "empty_text_pages": 0
+  },
+  "raw_sweep_caveat": "Both raw reports flag paused manual video as not advancing and2ERR_ABORTED media requests. Direct normal-view playback check found readyState4,no error,12second1280px video; explicit play advanced0to1.0076s. Manual playback is functional.",
+  "native_render_correctness": "outside this review; parent responsibility",
+  "observed_model": "UNKNOWN"
+}

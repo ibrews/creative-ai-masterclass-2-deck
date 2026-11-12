@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"{\\\"positional\\\": \\\"<Struct 'Rotator' (0x0000012AAA40DDC8) {pitch: 22.000000, yaw: 33.000000, roll: 11.000000}>\\\", \\\"keywords\\\": \\\"<Struct 'Rotator' (0x0000012AAA40DDC8) {pitch: 11.000000, yaw: 22.000000, roll: 33.000000}>\\\"}\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "{\"positional\": \"<Struct 'Rotator' (0x0000012AAA40DDC8) {pitch: 22.000000, yaw: 33.000000, roll: 11.000000}>\", \"keywords\": \"<Struct 'Rotator' (0x0000012AAA40DDC8) {pitch: 11.000000, yaw: 22.000000, roll: 33.000000}>\"}"
+  }
+}

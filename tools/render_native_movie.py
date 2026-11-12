@@ -5,14 +5,16 @@ import unreal as ue
 
 out = Path(os.environ['SMALL_WORLDS_EVIDENCE']) / 'movie-frames'
 out.mkdir(parents=True, exist_ok=True)
-ue.get_editor_subsystem(ue.LevelEditorSubsystem).load_level('/Game/SmallWorlds/Maps/04_Cinematic')
+map_path = os.environ.get('CLASS_MOVIE_MAP', '/Game/SmallWorlds/Maps/04_Cinematic')
+sequence_path = os.environ.get('CLASS_MOVIE_SEQUENCE', '/Game/SmallWorlds/Cinematics/LS_LanternFestival')
+ue.get_editor_subsystem(ue.LevelEditorSubsystem).load_level(map_path)
 sub = ue.get_editor_subsystem(ue.MoviePipelineQueueSubsystem)
 queue = sub.get_queue()
 queue.delete_all_jobs()
 job = queue.allocate_new_job(ue.MoviePipelineExecutorJob)
 job.job_name = 'SmallWorlds12Seconds'
-job.map = ue.SoftObjectPath('/Game/SmallWorlds/Maps/04_Cinematic.04_Cinematic')
-job.sequence = ue.SoftObjectPath('/Game/SmallWorlds/Cinematics/LS_LanternFestival.LS_LanternFestival')
+job.map = ue.SoftObjectPath(map_path + '.' + map_path.rsplit('/', 1)[-1])
+job.sequence = ue.SoftObjectPath(sequence_path + '.' + sequence_path.rsplit('/', 1)[-1])
 config = job.get_configuration()
 output = config.find_or_add_setting_by_class(ue.MoviePipelineOutputSetting)
 output.output_directory = ue.DirectoryPath(str(out))

@@ -1,0 +1,11 @@
+{
+  "manifest_sha256": "2059e86dcc0cf8494ba890e875b43287bfb43524beda2c97d041ff58c08c3ec2",
+  "declared": 49,
+  "actual": 51,
+  "extra": [],
+  "missing": [],
+  "hash_mismatches": [],
+  "hidden": [],
+  "symlinks": [],
+  "private_pattern_hits": []
+}

@@ -1,0 +1,1016 @@
+[
+ {
+  "type": "settings",
+  "title": "",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 0
+ },
+ {
+  "type": "cover",
+  "title": "Creative AIWorkflow Masterclass",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 1
+ },
+ {
+  "type": "lesson",
+  "year": "CH 1",
+  "title": "Get ready",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 2
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "What you will build",
+  "overflow": [],
+  "badImg": [],
+  "videos": [
+   {
+    "src": "media/part2/harbor-city.mp4",
+    "rs": 4,
+    "dur": 12,
+    "w": 1280,
+    "adv": false
+   }
+  ],
+  "iframes": [],
+  "i": 3
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "One world, two lighting choices",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 4
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "01 · Choose your starting point",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 5
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "02 · Bring one assistant and Unreal",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 6
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 7
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "03 · Give the assistant the whole folder",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 8
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 9
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "04 · Open the supplied Unreal project",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 10
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 11
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "05 · Give your agent the Unreal field guide",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 12
+ },
+ {
+  "type": "case",
+  "year": "CH 1",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 13
+ },
+ {
+  "type": "lesson",
+  "year": "CH 2",
+  "title": "Meet your AI art team",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 14
+ },
+ {
+  "type": "case",
+  "year": "CH 2",
+  "title": "06 · What changed in 5.9 Preview?",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 15
+ },
+ {
+  "type": "case",
+  "year": "CH 2",
+  "title": "07 · Connect your agent inside Unreal",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 16
+ },
+ {
+  "type": "case",
+  "year": "CH 2",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 17
+ },
+ {
+  "type": "case",
+  "year": "CH 2",
+  "title": "08 · Your first AI-directed city edit",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 18
+ },
+ {
+  "type": "case",
+  "year": "CH 2",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 19
+ },
+ {
+  "type": "lesson",
+  "year": "CH 3",
+  "title": "Forage and your kit",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 20
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "09 · Your free Forage copy",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 21
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 22
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "10 · Import only the parts you need",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 23
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 24
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "11 · Explore the twelve-part city kit",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 25
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 26
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "12 · Build the Harbor of a Thousand Lanterns",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 27
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 28
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "13 · Bring your own Fab library into the city",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 29
+ },
+ {
+  "type": "case",
+  "year": "CH 3",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 30
+ },
+ {
+  "type": "lesson",
+  "year": "CH 4",
+  "title": "Create with 5.9 AI",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 31
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "14 · Let the agent use editor Python",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 32
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 33
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "15 · Your free ECABridge extension",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 34
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 35
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "16 · Unreal Canvas: turn the scene into a creative brief",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 36
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 37
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "17 · Point at what you want to change",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 38
+ },
+ {
+  "type": "case",
+  "year": "CH 4",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 39
+ },
+ {
+  "type": "lesson",
+  "year": "CH 5",
+  "title": "Build the world",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 40
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "18 · Write a small job before running it",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 41
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 42
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "19 · Run a harmless Python check",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 43
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 44
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "20 · Build the daylight baseline",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 45
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 46
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "21 · Check scale before polishing",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 47
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 48
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "22 · Inspect the material library",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 49
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 50
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "23 · Make a dusk lighting variant",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 51
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 52
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "24 · Turn one prop into a reusable recipe",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 53
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 54
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "25 · Build the lantern festival",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 55
+ },
+ {
+  "type": "case",
+  "year": "CH 5",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 56
+ },
+ {
+  "type": "lesson",
+  "year": "CH 6",
+  "title": "Direct the AI",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 57
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "26 · Give feedback the agent can act on",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 58
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 59
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "27 · Request a batch with a fixed budget",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 60
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 61
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "28 · Compare with the original Blender scene",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 62
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 63
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "29 · Choose how AI reaches the editor",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 64
+ },
+ {
+  "type": "case",
+  "year": "CH 6",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 65
+ },
+ {
+  "type": "lesson",
+  "year": "CH 7",
+  "title": "Make it move",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 66
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "30 · Create the 12-second cinematic",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 67
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 68
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "31 · Review the start, middle and end",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 69
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 70
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "32 · Render a short image sequence",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 71
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 72
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "33 · Turn frames into a review video",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 73
+ },
+ {
+  "type": "case",
+  "year": "CH 7",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 74
+ },
+ {
+  "type": "lesson",
+  "year": "CH 8",
+  "title": "Let it run",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 75
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "34 · Save a checkpoint another chat can use",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 76
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 77
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "35 · Test a fresh chat",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 78
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 79
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "36 · Practice one recoverable failure",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 80
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 81
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "37 · Give a longer job a real boundary",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 82
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 83
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "38 · Separate checks from your verdict",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 84
+ },
+ {
+  "type": "case",
+  "year": "CH 8",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 85
+ },
+ {
+  "type": "lesson",
+  "year": "CH 9",
+  "title": "Keep creating",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 86
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "39 · Build three more worlds from the same kit",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 87
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 88
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "40 · Add effects as a separate experiment",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 89
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 90
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "41 · Leave yourself a route back",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 91
+ },
+ {
+  "type": "case",
+  "year": "CH 9",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 92
+ },
+ {
+  "type": "lesson",
+  "year": "CH 10",
+  "title": "Your MegaJam launchpad",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 93
+ },
+ {
+  "type": "case",
+  "year": "CH 10",
+  "title": "42 · Turn today’s scene into a jam game",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 94
+ },
+ {
+  "type": "case",
+  "year": "CH 10",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 95
+ },
+ {
+  "type": "case",
+  "year": "CH 10",
+  "title": "43 · Leave class ready to enter",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 96
+ },
+ {
+  "type": "case",
+  "year": "CH 10",
+  "title": "Ask, then inspect",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 97
+ },
+ {
+  "type": "bonus",
+  "year": "NEXT",
+  "title": "Your next world can be a game.",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 98
+ },
+ {
+  "type": "map",
+  "title": "Your workflow",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 99
+ },
+ {
+  "type": "close",
+  "title": "A world you can reopen.",
+  "overflow": [],
+  "badImg": [],
+  "videos": [],
+  "iframes": [],
+  "i": 100
+ }
+]

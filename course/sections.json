@@ -12,16 +12,16 @@
     "cases": [
       {
         "title": "What you will build",
-        "subtitle": "Paper City: Lantern Festival, made in Unreal Engine 5.9 Preview.",
-        "img": "images/part2/03-festival.png",
+        "subtitle": "Harbor City: an original kit, Forage and native AI tools in Unreal Engine 5.9 Preview.",
+        "img": "images/part2/07-harbor-city.png",
         "bullets": [
-          "Four saved native maps, from daylight to a lantern festival.",
-          "Reusable materials and individually labeled props.",
-          "Three camera cuts and an animated sculpture."
+          "Twelve reusable part recipes and a 64-placement city.",
+          "The actual Forage practice mesh as the central monument.",
+          "Native MCP builds and remixes; a three-shot cinematic."
         ],
         "guideStep": "start",
         "notes": "Show the actual finished scene first. The numbered workbook teaches how to make and inspect it. These are native Unreal captures, not concept illustrations.",
-        "clip": "media/part2/paper-city.mp4"
+        "clip": "media/part2/harbor-city.mp4"
       },
       {
         "title": "One world, two lighting choices",
@@ -140,7 +140,519 @@
         "notes": "In Codex choose Open folder or Add project, select the extracted workshop folder and choose Local. In Claude Desktop choose Code, a local environment and the same folder.\n\nOpen a chat in this project. Ask it to read AGENTS.md, Studio/design.json and Recipes/01-start-here.md before editing.\n\nCheck that it can name real files. A browser chat with pasted screenshots does not have the same local file access.\n\nRead AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower wall heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.\n\nCheck: It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.\n\nRecovery: Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content."
       },
       {
-        "title": "04 · Write a small job before running it",
+        "title": "04 · Open the supplied Unreal project",
+        "subtitle": "A Blueprint-only project avoids a compiler setup.",
+        "bullets": [
+          "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor.",
+          "The project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue.",
+          "On a fresh starter the final map does not exist yet."
+        ],
+        "notes": "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.\n\nThe project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.\n\nOn a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).\n\nHelp me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.\n\nCheck: You have the PaperCity editor open and an Output Log with no missing required plugin error.\n\nRecovery: If the project asks to compile C++, verify the class package and exact engine build before continuing. This project has no C++ module and can run the original scripts without an AI bridge; the updated kit also supplies native MCP tools.",
+        "guideStep": "open-unreal",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "PaperCity.uproject",
+            "Blueprint-only",
+            "Built-in editor plugins",
+            "No third-party plugin required"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Open the supplied Unreal project",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You have the PaperCity editor open and an Output Log with no missing required plugin error."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Help me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Rende…"
+          ]
+        },
+        "guideStep": "open-unreal",
+        "notes": "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.\n\nThe project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.\n\nOn a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).\n\nHelp me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.\n\nCheck: You have the PaperCity editor open and an Output Log with no missing required plugin error.\n\nRecovery: If the project asks to compile C++, verify the class package and exact engine build before continuing. This project has no C++ module and can run the original scripts without an AI bridge; the updated kit also supplies native MCP tools."
+      },
+      {
+        "title": "05 · Give your agent the Unreal field guide",
+        "subtitle": "Useful techniques, with your own project memory kept separate.",
+        "bullets": [
+          "The class ZIP includes Second Brain: the existing creative-workflow foundations plus sixteen Unreal techniques.",
+          "Ask your local assistant to search this folder for a relevant symptom before guessing.",
+          "Keep your own goals, private design reasons and progress in Studio/project-memory.md."
+        ],
+        "notes": "The class ZIP includes Second Brain: the existing creative-workflow foundations plus sixteen Unreal techniques. Open Second Brain/unreal/Start Here.html for the offline searchable guide, or read Second Brain/unreal/README.md.\n\nAsk your local assistant to search this folder for a relevant symptom before guessing. Each technique gives actions, a visible check and its evidence scope. The package uses original classroom and generic examples, not client files or an internal knowledge index.\n\nKeep your own goals, private design reasons and progress in Studio/project-memory.md. Reading the guide needs no connector installation. The optional acp-kit connector supports macOS/Linux; Windows learners can use local files and the HTML guide.\n\nRead the supplied Second Brain/unreal/README.md. Find the Rotator, light-color and native MCP tool-discovery recipes. For each, cite its file and stable ID, summarize the gotcha and say what check proves it was handled. Keep my own project memory in Studio; do not search other folders or send my files anywhere.\n\nCheck: Your assistant can retrieve a specific Unreal technique and cite the supplied file before using it.\n\nRecovery: If Second Brain is absent, download the updated class ZIP or its separate companion package. Do not connect an internal or workplace knowledge base as a substitute.",
+        "guideStep": "second-brain",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "16 Unreal techniques",
+            "Offline search + readable files",
+            "Generic classroom examples",
+            "Your memory stays local"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Give your agent the Unreal field guide",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "Your assistant can retrieve a specific Unreal technique and cite the supplied file before using it."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Read the supplied Second Brain/unreal/README.md. Find the Rotator, light-color and native MCP tool-discovery recipes. For each, cite its file and stable ID, summarize the gotcha and say what check proves it was handled. …"
+          ]
+        },
+        "guideStep": "second-brain",
+        "notes": "The class ZIP includes Second Brain: the existing creative-workflow foundations plus sixteen Unreal techniques. Open Second Brain/unreal/Start Here.html for the offline searchable guide, or read Second Brain/unreal/README.md.\n\nAsk your local assistant to search this folder for a relevant symptom before guessing. Each technique gives actions, a visible check and its evidence scope. The package uses original classroom and generic examples, not client files or an internal knowledge index.\n\nKeep your own goals, private design reasons and progress in Studio/project-memory.md. Reading the guide needs no connector installation. The optional acp-kit connector supports macOS/Linux; Windows learners can use local files and the HTML guide.\n\nRead the supplied Second Brain/unreal/README.md. Find the Rotator, light-color and native MCP tool-discovery recipes. For each, cite its file and stable ID, summarize the gotcha and say what check proves it was handled. Keep my own project memory in Studio; do not search other folders or send my files anywhere.\n\nCheck: Your assistant can retrieve a specific Unreal technique and cite the supplied file before using it.\n\nRecovery: If Second Brain is absent, download the updated class ZIP or its separate companion package. Do not connect an internal or workplace knowledge base as a substitute."
+      }
+    ]
+  },
+  {
+    "year": "CH 2",
+    "accent": "amber",
+    "lesson": {
+      "title": "Meet your AI art team",
+      "short": "Meet your AI art team",
+      "tagline": "Open a scene, talk to your agent and watch the editor work.",
+      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
+    },
+    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
+    "cases": [
+      {
+        "title": "06 · What changed in 5.9 Preview?",
+        "subtitle": "Open a scene, talk to your agent and watch the editor work.",
+        "bullets": [
+          "Open the Finished project and load /Game/SmallWorlds/Maps/05_HarborCity.",
+          "5.9 brings external agents into the Unreal Assistant panel, expands native MCP toolsets and improves editor Python.",
+          "Unreal Canvas adds a separate experimental workspace for generated media, meshes and spatial annotations."
+        ],
+        "notes": "Open the Finished project and load /Game/SmallWorlds/Maps/05_HarborCity. This is the supplied original kit assembled into a larger miniature port; the central token arrived through Forage.\n\n5.9 brings external agents into the Unreal Assistant panel, expands native MCP toolsets and improves editor Python. The workshop includes a small native MCP toolset so your agent can build and remix this city.\n\nUnreal Canvas adds a separate experimental workspace for generated media, meshes and spatial annotations. We will distinguish edits to real scene actors from generated images of the scene. Optional provider setup is covered later.\n\n\n\nCheck: You can navigate the city, locate the Forage monument and name the tools you will use.\n\nRecovery: If the Finished map is absent, download Finished from the class folder. A Starter intentionally contains no generated maps.",
+        "guideStep": "ai59",
+        "img": "images/part2/07-harbor-city.png"
+      },
+      {
+        "title": "07 · Connect your agent inside Unreal",
+        "subtitle": "The panel connects the current editor for you.",
+        "bullets": [
+          "In Edit → Plugins confirm Unreal Assistant, Unreal MCP and All Toolsets are enabled.",
+          "For Codex or Claude Code, install its CLI and sign in with your own account.",
+          "Open Edit → Editor Preferences → General → Unreal Assistant → External Agent."
+        ],
+        "notes": "In Edit → Plugins confirm Unreal Assistant, Unreal MCP and All Toolsets are enabled. Restart if you changed a plugin. Open Window → Unreal Assistant, or click Assistant on the status bar.\n\nFor Codex or Claude Code, install its CLI and sign in with your own account. The panel also needs Node.js and the matching ACP adapter: npm install -g @agentclientprotocol/codex-acp or npm install -g @agentclientprotocol/claude-agent-acp. Restart Unreal after installation.\n\nOpen Edit → Editor Preferences → General → Unreal Assistant → External Agent. Select your agent and enable Use External Agent. Review the project command approval and choose Allow to run that agent. Send the read-only prompt below and expand Required Actions to see the tools.\n\nRead only: identify this Unreal editor’s project, engine and available toolsets. Find HarborWorkshopTools and list its part IDs. Report which scene is open and which actors I selected. Do not modify the project.\n\nCheck: The agent reports PaperCity, the 5.9 engine and twelve kit IDs from real tools.\n\nRecovery: If the adapter is missing, restart the editor to refresh PATH. Alternative: Editor Preferences → Agentic Workflows → Model Context Protocol → choose your client → Generate Client Config; run the external agent from the generated config’s folder. The fallback Actions scripts also work.",
+        "guideStep": "native-connect",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Enable plugins",
+            "Choose your own signed-in agent",
+            "Allow this project command",
+            "Read-only scene query"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Connect your agent inside Unreal",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "The agent reports PaperCity, the 5.9 engine and twelve kit IDs from real tools."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Read only: identify this Unreal editor’s project, engine and available toolsets. Find HarborWorkshopTools and list its part IDs. Report which scene is open and which actors I selected. Do not modify the project."
+          ]
+        },
+        "guideStep": "native-connect",
+        "notes": "In Edit → Plugins confirm Unreal Assistant, Unreal MCP and All Toolsets are enabled. Restart if you changed a plugin. Open Window → Unreal Assistant, or click Assistant on the status bar.\n\nFor Codex or Claude Code, install its CLI and sign in with your own account. The panel also needs Node.js and the matching ACP adapter: npm install -g @agentclientprotocol/codex-acp or npm install -g @agentclientprotocol/claude-agent-acp. Restart Unreal after installation.\n\nOpen Edit → Editor Preferences → General → Unreal Assistant → External Agent. Select your agent and enable Use External Agent. Review the project command approval and choose Allow to run that agent. Send the read-only prompt below and expand Required Actions to see the tools.\n\nRead only: identify this Unreal editor’s project, engine and available toolsets. Find HarborWorkshopTools and list its part IDs. Report which scene is open and which actors I selected. Do not modify the project.\n\nCheck: The agent reports PaperCity, the 5.9 engine and twelve kit IDs from real tools.\n\nRecovery: If the adapter is missing, restart the editor to refresh PATH. Alternative: Editor Preferences → Agentic Workflows → Model Context Protocol → choose your client → Generate Client Config; run the external agent from the generated config’s folder. The fallback Actions scripts also work."
+      },
+      {
+        "title": "08 · Your first AI-directed city edit",
+        "subtitle": "One prompt, a visible new market and a saved variation.",
+        "bullets": [
+          "Start from Finished with 05_HarborCity open.",
+          "Use the prompt below.",
+          "Inspect the new stalls in the Outliner, frame one with F and compare the variation with the reference."
+        ],
+        "notes": "Start from Finished with 05_HarborCity open. Ask the agent to duplicate it using HarborWorkshopTools.duplicate_city with variant_name 07_MyHarbor. Keep 05_HarborCity as your reference.\n\nUse the prompt below. Watch Required Actions: the agent should inspect the catalog, duplicate the map and add three market_stall parts at the specified positions. Approve edits for this workshop copy when the client asks.\n\nInspect the new stalls in the Outliner, frame one with F and compare the variation with the reference. Ask the agent to save_current_scene. This is a native scene change you can select, move and reopen.\n\nUse the native HarborWorkshopTools. Read list_parts, then duplicate_city(\"07_MyHarbor\"). In that new map add three market_stall parts named HK_MyMarket_1, HK_MyMarket_2 and HK_MyMarket_3 at (-600,-2050,0), (0,-2050,0), (600,-2050,0), yaw 0 degrees. Show me the saved map and the created actor labels, then save_current_scene. Do not change the reference map or add downloads.\n\nCheck: The new map contains three named native market stalls and the reference is unchanged.\n\nRecovery: If 07_MyHarbor already exists, choose another unused name. If tools are not discovered, reopen the editor with Harbor Workshop AI Tools enabled; do not assume a chat response changed the scene.",
+        "guideStep": "first-win",
+        "img": "images/part2/08-harbor-market.png"
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Your first AI-directed city edit",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "The new map contains three named native market stalls and the reference is unchanged."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Use the native HarborWorkshopTools. Read list_parts, then duplicate_city(\"07_MyHarbor\"). In that new map add three market_stall parts named HK_MyMarket_1, HK_MyMarket_2 and HK_MyMarket_3 at (-600,-2050,0), (0,-2050,0), (…"
+          ]
+        },
+        "guideStep": "first-win",
+        "notes": "Start from Finished with 05_HarborCity open. Ask the agent to duplicate it using HarborWorkshopTools.duplicate_city with variant_name 07_MyHarbor. Keep 05_HarborCity as your reference.\n\nUse the prompt below. Watch Required Actions: the agent should inspect the catalog, duplicate the map and add three market_stall parts at the specified positions. Approve edits for this workshop copy when the client asks.\n\nInspect the new stalls in the Outliner, frame one with F and compare the variation with the reference. Ask the agent to save_current_scene. This is a native scene change you can select, move and reopen.\n\nUse the native HarborWorkshopTools. Read list_parts, then duplicate_city(\"07_MyHarbor\"). In that new map add three market_stall parts named HK_MyMarket_1, HK_MyMarket_2 and HK_MyMarket_3 at (-600,-2050,0), (0,-2050,0), (600,-2050,0), yaw 0 degrees. Show me the saved map and the created actor labels, then save_current_scene. Do not change the reference map or add downloads.\n\nCheck: The new map contains three named native market stalls and the reference is unchanged.\n\nRecovery: If 07_MyHarbor already exists, choose another unused name. If tools are not discovered, reopen the editor with Harbor Workshop AI Tools enabled; do not assume a chat response changed the scene."
+      }
+    ]
+  },
+  {
+    "year": "CH 3",
+    "accent": "purple",
+    "lesson": {
+      "title": "Forage and your kit",
+      "short": "Forage and your kit",
+      "tagline": "The class package includes the Windows beta.",
+      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
+    },
+    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
+    "cases": [
+      {
+        "title": "09 · Your free Forage copy",
+        "subtitle": "The class package includes the Windows beta.",
+        "bullets": [
+          "The updated class project includes Plugins/ForageBeta.",
+          "Check the descriptor path: Plugins/ForageBeta/ForageBeta.uplugin.",
+          "Use the bundled original practice pack for our shared exercise."
+        ],
+        "notes": "The updated class project includes Plugins/ForageBeta. Open Edit → Plugins, search Forage Beta and confirm it is enabled. If you are using another project, extract the supplied Forage Windows ZIP and copy its complete ForageBeta folder into that project’s Plugins folder.\n\nCheck the descriptor path: Plugins/ForageBeta/ForageBeta.uplugin. Restart Unreal, then find Window → Forage → Guided Tutorial and Open Dashboard.\n\nUse the bundled original practice pack for our shared exercise. It needs no Fab account or paid asset pack. Forage selects and brings existing assets into a project; our agent composes those assets into a scene.\n\nRead only: verify ForageBeta/ForageBeta.uplugin and Tools/Win64/Forage.exe in this project. Explain how I open the Guided Tutorial. Do not sign into Epic or buy anything for me.\n\nCheck: Window → Forage is present in the 5.9 Windows editor.\n\nRecovery: If Unreal asks to compile a plugin, verify you used the class Windows package and exact engine build. The current beta is Windows-only; other platforms can inspect the Finished project and reference media.",
+        "guideStep": "forage-install",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Free to class attendees",
+            "Windows 5.9 Preview",
+            "Original practice pack",
+            "No Fab sign-in for this exercise"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Your free Forage copy",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "Window → Forage is present in the 5.9 Windows editor."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Read only: verify ForageBeta/ForageBeta.uplugin and Tools/Win64/Forage.exe in this project. Explain how I open the Guided Tutorial. Do not sign into Epic or buy anything for me."
+          ]
+        },
+        "guideStep": "forage-install",
+        "notes": "The updated class project includes Plugins/ForageBeta. Open Edit → Plugins, search Forage Beta and confirm it is enabled. If you are using another project, extract the supplied Forage Windows ZIP and copy its complete ForageBeta folder into that project’s Plugins folder.\n\nCheck the descriptor path: Plugins/ForageBeta/ForageBeta.uplugin. Restart Unreal, then find Window → Forage → Guided Tutorial and Open Dashboard.\n\nUse the bundled original practice pack for our shared exercise. It needs no Fab account or paid asset pack. Forage selects and brings existing assets into a project; our agent composes those assets into a scene.\n\nRead only: verify ForageBeta/ForageBeta.uplugin and Tools/Win64/Forage.exe in this project. Explain how I open the Guided Tutorial. Do not sign into Epic or buy anything for me.\n\nCheck: Window → Forage is present in the 5.9 Windows editor.\n\nRecovery: If Unreal asks to compile a plugin, verify you used the class Windows package and exact engine build. The current beta is Windows-only; other platforms can inspect the Finished project and reference media."
+      },
+      {
+        "title": "10 · Import only the parts you need",
+        "subtitle": "One mesh, its material and its texture.",
+        "bullets": [
+          "Use a fresh Starter project for the import exercise.",
+          "Read the second dialog.",
+          "Press Ctrl+Space and open Content → ForageBetaSample."
+        ],
+        "notes": "Use a fresh Starter project for the import exercise. Open Window → Forage → Guided Tutorial. The first dialog asks to stage the practice selection in this project’s Saved/ForageBeta folder. Choose Yes to stage it.\n\nRead the second dialog. It lists the three selected files and asks before adding them to project Content. Choose Yes. This separates preview/staging from the actual import.\n\nPress Ctrl+Space and open Content → ForageBetaSample. Locate SM_ForageToken, M_ForageToken and T_ForageToken. Drag SM_ForageToken into the viewport. In the tested 5.9 layout the browser selection can be empty, so browse to the folder directly.\n\nInspect /Game/ForageBetaSample. Report the imported Static Mesh, Material and Texture, and the mesh’s material reference. Do not substitute an unrelated Engine shape. We will use this actual imported token in our city.\n\nCheck: Three native content files exist and the token displays with its bound material and texture.\n\nRecovery: If files already exist in Finished, use a fresh Starter for the before/after exercise. Preserve modified imports. Missing files usually mean the second import confirmation was declined.",
+        "guideStep": "forage-import",
+        "img": "images/part2/09-forage-monument.png"
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Import only the parts you need",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "Three native content files exist and the token displays with its bound material and texture."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Inspect /Game/ForageBetaSample. Report the imported Static Mesh, Material and Texture, and the mesh’s material reference. Do not substitute an unrelated Engine shape. We will use this actual imported token in our city."
+          ]
+        },
+        "guideStep": "forage-import",
+        "notes": "Use a fresh Starter project for the import exercise. Open Window → Forage → Guided Tutorial. The first dialog asks to stage the practice selection in this project’s Saved/ForageBeta folder. Choose Yes to stage it.\n\nRead the second dialog. It lists the three selected files and asks before adding them to project Content. Choose Yes. This separates preview/staging from the actual import.\n\nPress Ctrl+Space and open Content → ForageBetaSample. Locate SM_ForageToken, M_ForageToken and T_ForageToken. Drag SM_ForageToken into the viewport. In the tested 5.9 layout the browser selection can be empty, so browse to the folder directly.\n\nInspect /Game/ForageBetaSample. Report the imported Static Mesh, Material and Texture, and the mesh’s material reference. Do not substitute an unrelated Engine shape. We will use this actual imported token in our city.\n\nCheck: Three native content files exist and the token displays with its bound material and texture.\n\nRecovery: If files already exist in Finished, use a fresh Starter for the before/after exercise. Preserve modified imports. Missing files usually mean the second import confirmation was declined."
+      },
+      {
+        "title": "11 · Explore the twelve-part city kit",
+        "subtitle": "Readable recipes make a useful vocabulary for your agent.",
+        "bullets": [
+          "In Finished, open /Game/SmallWorlds/Maps/06_KitGallery.",
+          "Open Studio/harbor-kit.json.",
+          "Select a KIT_ anchor and expand its Outliner folder."
+        ],
+        "notes": "In Finished, open /Game/SmallWorlds/Maps/06_KitGallery. In Starter, run Actions/07_build_gallery.py inside Unreal, or ask HarborWorkshopTools.build_kit_gallery to create the gallery.\n\nOpen Studio/harbor-kit.json. The exact IDs are quay, townhouse, warehouse, tower, bridge, market_stall, tree, lantern, boat, arch, plaza and skyrail. Dimensions and positions are centimeters; yaw is degrees.\n\nSelect a KIT_ anchor and expand its Outliner folder. Each part is composed from named native mesh actors. Ask the agent for a catalog ID and placement; spawn_part or the add_part MCP tool assembles the complete recipe.\n\nRead Studio/harbor-kit.json and the native list_parts tool. Describe the twelve parts. Propose a canal city, a hillside village and a floating market using this same kit. For each, name the focal point, five part IDs and one camera. Do not build the three ideas yet.\n\nCheck: You can name a real part, see its native construction and direct its placement with dimensions.\n\nRecovery: If the gallery already exists, open it rather than rerunning the builder. To move or duplicate an assembled family manually, select its whole hierarchy; selecting one child only moves that mesh.",
+        "guideStep": "kit-gallery",
+        "img": "images/part2/10-kit-gallery.png"
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Explore the twelve-part city kit",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You can name a real part, see its native construction and direct its placement with dimensions."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Read Studio/harbor-kit.json and the native list_parts tool. Describe the twelve parts. Propose a canal city, a hillside village and a floating market using this same kit. For each, name the focal point, five part IDs and…"
+          ]
+        },
+        "guideStep": "kit-gallery",
+        "notes": "In Finished, open /Game/SmallWorlds/Maps/06_KitGallery. In Starter, run Actions/07_build_gallery.py inside Unreal, or ask HarborWorkshopTools.build_kit_gallery to create the gallery.\n\nOpen Studio/harbor-kit.json. The exact IDs are quay, townhouse, warehouse, tower, bridge, market_stall, tree, lantern, boat, arch, plaza and skyrail. Dimensions and positions are centimeters; yaw is degrees.\n\nSelect a KIT_ anchor and expand its Outliner folder. Each part is composed from named native mesh actors. Ask the agent for a catalog ID and placement; spawn_part or the add_part MCP tool assembles the complete recipe.\n\nRead Studio/harbor-kit.json and the native list_parts tool. Describe the twelve parts. Propose a canal city, a hillside village and a floating market using this same kit. For each, name the focal point, five part IDs and one camera. Do not build the three ideas yet.\n\nCheck: You can name a real part, see its native construction and direct its placement with dimensions.\n\nRecovery: If the gallery already exists, open it rather than rerunning the builder. To move or duplicate an assembled family manually, select its whole hierarchy; selecting one child only moves that mesh."
+      },
+      {
+        "title": "12 · Build the Harbor of a Thousand Lanterns",
+        "subtitle": "A complete city from one native AI tool call.",
+        "bullets": [
+          "In a Starter, complete the Forage practice import first.",
+          "Ask the connected agent to call HarborWorkshopTools.build_harbor_city.",
+          "Inspect the city, the three cameras and the central Forage token."
+        ],
+        "notes": "In a Starter, complete the Forage practice import first. Read Studio/harbor-city.json: it contains 64 placements from the original kit, including quays, a market, footbridges, boats and an elevated skyrail.\n\nAsk the connected agent to call HarborWorkshopTools.build_harbor_city. The supplied tool builds /Game/SmallWorlds/Maps/05_HarborCity and LS_HarborCity. Alternative: File → Execute Python Script → Actions/06_build_city.py.\n\nInspect the city, the three cameras and the central Forage token. Open /Game/SmallWorlds/Cinematics/LS_HarborCity, enable camera cuts and play the 12-second sequence. Compare it with the supplied result movie.\n\nUse native Unreal MCP to find HarborWorkshopTools. Verify the Forage practice mesh is installed, read list_parts, then call build_harbor_city once. Inspect the real map, call verify_city and show the three cameras and LS_HarborCity. Preserve any existing maps; if 05_HarborCity exists, open it instead of rebuilding.\n\nCheck: A saved city contains 64 recipe anchors, the actual Forage mesh, three cameras and a native three-shot sequence.\n\nRecovery: If the Forage sample is absent, the builder stops before making a map. Import it first. If a partial map exists after an error, preserve it and retry from a new Starter copy.",
+        "guideStep": "harbor-build",
+        "img": "images/part2/07-harbor-city.png"
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Build the Harbor of a Thousand Lanterns",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "A saved city contains 64 recipe anchors, the actual Forage mesh, three cameras and a native three-shot sequence."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Use native Unreal MCP to find HarborWorkshopTools. Verify the Forage practice mesh is installed, read list_parts, then call build_harbor_city once. Inspect the real map, call verify_city and show the three cameras and LS…"
+          ]
+        },
+        "guideStep": "harbor-build",
+        "notes": "In a Starter, complete the Forage practice import first. Read Studio/harbor-city.json: it contains 64 placements from the original kit, including quays, a market, footbridges, boats and an elevated skyrail.\n\nAsk the connected agent to call HarborWorkshopTools.build_harbor_city. The supplied tool builds /Game/SmallWorlds/Maps/05_HarborCity and LS_HarborCity. Alternative: File → Execute Python Script → Actions/06_build_city.py.\n\nInspect the city, the three cameras and the central Forage token. Open /Game/SmallWorlds/Cinematics/LS_HarborCity, enable camera cuts and play the 12-second sequence. Compare it with the supplied result movie.\n\nUse native Unreal MCP to find HarborWorkshopTools. Verify the Forage practice mesh is installed, read list_parts, then call build_harbor_city once. Inspect the real map, call verify_city and show the three cameras and LS_HarborCity. Preserve any existing maps; if 05_HarborCity exists, open it instead of rebuilding.\n\nCheck: A saved city contains 64 recipe anchors, the actual Forage mesh, three cameras and a native three-shot sequence.\n\nRecovery: If the Forage sample is absent, the builder stops before making a map. Import it first. If a partial map exists after an error, preserve it and retry from a new Starter copy."
+      },
+      {
+        "title": "13 · Bring your own Fab library into the city",
+        "subtitle": "Let Forage scout; choose what belongs in your scene.",
+        "bullets": [
+          "Open Window → Forage → Open Dashboard to search assets already in this project.",
+          "Ask for a shortlist of owned packs for one specific replacement: a fountain, a tree family or a harbor prop.",
+          "Review the picks in your signed-in Fab library."
+        ],
+        "notes": "Open Window → Forage → Open Dashboard to search assets already in this project. For the native Fab handoff, use the included companion’s fab-handoff command or connect its stdio MCP server to your assistant.\n\nAsk for a shortlist of owned packs for one specific replacement: a fountain, a tree family or a harbor prop. The beta companion command is: Forage.exe fab-handoff \"stylized harbor fountain and market props\" --limit 2 --editor-port 8000. Use your actual Unreal MCP port.\n\nReview the picks in your signed-in Fab library. Choose and install a compatible pack through Epic’s editor flow, then have the agent list its actual imported mesh paths before placing anything. Keep the original class kit when you do not own a suitable pack.\n\nUsing Forage, shortlist up to two packs from my own signed-in Fab library for a stylized harbor fountain. Show the pack names, whether I own them, compatibility and the proposed download before any install. After I choose and install, inspect actual /Game mesh paths and propose a replacement in my city variation. Do not purchase, guess asset paths or redistribute another creator’s pack.\n\nCheck: You have a reviewed shortlist or an honest “no matching owned asset” result; any placed mesh has a verified project path.\n\nRecovery: Library access needs your own Epic sign-in. A missing cache or unsupported library route is not proof you own a pack. Continue with the supplied kit and original practice mesh. The public beta does not expose every command from earlier member CLI builds.",
+        "guideStep": "forage-owned",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Local project search",
+            "Owned-library shortlist",
+            "You choose the pack",
+            "Verify imported paths"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Bring your own Fab library into the city",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You have a reviewed shortlist or an honest “no matching owned asset” result; any placed mesh has a verified project path."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Using Forage, shortlist up to two packs from my own signed-in Fab library for a stylized harbor fountain. Show the pack names, whether I own them, compatibility and the proposed download before any install. After I choos…"
+          ]
+        },
+        "guideStep": "forage-owned",
+        "notes": "Open Window → Forage → Open Dashboard to search assets already in this project. For the native Fab handoff, use the included companion’s fab-handoff command or connect its stdio MCP server to your assistant.\n\nAsk for a shortlist of owned packs for one specific replacement: a fountain, a tree family or a harbor prop. The beta companion command is: Forage.exe fab-handoff \"stylized harbor fountain and market props\" --limit 2 --editor-port 8000. Use your actual Unreal MCP port.\n\nReview the picks in your signed-in Fab library. Choose and install a compatible pack through Epic’s editor flow, then have the agent list its actual imported mesh paths before placing anything. Keep the original class kit when you do not own a suitable pack.\n\nUsing Forage, shortlist up to two packs from my own signed-in Fab library for a stylized harbor fountain. Show the pack names, whether I own them, compatibility and the proposed download before any install. After I choose and install, inspect actual /Game mesh paths and propose a replacement in my city variation. Do not purchase, guess asset paths or redistribute another creator’s pack.\n\nCheck: You have a reviewed shortlist or an honest “no matching owned asset” result; any placed mesh has a verified project path.\n\nRecovery: Library access needs your own Epic sign-in. A missing cache or unsupported library route is not proof you own a pack. Continue with the supplied kit and original practice mesh. The public beta does not expose every command from earlier member CLI builds."
+      }
+    ]
+  },
+  {
+    "year": "CH 4",
+    "accent": "rose",
+    "lesson": {
+      "title": "Create with 5.9 AI",
+      "short": "Create with 5.9 AI",
+      "tagline": "5.9 can discover APIs and run one useful script.",
+      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
+    },
+    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
+    "cases": [
+      {
+        "title": "14 · Let the agent use editor Python",
+        "subtitle": "5.9 can discover APIs and run one useful script.",
+        "bullets": [
+          "Ask your agent to find EditorToolset’s PythonScriptingTools and call its read_me tool once.",
+          "For a batch of edits, ask it to prepare one editor script instead of hundreds of single-actor calls.",
+          "Use the prompt below in your city variation."
+        ],
+        "notes": "Ask your agent to find EditorToolset’s PythonScriptingTools and call its read_me tool once. It can use search_symbols and get_symbol to inspect the installed Python API.\n\nFor a batch of edits, ask it to prepare one editor script instead of hundreds of single-actor calls. Through execute_python, imports belong at top level and the final expression is the returned result.\n\nUse the prompt below in your city variation. Inspect the returned labels and native geometry. The supplied HarborWorkshopTools already wraps our most common tasks, so beginners need not write a toolset themselves.\n\nIn my current city variation only, inspect the available PythonScriptingTools schema and call read_me. Use one editor Python script to list all HK_MyMarket_ actors and return their names and locations as the final expression. Do not edit anything. Use symbol lookup if an API is uncertain; print output alone is not the tool’s return value.\n\nCheck: Actual actor names and coordinates return from the live editor, using a built-in 5.9 tool.\n\nRecovery: If execute_python rejects a nested or star import, put imports at top level and use explicit module names. If the toolset is absent, enable All Toolsets and reconnect.",
+        "guideStep": "python-tools",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Discover the live API",
+            "One script for a batch",
+            "Return a real result"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Let the agent use editor Python",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "Actual actor names and coordinates return from the live editor, using a built-in 5.9 tool."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "In my current city variation only, inspect the available PythonScriptingTools schema and call read_me. Use one editor Python script to list all HK_MyMarket_ actors and return their names and locations as the final expres…"
+          ]
+        },
+        "guideStep": "python-tools",
+        "notes": "Ask your agent to find EditorToolset’s PythonScriptingTools and call its read_me tool once. It can use search_symbols and get_symbol to inspect the installed Python API.\n\nFor a batch of edits, ask it to prepare one editor script instead of hundreds of single-actor calls. Through execute_python, imports belong at top level and the final expression is the returned result.\n\nUse the prompt below in your city variation. Inspect the returned labels and native geometry. The supplied HarborWorkshopTools already wraps our most common tasks, so beginners need not write a toolset themselves.\n\nIn my current city variation only, inspect the available PythonScriptingTools schema and call read_me. Use one editor Python script to list all HK_MyMarket_ actors and return their names and locations as the final expression. Do not edit anything. Use symbol lookup if an API is uncertain; print output alone is not the tool’s return value.\n\nCheck: Actual actor names and coordinates return from the live editor, using a built-in 5.9 tool.\n\nRecovery: If execute_python rejects a nested or star import, put imports at top level and use explicit module names. If the toolset is absent, enable All Toolsets and reconnect."
+      },
+      {
+        "title": "15 · Your free ECABridge extension",
+        "subtitle": "Use it when you need its additional editor commands.",
+        "bullets": [
+          "The class folder supplies an optional ECABridge download for Windows UE 5.9.0 CL60351404; leave it disabled for the required route.",
+          "If you install it, this project configures ECABridge at http://127.0.0.1:3001/mcp.",
+          "Begin with a read-only level query and inspect the returned project."
+        ],
+        "notes": "The class folder supplies an optional ECABridge download for Windows UE 5.9.0 CL60351404; leave it disabled for the required route. It is precompiled; keep its complete plugin folder. For another project, copy ECABridge into Plugins with the editor closed, then enable ECA Bridge and restart.\n\nIf you install it, this project configures ECABridge at http://127.0.0.1:3001/mcp. Epic’s native Unreal MCP remains at port 8000. Add ECABridge as a separate HTTP MCP server in your client; keep both names and ports distinct.\n\nBegin with a read-only level query and inspect the returned project. Load the needed categories rather than assuming every command is listed initially. Use the bridge for an additional task only after its actual schema and result are visible.\n\nRead only: connect to ECABridge at http://127.0.0.1:3001/mcp. Discover its tools and current level, confirm PaperCity and UE 5.9, and explain one command that would help our scene. Keep native Unreal MCP at port 8000. Do not rebuild plugins or change the city.\n\nCheck: The client can distinguish native Unreal MCP from ECABridge and retrieve real scene information.\n\nRecovery: A shutdown assertion was observed after a two-job MRQ run with this optional bridge enabled. Keep it disabled for the core class and rendering; native MCP and Actions cover the required route. A different engine changelist may need a different binary. Do not let a compiler prompt turn this class exercise into an engine build.",
+        "guideStep": "ecabridge",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Free class copy",
+            "Win64 CL60351404",
+            "Native MCP :8000",
+            "ECABridge :3001"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Your free ECABridge extension",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "The client can distinguish native Unreal MCP from ECABridge and retrieve real scene information."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Read only: connect to ECABridge at http://127.0.0.1:3001/mcp. Discover its tools and current level, confirm PaperCity and UE 5.9, and explain one command that would help our scene. Keep native Unreal MCP at port 8000. Do…"
+          ]
+        },
+        "guideStep": "ecabridge",
+        "notes": "The class folder supplies an optional ECABridge download for Windows UE 5.9.0 CL60351404; leave it disabled for the required route. It is precompiled; keep its complete plugin folder. For another project, copy ECABridge into Plugins with the editor closed, then enable ECA Bridge and restart.\n\nIf you install it, this project configures ECABridge at http://127.0.0.1:3001/mcp. Epic’s native Unreal MCP remains at port 8000. Add ECABridge as a separate HTTP MCP server in your client; keep both names and ports distinct.\n\nBegin with a read-only level query and inspect the returned project. Load the needed categories rather than assuming every command is listed initially. Use the bridge for an additional task only after its actual schema and result are visible.\n\nRead only: connect to ECABridge at http://127.0.0.1:3001/mcp. Discover its tools and current level, confirm PaperCity and UE 5.9, and explain one command that would help our scene. Keep native Unreal MCP at port 8000. Do not rebuild plugins or change the city.\n\nCheck: The client can distinguish native Unreal MCP from ECABridge and retrieve real scene information.\n\nRecovery: A shutdown assertion was observed after a two-job MRQ run with this optional bridge enabled. Keep it disabled for the core class and rendering; native MCP and Actions cover the required route. A different engine changelist may need a different binary. Do not let a compiler prompt turn this class exercise into an engine build."
+      },
+      {
+        "title": "16 · Unreal Canvas: turn the scene into a creative brief",
+        "subtitle": "Optional service-dependent lab; preserve the native city.",
+        "bullets": [
+          "Enable Unreal Canvas Bridge in Edit → Plugins if it is available in your build, restart, then open Tools → Unreal Canvas.",
+          "Open a city camera.",
+          "Save the result as a separate concept image."
+        ],
+        "notes": "Enable Unreal Canvas Bridge in Edit → Plugins if it is available in your build, restart, then open Tools → Unreal Canvas. Follow the build’s setup dialog and select a provider/model you already have access to. Review any download and service cost before starting.\n\nOpen a city camera. In Canvas Toolbox, use Viewport Snapshot or Viewport Render to bring a reference view into the canvas. Select an Image tool that accepts a reference image. Add the capture and paste the prompt below. Generate one result, then compare it with the reference.\n\nSave the result as a separate concept image. This changes the image, not the city actors. To use a generated prop, select a compatible Mesh tool with a suitable prop image, inspect the output in its viewer, choose Import to Content Browser, then place that actual imported asset in your variation.\n\nUse this harbor-city view as the composition reference. Explore a rain-soaked evening with teal reflections, amber market awnings and one prominent clockwork fountain. Keep the canal layout and camera recognizable. Produce one concept image; do not claim the 3D level has changed.\n\nCheck: You have a separately labeled concept result and can explain whether you generated media or imported a real mesh.\n\nRecovery: Provider/model availability varies. If no supported model is configured, keep the supplied native result and read the workflow. This optional generation route is documented, not a claim that every student account or cloud provider was tested.",
+        "guideStep": "canvas",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Capture the real scene",
+            "Generate one concept",
+            "Compare",
+            "Import a mesh separately"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Unreal Canvas: turn the scene into a creative brief",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You have a separately labeled concept result and can explain whether you generated media or imported a real mesh."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Use this harbor-city view as the composition reference. Explore a rain-soaked evening with teal reflections, amber market awnings and one prominent clockwork fountain. Keep the canal layout and camera recognizable. Produ…"
+          ]
+        },
+        "guideStep": "canvas",
+        "notes": "Enable Unreal Canvas Bridge in Edit → Plugins if it is available in your build, restart, then open Tools → Unreal Canvas. Follow the build’s setup dialog and select a provider/model you already have access to. Review any download and service cost before starting.\n\nOpen a city camera. In Canvas Toolbox, use Viewport Snapshot or Viewport Render to bring a reference view into the canvas. Select an Image tool that accepts a reference image. Add the capture and paste the prompt below. Generate one result, then compare it with the reference.\n\nSave the result as a separate concept image. This changes the image, not the city actors. To use a generated prop, select a compatible Mesh tool with a suitable prop image, inspect the output in its viewer, choose Import to Content Browser, then place that actual imported asset in your variation.\n\nUse this harbor-city view as the composition reference. Explore a rain-soaked evening with teal reflections, amber market awnings and one prominent clockwork fountain. Keep the canal layout and camera recognizable. Produce one concept image; do not claim the 3D level has changed.\n\nCheck: You have a separately labeled concept result and can explain whether you generated media or imported a real mesh.\n\nRecovery: Provider/model availability varies. If no supported model is configured, keep the supplied native result and read the workflow. This optional generation route is documented, not a claim that every student account or cloud provider was tested."
+      },
+      {
+        "title": "17 · Point at what you want to change",
+        "subtitle": "Use a spatial note to give AI a concrete target.",
+        "bullets": [
+          "In a Canvas-enabled project variation, open the 3D Annotation panel supplied by Unreal Canvas Spatial Annotations.",
+          "Send the viewport capture and its supported annotation data into Canvas.",
+          "For a native edit, ask the connected editor agent to identify the named market actors and make the equivalent scene change in your variation."
+        ],
+        "notes": "In a Canvas-enabled project variation, open the 3D Annotation panel supplied by Unreal Canvas Spatial Annotations. Mark the market area or select an actor; add one short instruction describing the desired change.\n\nSend the viewport capture and its supported annotation data into Canvas. Use the relevant spatial modification tool, choose your configured model and generate one alternative. Compare the annotated region and the rest of the image.\n\nFor a native edit, ask the connected editor agent to identify the named market actors and make the equivalent scene change in your variation. Re-render and compare. A generated preview and an actor edit are two different outputs you can use together.\n\nUse my marked market area as the target. In the concept, try red-and-cream awnings while keeping the canal and camera recognizable. Then propose the corresponding native material changes on the named HK_MyMarket_ actor family. Show the proposal before editing the native scene.\n\nCheck: The instruction identifies a place or actor and the comparison shows which result is media and which is native scene content.\n\nRecovery: If annotations or the model are unavailable, select the target actors, capture the viewport and supply their labels with the prompt. Keep the same specific target and comparison workflow.",
+        "guideStep": "spatial-annotations",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Mark one place",
+            "Describe one change",
+            "Compare generated media",
+            "Apply a native edit separately"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Point at what you want to change",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "The instruction identifies a place or actor and the comparison shows which result is media and which is native scene content."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Use my marked market area as the target. In the concept, try red-and-cream awnings while keeping the canal and camera recognizable. Then propose the corresponding native material changes on the named HK_MyMarket_ actor f…"
+          ]
+        },
+        "guideStep": "spatial-annotations",
+        "notes": "In a Canvas-enabled project variation, open the 3D Annotation panel supplied by Unreal Canvas Spatial Annotations. Mark the market area or select an actor; add one short instruction describing the desired change.\n\nSend the viewport capture and its supported annotation data into Canvas. Use the relevant spatial modification tool, choose your configured model and generate one alternative. Compare the annotated region and the rest of the image.\n\nFor a native edit, ask the connected editor agent to identify the named market actors and make the equivalent scene change in your variation. Re-render and compare. A generated preview and an actor edit are two different outputs you can use together.\n\nUse my marked market area as the target. In the concept, try red-and-cream awnings while keeping the canal and camera recognizable. Then propose the corresponding native material changes on the named HK_MyMarket_ actor family. Show the proposal before editing the native scene.\n\nCheck: The instruction identifies a place or actor and the comparison shows which result is media and which is native scene content.\n\nRecovery: If annotations or the model are unavailable, select the target actors, capture the viewport and supply their labels with the prompt. Keep the same specific target and comparison workflow."
+      }
+    ]
+  },
+  {
+    "year": "CH 5",
+    "accent": "teal",
+    "lesson": {
+      "title": "Build the world",
+      "short": "Build the world",
+      "tagline": "Give the agent a finish line it can check.",
+      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
+    },
+    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
+    "cases": [
+      {
+        "title": "18 · Write a small job before running it",
         "subtitle": "Give the agent a finish line it can check.",
         "bullets": [
           "Open Studio/job-template.md.",
@@ -178,44 +690,7 @@
         "notes": "Open Studio/job-template.md. Replace the bracketed fields with your own goal and limits. Use the sample goal below if this is your first attempt.\n\nPermit edits only in this workshop copy. Choose a time limit, a retry limit and whether new downloads or paid services are allowed.\n\nAsk for a plan before the first write. Read it and authorize the bounded job. The assistant must report actual evidence rather than filling in a successful receipt in advance.\n\nDraft Studio/my-job.md for this goal: build Paper City in Unreal, make a dusk variant, add a lantern festival and create a 12-second sequence. Only use this workshop and built-in Unreal assets. Budget: 30 minutes of active agent work, at most two retries per failed step, no paid services or downloads. Preserve prior maps. Finish with saved maps, verification output and a list of visual checks for me. Show the plan before running it.\n\nCheck: The job names allowed files, budget, stop conditions and the output you will inspect.\n\nRecovery: Shrink a broad request such as “make it amazing” to one visible change with a comparison image. Keep stretch ideas in a separate list."
       },
       {
-        "title": "05 · Open the supplied Unreal project",
-        "subtitle": "A Blueprint-only project avoids a compiler setup.",
-        "bullets": [
-          "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor.",
-          "The project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue.",
-          "On a fresh starter the final map does not exist yet."
-        ],
-        "notes": "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.\n\nThe project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.\n\nOn a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).\n\nHelp me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.\n\nCheck: You have the PaperCity editor open and an Output Log with no missing required plugin error.\n\nRecovery: If the project asks to compile C++ or reports a third-party plugin, you opened the wrong folder. This project has no C++ module and requires no AI bridge plugin.",
-        "guideStep": "open-unreal",
-        "example": {
-          "label": "Your route",
-          "lines": [
-            "PaperCity.uproject",
-            "Blueprint-only",
-            "Built-in editor plugins",
-            "No third-party plugin required"
-          ]
-        }
-      },
-      {
-        "title": "Ask, then inspect",
-        "subtitle": "Open the supplied Unreal project",
-        "bullets": [
-          "Copy the complete prompt from the workbook.",
-          "Inspect the actual result before continuing.",
-          "You have the PaperCity editor open and an Output Log with no missing required plugin error."
-        ],
-        "example": {
-          "label": "Prompt opening",
-          "lines": [
-            "Help me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Rende…"
-          ]
-        },
-        "guideStep": "open-unreal",
-        "notes": "In the Starter copy, double-click Unreal/PaperCity.uproject and choose your installed 5.9 Preview editor. If Windows asks which app to use, open the engine first and browse to the project.\n\nThe project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.\n\nOn a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).\n\nHelp me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.\n\nCheck: You have the PaperCity editor open and an Output Log with no missing required plugin error.\n\nRecovery: If the project asks to compile C++ or reports a third-party plugin, you opened the wrong folder. This project has no C++ module and requires no AI bridge plugin."
-      },
-      {
-        "title": "06 · Run a harmless Python check",
+        "title": "19 · Run a harmless Python check",
         "subtitle": "Unreal Python runs inside the editor.",
         "bullets": [
           "In the Output Log input, keep the normal console command mode and enter: py import unreal; print(unreal.SystemLibrary.get_engine_version()).",
@@ -249,22 +724,9 @@
         },
         "guideStep": "python-check",
         "notes": "In the Output Log input, keep the normal console command mode and enter: py import unreal; print(unreal.SystemLibrary.get_engine_version()). Press Enter.\n\nLook for the printed engine version in the log. A system terminal cannot import Unreal’s editor module.\n\nFor action files, use Tools → Execute Python Script and browse to the numbered file in Actions. If that menu is absent, use the console form: py \"FULL/PATH/TO/Actions/00_check_environment.py\". Replace FULL/PATH/TO with your extracted workshop location; use forward slashes.\n\nExplain how to run Actions/00_check_environment.py inside my already-open Unreal editor. Give me the exact py command with my local file path, using forward slashes. Do not run it in system Python. Wait for me to paste its log result.\n\nCheck: The log prints SMALL_WORLDS_ENVIRONMENT with the engine version and workshop path.\n\nRecovery: If you see “No module named unreal”, the command ran in the wrong Python. If the script file is missing, remove the ZIP from the path and select the extracted Actions file."
-      }
-    ]
-  },
-  {
-    "year": "CH 2",
-    "accent": "amber",
-    "lesson": {
-      "title": "Build the world",
-      "short": "Build the world",
-      "tagline": "Generate native actors from a readable recipe.",
-      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
-    },
-    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
-    "cases": [
+      },
       {
-        "title": "07 · Build the daylight baseline",
+        "title": "20 · Build the daylight baseline",
         "subtitle": "Generate native actors from a readable recipe.",
         "bullets": [
           "In Unreal choose Tools → Execute Python Script and select Actions/01_build_starter.py.",
@@ -293,7 +755,7 @@
         "notes": "In Unreal choose Tools → Execute Python Script and select Actions/01_build_starter.py. This creates /Game/SmallWorlds/Maps/01_PaperCity.\n\nWait for SMALL_WORLDS_PASS in Output Log. In Content Browser open Content → SmallWorlds → Maps. Double-click 01_PaperCity if necessary.\n\nIn the Outliner search SW_Tower. Count three towers. Select SW_Cam_Wide and use Pilot from its context menu to inspect the overall composition. Press Ctrl+S / Cmd+S to save.\n\nRead the starter builder and Studio/design.json. Explain what Actions/01_build_starter.py will create and how it avoids replacing an existing map. Then give me its exact Unreal console command. After I run it, help me inspect the actual log and actor list.\n\nCheck: Three towers, two bridges, a canal, lamps and a cyan sculpture are visible. The log records the map and actor count.\n\nRecovery: If it says the map already exists, open it instead of rerunning. Preserve it by copying the whole workshop before a fresh build. If a script fails, read the first traceback before retrying."
       },
       {
-        "title": "08 · Check scale before polishing",
+        "title": "21 · Check scale before polishing",
         "subtitle": "Unreal scene units are centimeters.",
         "bullets": [
           "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner.",
@@ -330,7 +792,7 @@
         "notes": "Select SW_Tower_1, SW_Tower_2 and SW_Tower_3 in the Outliner. Their cube scales are Z=2, Z=3 and Z=4 because the source cube is 100 cm high.\n\nCompare the two 180 cm-wide bridges with the towers. Do not infer real-world height from the viewport zoom.\n\nRun Actions/05_verify_current.py. Keep its actual JSON result in Studio/receipts. The verifier checks structure and dimensions; you still inspect the picture.\n\nCheck the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.\n\nCheck: Tower wall heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.\n\nRecovery: A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing."
       },
       {
-        "title": "09 · Inspect the material library",
+        "title": "22 · Inspect the material library",
         "subtitle": "Separate the shape from its surface.",
         "bullets": [
           "Open Content → SmallWorlds → Materials.",
@@ -368,7 +830,7 @@
         "notes": "Open Content → SmallWorlds → Materials. Open M_Jade and inspect Base Color, Roughness and Metallic in the graph.\n\nSelect a bridge rail, inspect its material slot and confirm it uses M_Jade. Compare the rough paper towers with the glossier canal.\n\nAsk your assistant for one bounded material variation. Duplicate the material in Content Browser before editing. Apply the duplicate to one selected rail and compare it with the untouched bridge.\n\nPropose one jade-rail material variation with an exact Base Color, Roughness and Metallic value. Keep the paper walls and canal unchanged. Tell me how to duplicate M_Jade and apply the duplicate to only one bridge rail. I will inspect before accepting it.\n\nCheck: One rail uses your duplicate material; the original M_Jade and the other bridge stay available for comparison.\n\nRecovery: If every rail changed, you edited the shared material. Restore its prior values, duplicate it and apply the duplicate to a single actor."
       },
       {
-        "title": "10 · Make a dusk lighting variant",
+        "title": "23 · Make a dusk lighting variant",
         "subtitle": "Change the light while preserving the daylight map.",
         "bullets": [
           "Run Actions/02_build_dusk.py.",
@@ -397,7 +859,7 @@
         "notes": "Run Actions/02_build_dusk.py. It creates 02_Dusk as a separate map with warmer key light, emissive lanterns and point lights.\n\nOpen 01_PaperCity and 02_Dusk in turn. Use the same SW_Cam_Wide view for both. Wait for shader compilation and exposure to settle.\n\nCapture both views with the same viewport size using your operating system screenshot tool. Save them in Studio/evidence and record which version you prefer.\n\nRead the two stage definitions. Before I run 02_build_dusk.py, predict which lighting settings will change. After I supply matching screenshots and the log, compare shadow direction, lantern visibility, highlights and tower readability. Separate observations from suggestions.\n\nCheck: Both maps exist. The dusk view has visible warm lanterns and readable towers. Your verdict is recorded with the compared filenames.\n\nRecovery: If the view is black, confirm you are looking through a camera, not below the plinth. Check exposure and lights in the saved map before raising every intensity."
       },
       {
-        "title": "11 · Turn one prop into a reusable recipe",
+        "title": "24 · Turn one prop into a reusable recipe",
         "subtitle": "A lantern has a small, understandable construction.",
         "bullets": [
           "In small_worlds.py find the loop that creates SW_LanternPost, SW_LanternCap, SW_Lantern and SW_LanternLight.",
@@ -435,7 +897,7 @@
         "notes": "In small_worlds.py find the loop that creates SW_LanternPost, SW_LanternCap, SW_Lantern and SW_LanternLight. Read the dimensions and labels together.\n\nAsk the assistant to describe a new prop with the same clarity: component shapes, dimensions, materials and placement. Choose a bench, plant, kiosk or boat.\n\nHave it write the recipe into Studio/prop-proposal.md before it edits code. Require a unique actor prefix so the result can be found and removed as one scoped experiment.\n\nDesign an original small ticket kiosk for this paper city using built-in cubes, cylinders and cones. Give dimensions in centimeters, material choices, labeled parts and a placement that leaves both bridges clear. Save the proposal in Studio/prop-proposal.md. Do not build until I choose the design.\n\nCheck: You can explain every component and find where the prop will stand. No paid asset purchase is needed.\n\nRecovery: If the proposal needs an unavailable model or API, ask for a built-in-shape version first. Record generated asset provenance if you later use another tool."
       },
       {
-        "title": "12 · Build the lantern festival",
+        "title": "25 · Build the lantern festival",
         "subtitle": "Use repetition to make a richer scene.",
         "bullets": [
           "Run Actions/03_build_festival.py.",
@@ -466,8 +928,8 @@
     ]
   },
   {
-    "year": "CH 3",
-    "accent": "purple",
+    "year": "CH 6",
+    "accent": "amber",
     "lesson": {
       "title": "Direct the AI",
       "short": "Direct the AI",
@@ -477,7 +939,7 @@
     "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
     "cases": [
       {
-        "title": "13 · Give feedback the agent can act on",
+        "title": "26 · Give feedback the agent can act on",
         "subtitle": "Name the visual problem and protect what works.",
         "bullets": [
           "Pick one screenshot and write what you see.",
@@ -515,7 +977,7 @@
         "notes": "Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”\n\nName the protected elements: tower wall heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.\n\nAsk for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.\n\nThe hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower wall heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.\n\nCheck: The revision changes one named problem and preserves your protected choices.\n\nRecovery: If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change."
       },
       {
-        "title": "14 · Request a batch with a fixed budget",
+        "title": "27 · Request a batch with a fixed budget",
         "subtitle": "Make several ideas, then choose.",
         "bullets": [
           "Ask for three written variations first: quiet gallery, night market and sculptural park.",
@@ -552,7 +1014,7 @@
         "notes": "Ask for three written variations first: quiet gallery, night market and sculptural park. Keep the towers and bridges as shared constraints.\n\nChoose one to build in a separate map. Limit the job to a fixed prop count and a small number of material colors.\n\nRequire the output list and a screenshot before the agent starts another variation. A batch is a set of reviewable alternatives, not permission for endless generation.\n\nPropose three variants of Paper City: quiet gallery, night market and sculpture park. For each, give exactly three prop families, a three-color palette and one hero-camera idea. Use built-in geometry. Do not build yet. I will choose one, then authorize at most 12 new props in a separate map with a 10-minute budget.\n\nCheck: Three distinct proposals can be compared before using compute or changing files.\n\nRecovery: If all three descriptions are vague adjectives, ask for object counts, placement coordinates and a specific focal point."
       },
       {
-        "title": "15 · Compare with the original Blender scene",
+        "title": "28 · Compare with the original Blender scene",
         "subtitle": "Understand what survived the engine handoff.",
         "bullets": [
           "Open SourceAssets/Paper City.blend in Blender if installed, or inspect the included source postcard.",
@@ -589,7 +1051,7 @@
         "notes": "Open SourceAssets/Paper City.blend in Blender if installed, or inspect the included source postcard. This is the Part 1 starting scene, not a claim about every live-class edit.\n\nThe native Unreal recipe is a deliberate reinterpretation: three towers, folded roofs, a canal and jade rails, expanded into a festival. It is not a lossless import.\n\nOptional: drag SourceAssets/Paper City.glb into an empty Content Browser folder in a duplicate project. Review the import options, scale, materials and hierarchy. Compare imported geometry with the native recipe; do not replace the finished map.\n\nCompare the included Part 1 source assets with the Unreal construction recipe. Identify what is preserved, what is rebuilt and what needs checking after a GLB import: units, axes, material slots, transparency and object hierarchy. Do not call the native reconstruction a lossless import.\n\nCheck: You can distinguish an imported mesh from a native reconstruction and list the handoff checks.\n\nRecovery: If GLB import is unavailable in your editor configuration, keep it optional. The main workshop uses built-in Unreal meshes and does not depend on that importer."
       },
       {
-        "title": "16 · Choose how AI reaches the editor",
+        "title": "29 · Choose how AI reaches the editor",
         "subtitle": "The same job can use a script or a direct tool connection.",
         "bullets": [
           "The required path uses the local coding assistant to prepare files and you to run the numbered script in Unreal.",
@@ -627,8 +1089,8 @@
     ]
   },
   {
-    "year": "CH 4",
-    "accent": "rose",
+    "year": "CH 7",
+    "accent": "purple",
     "lesson": {
       "title": "Make it move",
       "short": "Make it move",
@@ -638,7 +1100,7 @@
     "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
     "cases": [
       {
-        "title": "17 · Create the 12-second cinematic",
+        "title": "30 · Create the 12-second cinematic",
         "subtitle": "Three shots and one animated sculpture.",
         "bullets": [
           "Run Actions/04_build_cinematic.py.",
@@ -667,7 +1129,7 @@
         "notes": "Run Actions/04_build_cinematic.py. It creates 04_Cinematic and Content/SmallWorlds/Cinematics/LS_LanternFestival.\n\nOpen the new map, then double-click LS_LanternFestival in Content Browser. In Sequencer enable the camera-cut view button on the Camera Cuts track.\n\nScrub frames 0, 96 and 192. You should see wide, bridge and sculpture cameras. Scrub between keys to inspect the floating sculpture and camera movement.\n\nExplain Actions/04_build_cinematic.py before I run it. Identify the three camera cuts, the 24 fps frame ranges and the animated sculpture. After I run it, help me inspect the cut track and transform keys. Do not claim rendered motion from key counts alone.\n\nCheck: The sequence lasts 288 frames at 24 fps, with three four-second shots. The sculpture moves and rotates when scrubbed.\n\nRecovery: If the viewport stays on your free camera, enable Sequencer’s camera-cut lock. If the sequence already exists, open it rather than overwriting it."
       },
       {
-        "title": "18 · Review the start, middle and end",
+        "title": "31 · Review the start, middle and end",
         "subtitle": "A camera move must hold its composition.",
         "bullets": [
           "For the first shot inspect frames 0, 48 and 95.",
@@ -696,7 +1158,7 @@
         "notes": "For the first shot inspect frames 0, 48 and 95. For the second inspect 96, 144 and 191. For the third inspect 192, 240 and 287.\n\nAt each frame check the focal subject, foreground intersections, lantern visibility and whether the frame clips a roof or sculpture.\n\nIf a move fails, duplicate the sequence and shorten its travel before adding more keys. Save nine frame captures or a contact sheet for your review.\n\nMake me a nine-frame inspection checklist for LS_LanternFestival: start, middle and end of each shot. For each, I will mark framing, clipping, focal subject and lighting. If a shot fails, propose the smallest camera-key adjustment and preserve the original sequence.\n\nCheck: All three samples in each shot have been inspected. A keyframe existing is separate from good composition.\n\nRecovery: If a subject leaves the frame, reduce translation or retarget the end rotation in the duplicate sequence. Recheck all three samples."
       },
       {
-        "title": "19 · Render a short image sequence",
+        "title": "32 · Render a short image sequence",
         "subtitle": "Use frames first so a failed encode does not waste a render.",
         "bullets": [
           "Open Window → Cinematics → Movie Render Queue.",
@@ -725,7 +1187,7 @@
         "notes": "Open Window → Cinematics → Movie Render Queue. Add LS_LanternFestival. Confirm the job’s map is 04_Cinematic.\n\nOpen the job settings. Add or keep Deferred Rendering and PNG Sequence. In Output choose a new folder inside Studio/renders, set 1280 × 720 and 24 fps, and keep the sequence frame range. Use Anti-Aliasing engine warm-up if effects need time to initialize.\n\nRender locally. Wait for completion, then open the first, middle and last frames. Keep the Output Log if the render reports an error. The optional command-line encode recipe is in Recipes/04-render.md.\n\nHelp me configure one local Movie Render Queue job for LS_LanternFestival in map 04_Cinematic: 1280×720, 24 fps, PNG frames, a new Studio/renders folder and the sequence’s 288-frame range. Explain the settings I must inspect. Do not start an overnight render or overwrite prior frames.\n\nCheck: A new folder contains the rendered frame sequence. You inspected images from all three cuts.\n\nRecovery: If every frame uses one camera, check the saved Camera Cuts track and job sequence. If the render is much brighter than the viewport, compare exposure and cinematic scalability before adjusting lights."
       },
       {
-        "title": "20 · Turn frames into a review video",
+        "title": "33 · Turn frames into a review video",
         "subtitle": "Inspect the movie after encoding.",
         "bullets": [
           "If FFmpeg is already installed, ask the assistant to inspect the actual image filenames and form an encode command from that pattern.",
@@ -764,8 +1226,8 @@
     ]
   },
   {
-    "year": "CH 5",
-    "accent": "teal",
+    "year": "CH 8",
+    "accent": "rose",
     "lesson": {
       "title": "Let it run",
       "short": "Let it run",
@@ -775,7 +1237,7 @@
     "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
     "cases": [
       {
-        "title": "21 · Save a checkpoint another chat can use",
+        "title": "34 · Save a checkpoint another chat can use",
         "subtitle": "Memory needs concrete state.",
         "bullets": [
           "Open Studio/project-memory.md.",
@@ -813,7 +1275,7 @@
         "notes": "Open Studio/project-memory.md. Record the accepted map, sequence, engine version, design choices and evidence paths.\n\nWrite one sentence explaining why you kept a choice. Include a nickname or design reason that a new agent cannot guess from general knowledge.\n\nName exactly one next action and its stop condition. Keep rejected alternatives so the next chat does not rebuild them.\n\nUpdate Studio/project-memory.md from the work we actually completed. Record engine version, saved map and sequence, accepted choices, rejected alternatives, actual verification results and evidence filenames. My private design reason is: [write your own reason]. Next action: [one action]. Do not record acceptance I have not given.\n\nCheck: The note names a real saved state and an unambiguous next action.\n\nRecovery: If it only says “made progress,” replace that with map paths, values, filenames and a concrete next step."
       },
       {
-        "title": "22 · Test a fresh chat",
+        "title": "35 · Test a fresh chat",
         "subtitle": "Make continuity observable.",
         "bullets": [
           "Save the Unreal project and your notes.",
@@ -851,7 +1313,7 @@
         "notes": "Save the Unreal project and your notes. Start a new local chat in the same workshop folder.\n\nDo not paste the old conversation. Ask the new agent to read the memory and report the private design reason, accepted map and next action.\n\nOpen the cited files yourself. If the answer is wrong, repair the note or path and repeat. Keep the failed answer as useful evidence.\n\nRead AGENTS.md and Studio/project-memory.md. Without editing anything, tell me the accepted map, sequence, private design reason, last actual check and exact next action. Cite each source. If a fact is absent, say it is absent instead of guessing.\n\nCheck: The new agent recovers your actual reason and state from files.\n\nRecovery: If it recites generic advice, ask it to open the exact note. If it invents a value, compare its answer with the cited text."
       },
       {
-        "title": "23 · Practice one recoverable failure",
+        "title": "36 · Practice one recoverable failure",
         "subtitle": "Use a copy so the exercise cannot destroy your baseline.",
         "bullets": [
           "Make a full duplicate of the Starter workshop.",
@@ -889,7 +1351,7 @@
         "notes": "Make a full duplicate of the Starter workshop. In that duplicate only, ask the agent to change the JSON key lantern_intensity to lantern_intensity_typo.\n\nRun the dusk action in the duplicate. Inspect the traceback. It should name the missing lantern_intensity key. Preserve the log before fixing it.\n\nRestore the correct key from the original design file. Use a fresh duplicate before running again because the failed action may already have created a partial map. Record the failure, repair and rerun result.\n\nIn my designated failure-exercise copy only, rename lantern_intensity to lantern_intensity_typo in Studio/design.json. Explain the expected KeyError and partial-map risk. Do not run other jobs. After I provide the traceback, restore the key from the reference file and prepare a clean retry copy; do not overwrite the partial map.\n\nCheck: You identified a specific cause, preserved evidence and repaired it without deleting your good scene.\n\nRecovery: If your copy already contains 02_Dusk, the existing-map guard will stop earlier. Start with the Starter package for this exercise."
       },
       {
-        "title": "24 · Give a longer job a real boundary",
+        "title": "37 · Give a longer job a real boundary",
         "subtitle": "The finish line stays visible while you are away.",
         "bullets": [
           "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence..",
@@ -927,7 +1389,7 @@
         "notes": "Choose one extension you can verify: a new prop set, one lighting variation or one revised camera sequence.\n\nSpecify the allowed map, output folder, maximum active time, retry count and checkpoint frequency. Name actions that require you, such as approving a paid generation or judging the final image.\n\nAsk for a short progress file at each completed milestone. A long-running process is not completion; the final receipt must name the saved output and known issues.\n\nIn a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower wall heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.\n\nCheck: The agent can explain when to continue, checkpoint, stop or ask you for a required action.\n\nRecovery: If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized."
       },
       {
-        "title": "25 · Separate checks from your verdict",
+        "title": "38 · Separate checks from your verdict",
         "subtitle": "A successful command is only part of a useful result.",
         "bullets": [
           "Run the current-map verifier and inspect its actual output.",
@@ -967,8 +1429,8 @@
     ]
   },
   {
-    "year": "CH 6",
-    "accent": "amber",
+    "year": "CH 9",
+    "accent": "teal",
     "lesson": {
       "title": "Keep creating",
       "short": "Keep creating",
@@ -978,7 +1440,7 @@
     "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
     "cases": [
       {
-        "title": "26 · Build three more worlds from the same kit",
+        "title": "39 · Build three more worlds from the same kit",
         "subtitle": "Change the brief while keeping the method.",
         "bullets": [
           "Choose one: a floating library, a desert observatory or a rainy street market.",
@@ -1015,7 +1477,7 @@
         "notes": "Choose one: a floating library, a desert observatory or a rainy street market. Start in a new workshop copy or a separate project.\n\nAsk for a small palette, reusable prop recipes, a focal point and three camera compositions. Require a baseline before effects.\n\nRun one complete loop: brief, build, inspect, revise, save, restart. Do not launch all three just because they are listed here.\n\nDraft a bounded brief for a [floating library / desert observatory / rainy street market] using built-in Unreal geometry. Include three prop recipes, dimensions, palette, lighting intention, a focal point and three camera views. Give me a five-step build plan and measurable checks. Do not generate yet.\n\nCheck: Your new world has specific objects and a clear first milestone.\n\nRecovery: If the first milestone cannot be inspected quickly, reduce the object count and postpone particles or external assets."
       },
       {
-        "title": "27 · Add effects as a separate experiment",
+        "title": "40 · Add effects as a separate experiment",
         "subtitle": "Start with a visible, reversible change.",
         "bullets": [
           "Duplicate the festival map.",
@@ -1053,7 +1515,7 @@
         "notes": "Duplicate the festival map. Choose one optional effect: drifting particles, a fountain or moving fog.\n\nAsk your agent to identify the installed tools and a supported route before creating an effect. Keep Niagara and new experimental features outside the required path.\n\nInspect the effect during playback and in a short render with adequate warm-up. A component existing in the Outliner does not prove visible motion.\n\nIn a duplicate map, propose one subtle drifting-particle effect that preserves the paper-city style. First inspect available Niagara tooling and version support. Explain playback, warm-up, render and rollback checks. Do not change the accepted scene or install plugins.\n\nCheck: One effect is visibly present in playback and a short rendered test, or clearly remains an unverified proposal.\n\nRecovery: If it disappears in a render, inspect simulation warm-up and camera framing before increasing particle counts."
       },
       {
-        "title": "28 · Leave yourself a route back",
+        "title": "41 · Leave yourself a route back",
         "subtitle": "Finish with files you can reopen.",
         "bullets": [
           "Keep your accepted project, source recipe, design JSON, notes, screenshots and receipt together.",
@@ -1089,6 +1551,94 @@
         },
         "guideStep": "next",
         "notes": "Keep your accepted project, source recipe, design JSON, notes, screenshots and receipt together. Exclude caches from a sharing copy.\n\nClose the editor, reopen the accepted map and sequence, and repeat one visual check. Keep the original class download separate from your modified copy.\n\nReturn to this workbook at the first missing checkpoint whenever you resume. Bring your best result and one precise failure to office hours.\n\nInventory my workshop and prepare a sharing copy with project Content, Config, action scripts, design file, source assets, notes and evidence. Exclude DerivedDataCache, Intermediate and regenerable Saved caches. Preserve the working project. List files before packaging and verify the extracted copy opens.\n\nCheck: You have an accepted state, a readable receipt and a verified route to reopen it.\n\nRecovery: If the copy cannot open, fix missing project content or plugin requirements before calling it a usable handoff."
+      }
+    ]
+  },
+  {
+    "year": "CH 10",
+    "accent": "amber",
+    "lesson": {
+      "title": "Your MegaJam launchpad",
+      "short": "Your MegaJam launchpad",
+      "tagline": "Recommendation: enter small, finish playable and learn in public.",
+      "tags": "Small Worlds · Unreal Engine 5.9 Preview"
+    },
+    "notes": "Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.",
+    "cases": [
+      {
+        "title": "42 · Turn today’s scene into a jam game",
+        "subtitle": "Recommendation: enter small, finish playable and learn in public.",
+        "bullets": [
+          "The Epic AI MegaJam runs November 12–15.",
+          "Keep this class project as your reference.",
+          "Use this schedule: Thursday, playable loop; Friday, first packaged playtest; Saturday, clarity and polish; Sunday, final test, capture and upload with time to spare."
+        ],
+        "notes": "The Epic AI MegaJam runs November 12–15. Pick a tiny idea that fits the revealed theme. Our suggestion: Lantern Courier, a short harbor route with three deliveries, a timer and a clear win state. Adapt the mechanic to the theme instead of submitting only the class environment.\n\nKeep this class project as your reference. In a new game copy, ask the agent for one playable loop before adding art or more districts. Choose solo or a small team and assign gameplay, art and testing ownership.\n\nUse this schedule: Thursday, playable loop; Friday, first packaged playtest; Saturday, clarity and polish; Sunday, final test, capture and upload with time to spare. Carry forward your Forage workflow, kit vocabulary, MCP tools and saved project memory.\n\nHelp me turn my own class variation into a tiny Epic AI MegaJam game. First ask me for the revealed theme and my available time. Propose three one-sentence mechanics using the kit, then help me choose one. Plan one level, one core interaction, a clear win/lose condition, a packaged playtest and a 30–60 second gameplay capture. Treat the class kit as supplied/pre-existing material to declare. Do not register, submit, purchase or publish for me.\n\nCheck: You leave with a specific game idea, a first playable milestone and a realistic build schedule.\n\nRecovery: If you only have a cinematic or pretty scene, add the player’s action and goal before expanding the environment. Keep a small downloadable target; experimental web packaging can be its own later experiment.",
+        "guideStep": "jam-plan",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Class scene → playable loop",
+            "One mechanic • one level",
+            "Package early",
+            "Playtest • polish • submit"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Turn today’s scene into a jam game",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You leave with a specific game idea, a first playable milestone and a realistic build schedule."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Help me turn my own class variation into a tiny Epic AI MegaJam game. First ask me for the revealed theme and my available time. Propose three one-sentence mechanics using the kit, then help me choose one. Plan one level…"
+          ]
+        },
+        "guideStep": "jam-plan",
+        "notes": "The Epic AI MegaJam runs November 12–15. Pick a tiny idea that fits the revealed theme. Our suggestion: Lantern Courier, a short harbor route with three deliveries, a timer and a clear win state. Adapt the mechanic to the theme instead of submitting only the class environment.\n\nKeep this class project as your reference. In a new game copy, ask the agent for one playable loop before adding art or more districts. Choose solo or a small team and assign gameplay, art and testing ownership.\n\nUse this schedule: Thursday, playable loop; Friday, first packaged playtest; Saturday, clarity and polish; Sunday, final test, capture and upload with time to spare. Carry forward your Forage workflow, kit vocabulary, MCP tools and saved project memory.\n\nHelp me turn my own class variation into a tiny Epic AI MegaJam game. First ask me for the revealed theme and my available time. Propose three one-sentence mechanics using the kit, then help me choose one. Plan one level, one core interaction, a clear win/lose condition, a packaged playtest and a 30–60 second gameplay capture. Treat the class kit as supplied/pre-existing material to declare. Do not register, submit, purchase or publish for me.\n\nCheck: You leave with a specific game idea, a first playable milestone and a realistic build schedule.\n\nRecovery: If you only have a cinematic or pretty scene, add the player’s action and goal before expanding the environment. Keep a small downloadable target; experimental web packaging can be its own later experiment."
+      },
+      {
+        "title": "43 · Leave class ready to enter",
+        "subtitle": "Your next step is a playable milestone, not another tool install.",
+        "bullets": [
+          "Open the organizer’s jam page, read its linked Official Rules and join if you are eligible.",
+          "Submission closes Sunday November 15 at 8:59 p.m.",
+          "Before leaving: write your one-sentence game, first milestone and next work session in Studio/jam-brief.md."
+        ],
+        "notes": "Open the organizer’s jam page, read its linked Official Rules and join if you are eligible. Its summary says 18+ with an active Epic account; teams may have up to five humans. The Student category requires current higher-education enrollment, not just this masterclass.\n\nSubmission closes Sunday November 15 at 8:59 p.m. Eastern / 5:59 p.m. Pacific. Prepare a packaged playable game, a 30–60 second gameplay video and the requested team details. Declare earlier prompts, scripts and assets, including this supplied class kit.\n\nBefore leaving: write your one-sentence game, first milestone and next work session in Studio/jam-brief.md. Share an idea with a potential teammate if you want. Your assistant can help draft a dev log; you choose what to share.\n\nCreate Studio/jam-brief.md from my chosen idea and the official jam page. Include the theme, player goal, controls, one-level scope, original gameplay to build, supplied asset/tool disclosures, owners, next work session, packaging target, playtest checklist, video plan and my upload deadline with a buffer. Mark eligibility and rule checks as my decisions. End with exactly one next action.\n\nCheck: You have a bounded competition plan and know what must become playable before submission.\n\nRecovery: A workshop attendance certificate is not student-category eligibility. Confirm the full rules and current organizer updates yourself; do not assume class files or a source-project ZIP are a finished game entry.",
+        "guideStep": "jam-checklist",
+        "example": {
+          "label": "Your route",
+          "lines": [
+            "Join if eligible",
+            "Build custom gameplay",
+            "Declare supplied assets",
+            "Gameplay video + packaged build",
+            "Sun Nov 15 • 8:59 p.m. ET"
+          ]
+        }
+      },
+      {
+        "title": "Ask, then inspect",
+        "subtitle": "Leave class ready to enter",
+        "bullets": [
+          "Copy the complete prompt from the workbook.",
+          "Inspect the actual result before continuing.",
+          "You have a bounded competition plan and know what must become playable before submission."
+        ],
+        "example": {
+          "label": "Prompt opening",
+          "lines": [
+            "Create Studio/jam-brief.md from my chosen idea and the official jam page. Include the theme, player goal, controls, one-level scope, original gameplay to build, supplied asset/tool disclosures, owners, next work session,…"
+          ]
+        },
+        "guideStep": "jam-checklist",
+        "notes": "Open the organizer’s jam page, read its linked Official Rules and join if you are eligible. Its summary says 18+ with an active Epic account; teams may have up to five humans. The Student category requires current higher-education enrollment, not just this masterclass.\n\nSubmission closes Sunday November 15 at 8:59 p.m. Eastern / 5:59 p.m. Pacific. Prepare a packaged playable game, a 30–60 second gameplay video and the requested team details. Declare earlier prompts, scripts and assets, including this supplied class kit.\n\nBefore leaving: write your one-sentence game, first milestone and next work session in Studio/jam-brief.md. Share an idea with a potential teammate if you want. Your assistant can help draft a dev log; you choose what to share.\n\nCreate Studio/jam-brief.md from my chosen idea and the official jam page. Include the theme, player goal, controls, one-level scope, original gameplay to build, supplied asset/tool disclosures, owners, next work session, packaging target, playtest checklist, video plan and my upload deadline with a buffer. Mark eligibility and rule checks as my decisions. End with exactly one next action.\n\nCheck: You have a bounded competition plan and know what must become playable before submission.\n\nRecovery: A workshop attendance certificate is not student-category eligibility. Confirm the full rules and current organizer updates yourself; do not assume class files or a source-project ZIP are a finished game entry."
       }
     ]
   }

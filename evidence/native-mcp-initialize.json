@@ -1,0 +1,15 @@
+{
+  "scope": "Extract of actual native initialize; machine-local paths and process identifiers omitted.",
+  "protocolVersion": "2025-11-25",
+  "serverInfo": {
+    "name": "unreal-mcp",
+    "title": "",
+    "version": "5.9.0-60351404"
+  },
+  "instance": {
+    "engineVersion": "5.9.0-60351404",
+    "engineBranch": "//UE5/Release-5.9",
+    "engineChangelist": 60351404,
+    "projectName": "PaperCity"
+  }
+}

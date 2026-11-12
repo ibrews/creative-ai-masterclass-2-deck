@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"/Game/SmallWorlds/Maps/07_MyHarbor\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "/Game/SmallWorlds/Maps/07_MyHarbor"
+  }
+}

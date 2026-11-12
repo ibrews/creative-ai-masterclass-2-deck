@@ -1,0 +1,3 @@
+# Classroom Unreal context
+
+Blueprint-only editor project, UE 5.9.0 CL60351404 on Windows. Authoring runs through editor Python. `small_worlds.py` owns original Paper City maps 01–04 and primitive/material/camera helpers. `harbor_kit.py` owns the reusable Harbor City recipes and new maps 05–06. Parts compose native StaticMeshActors, with one named anchor and children in an Outliner folder. No per-frame Tick or runtime scripting is required. Preserve existing maps. External plugin binaries remain outside this public repository; class recipients get the tested Windows packages through the class folder.

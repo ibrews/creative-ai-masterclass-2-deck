@@ -1,0 +1,645 @@
+{
+  "brief": "Harbor of a Thousand Lanterns: an original modular miniature city, ringed quays, market, skyrail, three canals and a Forage token monument.",
+  "placements": [
+    {
+      "part": "quay",
+      "at": [
+        -1800,
+        -1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_001"
+    },
+    {
+      "part": "quay",
+      "at": [
+        -1800,
+        1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_002"
+    },
+    {
+      "part": "quay",
+      "at": [
+        -600,
+        -1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_003"
+    },
+    {
+      "part": "quay",
+      "at": [
+        -600,
+        1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_004"
+    },
+    {
+      "part": "quay",
+      "at": [
+        600,
+        -1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_005"
+    },
+    {
+      "part": "quay",
+      "at": [
+        600,
+        1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_006"
+    },
+    {
+      "part": "quay",
+      "at": [
+        1800,
+        -1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_007"
+    },
+    {
+      "part": "quay",
+      "at": [
+        1800,
+        1300,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_008"
+    },
+    {
+      "part": "quay",
+      "at": [
+        -1800,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_009"
+    },
+    {
+      "part": "quay",
+      "at": [
+        1800,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_010"
+    },
+    {
+      "part": "quay",
+      "at": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_quay_011"
+    },
+    {
+      "part": "plaza",
+      "at": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_plaza_012"
+    },
+    {
+      "part": "tower",
+      "at": [
+        -2200,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tower_013"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        -1500,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_014"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        -800,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_015"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        100,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_016"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        800,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_017"
+    },
+    {
+      "part": "warehouse",
+      "at": [
+        1500,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_warehouse_018"
+    },
+    {
+      "part": "tower",
+      "at": [
+        2200,
+        -1090,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tower_019"
+    },
+    {
+      "part": "tower",
+      "at": [
+        -2200,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tower_020"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        -1500,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_021"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        -800,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_022"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        100,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_023"
+    },
+    {
+      "part": "townhouse",
+      "at": [
+        800,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_townhouse_024"
+    },
+    {
+      "part": "warehouse",
+      "at": [
+        1500,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_warehouse_025"
+    },
+    {
+      "part": "tower",
+      "at": [
+        2200,
+        1510,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tower_026"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        -1800,
+        -650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_027"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        -1800,
+        650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_028"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        0,
+        -650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_029"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        0,
+        650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_030"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        1800,
+        -650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_031"
+    },
+    {
+      "part": "bridge",
+      "at": [
+        1800,
+        650,
+        30
+      ],
+      "yaw": 90,
+      "name": "HK_bridge_032"
+    },
+    {
+      "part": "market_stall",
+      "at": [
+        -1150,
+        -1560,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_market_stall_033"
+    },
+    {
+      "part": "market_stall",
+      "at": [
+        -550,
+        -1560,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_market_stall_034"
+    },
+    {
+      "part": "market_stall",
+      "at": [
+        550,
+        -1560,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_market_stall_035"
+    },
+    {
+      "part": "market_stall",
+      "at": [
+        1150,
+        -1560,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_market_stall_036"
+    },
+    {
+      "part": "tree",
+      "at": [
+        -2350,
+        -1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_037"
+    },
+    {
+      "part": "tree",
+      "at": [
+        -2350,
+        1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_038"
+    },
+    {
+      "part": "tree",
+      "at": [
+        -1200,
+        -1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_039"
+    },
+    {
+      "part": "tree",
+      "at": [
+        -1200,
+        1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_040"
+    },
+    {
+      "part": "tree",
+      "at": [
+        1200,
+        -1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_041"
+    },
+    {
+      "part": "tree",
+      "at": [
+        1200,
+        1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_042"
+    },
+    {
+      "part": "tree",
+      "at": [
+        2350,
+        -1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_043"
+    },
+    {
+      "part": "tree",
+      "at": [
+        2350,
+        1000,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_tree_044"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        -2300,
+        -1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_045"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        -2300,
+        1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_046"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        -1200,
+        -1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_047"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        -1200,
+        1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_048"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        0,
+        -1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_049"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        0,
+        1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_050"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        1200,
+        -1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_051"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        1200,
+        1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_052"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        2300,
+        -1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_053"
+    },
+    {
+      "part": "lantern",
+      "at": [
+        2300,
+        1850,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_lantern_054"
+    },
+    {
+      "part": "boat",
+      "at": [
+        -900,
+        -250,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_boat_055"
+    },
+    {
+      "part": "boat",
+      "at": [
+        1050,
+        -350,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_boat_056"
+    },
+    {
+      "part": "boat",
+      "at": [
+        -900,
+        400,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_boat_057"
+    },
+    {
+      "part": "boat",
+      "at": [
+        1000,
+        350,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_boat_058"
+    },
+    {
+      "part": "arch",
+      "at": [
+        0,
+        -1900,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_arch_059"
+    },
+    {
+      "part": "arch",
+      "at": [
+        0,
+        1900,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_arch_060"
+    },
+    {
+      "part": "skyrail",
+      "at": [
+        -1800,
+        1780,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_skyrail_061"
+    },
+    {
+      "part": "skyrail",
+      "at": [
+        -600,
+        1780,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_skyrail_062"
+    },
+    {
+      "part": "skyrail",
+      "at": [
+        600,
+        1780,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_skyrail_063"
+    },
+    {
+      "part": "skyrail",
+      "at": [
+        1800,
+        1780,
+        0
+      ],
+      "yaw": 0,
+      "name": "HK_skyrail_064"
+    }
+  ]
+}

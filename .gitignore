@@ -37,3 +37,8 @@ evidence/fort-model-cache-manifests.json
 evidence/clarity-final/**/*.png
 evidence/clarity-final/**/*.jpg
 evidence/clarity-final/**/*.pdf
+# Expanded rendered review working images stay local; reports are retained.
+evidence/expanded-review/**/*.png
+evidence/expanded-review/**/*.jpg
+evidence/second-brain-review/**/*.png
+evidence/second-brain-review/**/*.jpg

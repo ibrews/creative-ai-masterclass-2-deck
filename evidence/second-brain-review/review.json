@@ -1,0 +1,37 @@
+{
+  "verdict": "ISSUES",
+  "staged_manifest_sha256": "341612a327f5ba4f6963a6bc12d6e5c3168aa6644bc96c18da3032011508f099",
+  "allowlist": {
+    "declared": 49,
+    "generated_identities": 2,
+    "extra": 0,
+    "missing": 0,
+    "hash_mismatches": 0,
+    "hidden": 0,
+    "symlinks": 0
+  },
+  "privacy": "No credentials, client/person narratives, machine-private paths/endpoints or internal index/provenance found. Generic example paths and public technical links only. Existing foundations approved previously.",
+  "scope": "Native Unreal evidence explicitly Windows5.9CL60351404; root and unreal README distinguish optional macOS/Linux retrieval connector. No native Unreal executed by reviewer.",
+  "issues": [
+    {
+      "id": "mobile-asset-path",
+      "where": "UE09 asset-paths, ordered item2",
+      "actual": "390px viewport; document scrollWidth445px, unbroken package path extends beyond card",
+      "screenshot": "mobile-asset-path-overflow.png"
+    },
+    {
+      "id": "filtered-navigation",
+      "where": "search and technique navigation",
+      "reproduction": "Search black camera, then click Use named Rotator arguments",
+      "actual": "URL changes to #rotator but card remains hidden",
+      "screenshot": "mobile-filtered-nav.png"
+    }
+  ],
+  "search_checks": {
+    "Rotator": 2,
+    "black camera": 1,
+    "unfindable-xyz": 0,
+    "reset": 16
+  },
+  "observed_model": "UNKNOWN"
+}

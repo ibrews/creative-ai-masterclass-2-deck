@@ -110,24 +110,24 @@ figcaption { color: var(--muted); margin-top: .5em; }
 @media print {
   :root { --paper: white; --sheet: #f7f3eb; }
   * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  body { background: white; font-size: 14pt; line-height: 1.28; }
+  body { background: white; font-size: 13pt; line-height: 1.25; }
   main { width: 100%; margin: 0; padding: 0; }
   .skip, .button, .copy-tools, .stepnav { display: none !important; }
   .cover, .lesson { border-top-width: 4pt; padding-top: 6pt; }
-  .lesson { break-before: page; margin-top: 0; min-height: 9.96in; display: flex; flex-direction: column; }
+  .lesson { break-before: page; margin-top: 0; min-height: 9.8in; display: flex; flex-direction: column; }
   .write-in { display: block; margin-top: auto; padding-top: 14pt; }
   .write-in::after { content: ""; display: block; height: 16pt; border-bottom: 1px solid var(--faint); }
   .runhead, .small, .group-title, figcaption { font-size: 8.1pt; }
   .cover-hero { display: grid; grid-template-columns: 1fr 39%; margin: 26pt 0; gap: 18pt; }
   h1 { font-size: 45pt; }
-  h2 { font-size: 28pt; }
-  .cover .deck { font-size: 14pt; }
-  .toc { padding: 12pt 0 18pt; }
+  h2 { font-size: 26pt; }
+  .cover .deck { font-size: 13pt; }
+  .toc { break-before: page; padding: 12pt 0 18pt; }
   .toc-header { margin-bottom: 10pt; }
   .toc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13pt 22pt; }
   .toc a { font-size: 11.4pt; padding: 0; }
   .lesson-header { margin: 17pt 0 13pt; }
-  .deck { font-size: 14pt; }
+  .deck { font-size: 13pt; }
   .work { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 14pt; }
   .plate { padding: 8pt; }
   .plate pre { font-size: 8.2pt; }
@@ -136,7 +136,7 @@ figcaption { color: var(--muted); margin-top: .5em; }
   .prompt { margin-top: 12pt; padding: 8pt 10pt; }
   .prompt pre { font-size: 10.5pt; line-height: 1.36; }
   .outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; margin-top: 14pt; }
-  .outcomes p { font-size: 12.8pt; }
+  .outcomes p { font-size: 12pt; }
 }
 """
 
@@ -256,9 +256,9 @@ def build(source, output):
 <div class="runhead"><span>Creative AI Masterclass</span><span>Part 2 · Student workbook</span></div>
 <header class="cover-hero"><div><p class="small">Let it run in Unreal</p>
 <h1 id="cover-title">Small Worlds Workshop</h1>
-<p class="deck">Build a paper city in Unreal Engine 5.9 Preview. Light it for dusk, add a lantern festival, animate a sculpture and render a three-shot cinematic. Every step includes exact actions, a prompt, a check and a recovery path.</p></div>
-<figure><img src="{data_uri('images/desktop-class/paper-city.png')}" alt="Three folded-roof towers and a footbridge in a miniature paper city.">
-<figcaption>Part 1 source scene · Today’s brief is SW-18</figcaption></figure></header>
+<p class="deck">Direct Unreal Engine 5.9 Preview with AI. Learn Forage, assemble and remix a city from twelve reusable parts, and make a cinematic. Use your second brain, then turn your own scene into an Epic AI MegaJam game plan. Every step includes actions, a check and recovery guidance.</p></div>
+<figure><img src="{data_uri('images/part2/07-harbor-city.png')}" alt="The native Harbor City, with canals, bridges, teal towers and the imported Forage token monument.">
+<figcaption>Harbor City · Built through native Unreal MCP</figcaption></figure></header>
 <nav id="contents" class="toc" aria-labelledby="contents-title"><div class="toc-header"><h2 id="contents-title">Contents</h2>
 <button class="button" id="print" type="button" hidden>Print workbook</button></div>
 <div class="toc-grid">{table_of_contents(lessons)}</div></nav></section>

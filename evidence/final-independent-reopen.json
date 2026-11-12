@@ -1,0 +1,30 @@
+{
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "city": {
+    "map": "/Game/SmallWorlds/Maps/05_HarborCity",
+    "placements": 64,
+    "actors": 484,
+    "forage_mesh": "/Game/ForageBetaSample/SM_ForageToken.SM_ForageToken",
+    "part_types": 12
+  },
+  "bridge_rotations": "Six horizontal decks, yaw 90, PASS",
+  "gallery_parts": [
+    "quay",
+    "townhouse",
+    "warehouse",
+    "tower",
+    "bridge",
+    "market_stall",
+    "tree",
+    "lantern",
+    "boat",
+    "arch",
+    "plaza",
+    "skyrail"
+  ],
+  "sequence": {
+    "fps": 24,
+    "frames": 288,
+    "camera_cuts": 3
+  }
+}

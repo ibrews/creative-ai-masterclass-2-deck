@@ -12,16 +12,19 @@ ROOT = Path(__file__).resolve().parents[1]
 EXCLUDE = {'.git', '__pycache__', '.DS_Store', 'Intermediate', 'DerivedDataCache', 'Saved', 'Binaries'}
 
 
-def copy_tree(source, target):
+def copy_tree(source, target, exclude=EXCLUDE):
     for p in source.rglob('*'):
         rel = p.relative_to(source)
-        if p.is_file() and not any(part in EXCLUDE for part in rel.parts):
+        if p.is_file() and not any(part in exclude for part in rel.parts):
             out = target / rel
             out.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(p, out)
 
 
-def package(mode, output):
+def package(mode, output, forage_plugin, eca_plugin, second_brain, brain_hash):
+    actual = hashlib.sha256((second_brain / "releases/manifest.json").read_bytes()).hexdigest()
+    if actual != brain_hash:
+        raise SystemExit("Second Brain stage differs from its reviewed manifest")
     name = f'small-worlds-unreal-part-2-project-{mode}-2026-11-12'
     stage = output / name
     if stage.exists():
@@ -29,13 +32,25 @@ def package(mode, output):
     stage.mkdir(parents=True)
     project = stage / 'Small Worlds Unreal Workshop'
     copy_tree(ROOT / 'workshop', project)
+    copy_tree(second_brain, project / 'Second Brain')
     content = project / 'Unreal' / 'Content' / 'SmallWorlds'
     if mode == 'starter' and content.exists():
         shutil.rmtree(content)  # only our new packaging copy, never the source project
+    sample = project / 'Unreal' / 'Content' / 'ForageBetaSample'
+    if mode == 'starter' and sample.exists():
+        shutil.rmtree(sample)
+    for name, source in [('ForageBeta', forage_plugin)]:
+        if not (source / (name + '.uplugin')).is_file():
+            raise SystemExit('Missing plugin descriptor: ' + str(source))
+        copy_tree(source, project / 'Unreal' / 'Plugins' / name, EXCLUDE - {'Binaries'})
+    uproject = project / 'Unreal' / 'PaperCity.uproject'
+    descriptor = json.loads(uproject.read_text())
+    descriptor['Plugins'] += [dict(Name=n, Enabled=True) for n in ['ForageBeta']]
+    uproject.write_text(json.dumps(descriptor, indent=2)+'\n')
     if mode == 'finished':
         config = project / 'Unreal' / 'Config' / 'DefaultEngine.ini'
-        config.write_text(config.read_text().replace('EditorStartupMap=/Engine/Maps/Entry', 'EditorStartupMap=/Game/SmallWorlds/Maps/04_Cinematic'))
-    if mode == 'finished' and not list(content.rglob('*.umap')):
+        config.write_text(config.read_text().replace('EditorStartupMap=/Engine/Maps/Entry', 'EditorStartupMap=/Game/SmallWorlds/Maps/05_HarborCity'))
+    if mode == 'finished' and not all((content / 'Maps' / n).is_file() for n in ['01_PaperCity.umap','02_Dusk.umap','03_LanternFestival.umap','04_Cinematic.umap','05_HarborCity.umap','06_KitGallery.umap']):
         raise SystemExit('No native maps: refusing a Finished package')
     deck = project / 'Deck'
     for d in ['styles', 'media', 'images', 'slides']:
@@ -76,6 +91,10 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--mode', choices=['starter', 'finished'], required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--forage-plugin', type=Path, required=True)
+    p.add_argument('--eca-plugin', type=Path, help='Separate optional download; not auto-enabled in the core project.')
+    p.add_argument('--second-brain', type=Path, required=True)
+    p.add_argument('--brain-manifest-sha256', required=True)
     a = p.parse_args()
     a.output.mkdir(parents=True, exist_ok=True)
-    package(a.mode, a.output)
+    package(a.mode, a.output, a.forage_plugin, a.eca_plugin, a.second_brain, a.brain_manifest_sha256)

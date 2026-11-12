@@ -1,0 +1,30 @@
+{
+  "desktop": {
+    "geometry": {
+      "viewport": 1920,
+      "width": 1920,
+      "cards": 16,
+      "overflow": []
+    },
+    "navigation": {
+      "filter": "",
+      "visible": true,
+      "count": "16 of 16 techniques",
+      "hash": "#rotator"
+    }
+  },
+  "mobile": {
+    "geometry": {
+      "viewport": 390,
+      "width": 390,
+      "cards": 16,
+      "overflow": []
+    },
+    "navigation": {
+      "filter": "",
+      "visible": true,
+      "count": "16 of 16 techniques",
+      "hash": "#rotator"
+    }
+  }
+}

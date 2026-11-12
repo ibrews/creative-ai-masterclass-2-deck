@@ -1,0 +1,373 @@
+{
+  "tools": [
+    {
+      "name": "help",
+      "description": "Discover ECABridge commands in two zoom levels. Call `help()` with no args to list all categories with their command counts and short descriptions. Call `help(\"<Category>\")` to drill into a category: per-command params and output shape (no need to fetch the full tools/list). Cheaper than tools/list when you only want one category's surface.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Help",
+        "description": "Discover ECABridge commands in two zoom levels. Call `help()` with no args to list all categories with their command counts and short descriptions. Call `help(\"<Category>\")` to drill into a category: per-command params and output shape (no need to fetch the full tools/list). Cheaper than tools/list when you only want one category's surface.",
+        "properties": {
+          "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "If provided, drill into this category and return per-command details (name, short_description, params, output_schema_hint). If omitted, return the categories list with counts and short descriptions. Case-sensitive \u2014 match the names returned by `help()` exactly."
+          }
+        },
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "description": "\"categories\" (no args) or \"commands\" (category drill-down)"
+          },
+          "category": {
+            "type": "string",
+            "description": "Echoed back when mode=commands; empty when mode=categories"
+          },
+          "categories": {
+            "type": "array",
+            "description": "Populated when mode=categories. Each entry: { name, count, short_description }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "commands": {
+            "type": "array",
+            "description": "Populated when mode=commands. Each entry: { name, short_description, params:[{name,type,required,description,default?}], output_schema_hint }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of entries in the populated array"
+          },
+          "total": {
+            "type": "integer",
+            "description": "Total commands across all categories (mode=categories only)"
+          }
+        }
+      }
+    },
+    {
+      "name": "list_categories",
+      "description": "List every command category and the number of commands in each. Use this first when lazy tool registration is on, then call load_category for the specific categories you need \u2014 or load_all_categories to surface the full command set in one batch.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "List Categories",
+        "description": "List every command category and the number of commands in each. Use this first when lazy tool registration is on, then call load_category for the specific categories you need \u2014 or load_all_categories to surface the full command set in one batch.",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "categories": {
+            "type": "array",
+            "description": "Each entry: { name, count, loaded }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "lazy_mode": {
+            "type": "boolean",
+            "description": "Whether the registry is in lazy mode (tools/list filtered to loaded categories)"
+          },
+          "total": {
+            "type": "integer",
+            "description": "Total commands across all categories"
+          }
+        }
+      }
+    },
+    {
+      "name": "describe_category",
+      "description": "Return the names + descriptions of every command in the given category, without surfacing them in tools/list. Use to preview what load_category would expose.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Describe Category",
+        "description": "Return the names + descriptions of every command in the given category, without surfacing them in tools/list. Use to preview what load_category would expose.",
+        "properties": {
+          "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "Category name (case-sensitive). Get the list from list_categories."
+          }
+        },
+        "required": [
+          "category"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "The requested category"
+          },
+          "commands": {
+            "type": "array",
+            "description": "Each entry: { name, description }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of commands in the category"
+          }
+        }
+      }
+    },
+    {
+      "name": "load_category",
+      "description": "Mark a command category as loaded so its tools appear in subsequent tools/list responses. The commands were already callable via tools/call; this only widens the discovery surface. Pair with notifications/tools/list_changed.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Load Category",
+        "description": "Mark a command category as loaded so its tools appear in subsequent tools/list responses. The commands were already callable via tools/call; this only widens the discovery surface. Pair with notifications/tools/list_changed.",
+        "properties": {
+          "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "Category name (case-sensitive). Use list_categories to discover."
+          }
+        },
+        "required": [
+          "category"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "The category that was loaded"
+          },
+          "loaded_count": {
+            "type": "integer",
+            "description": "Number of commands now surfaced by tools/list from this category"
+          },
+          "total_loaded": {
+            "type": "array",
+            "description": "All categories currently visible in tools/list",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "load_all_categories",
+      "description": "Surface every command from every category in tools/list. Use this when the client doesn't want the lazy-mode token savings \u2014 e.g. a discovery agent that works by enumerating tools/list once and selecting from the full surface. Fires a single notifications/tools/list_changed event after batching.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Load All Categories",
+        "description": "Surface every command from every category in tools/list. Use this when the client doesn't want the lazy-mode token savings \u2014 e.g. a discovery agent that works by enumerating tools/list once and selecting from the full surface. Fires a single notifications/tools/list_changed event after batching.",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "newly_surfaced": {
+            "type": "integer",
+            "description": "Commands now visible in tools/list that weren't before this call"
+          },
+          "total_visible": {
+            "type": "integer",
+            "description": "Total commands now visible across all loaded categories"
+          },
+          "loaded": {
+            "type": "array",
+            "description": "All categories currently visible (sorted)",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "continue_response",
+      "description": "Fetch the next chunk of a previously truncated tool-call response. Pass the `_continuation_token` from a tool result whose `_remaining_chars` is non-zero. Result text concatenates onto the previous chunk to reconstruct the full JSON. Optional max_bytes overrides the server cap for this call.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Continue Response",
+        "description": "Fetch the next chunk of a previously truncated tool-call response. Pass the `_continuation_token` from a tool result whose `_remaining_chars` is non-zero. Result text concatenates onto the previous chunk to reconstruct the full JSON. Optional max_bytes overrides the server cap for this call.",
+        "properties": {
+          "token": {
+            "title": "Token",
+            "type": "string",
+            "description": "Continuation token returned by a chunked tool-call response."
+          },
+          "max_bytes": {
+            "title": "Max Bytes",
+            "type": "integer",
+            "description": "Optional chunk-size cap for this fetch (default 65536).",
+            "default": "65536"
+          }
+        },
+        "required": [
+          "token"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "chunk": {
+            "type": "string",
+            "description": "Next slice of the original result text"
+          },
+          "chars": {
+            "type": "integer",
+            "description": "Length of this chunk in characters"
+          },
+          "final": {
+            "type": "boolean",
+            "description": "True when this chunk drained the remainder"
+          }
+        }
+      }
+    },
+    {
+      "name": "find_command",
+      "description": "Search the command registry for a substring match against names + descriptions. Returns ranked results (name match beats description match). Use when you know what you want to do but not the exact command name. Always available, no load_category needed.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Find Command",
+        "description": "Search the command registry for a substring match against names + descriptions. Returns ranked results (name match beats description match). Use when you know what you want to do but not the exact command name. Always available, no load_category needed.",
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string",
+            "description": "Substring to search for (case-insensitive)"
+          },
+          "max_results": {
+            "title": "Max Results",
+            "type": "integer",
+            "description": "Maximum number of matches to return (default 20)",
+            "default": "20"
+          },
+          "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "Optional: restrict matches to this category"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "matches": {
+            "type": "array",
+            "description": "Each entry: { name, category, description, match_type (name|description) }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of matches returned (after max_results clamp)"
+          },
+          "total_found": {
+            "type": "integer",
+            "description": "Total matches before clamp (count <= total_found)"
+          },
+          "truncated": {
+            "type": "boolean",
+            "description": "True when total_found > count"
+          }
+        }
+      }
+    },
+    {
+      "name": "list_skills",
+      "description": "List the agent skill files shipped inside this plugin (Resources/Skills/<name>/SKILL.md). Returns each skill's name and routing description. Read the 'core' skill first \u2014 it covers connection, discovery, the Python sandbox, and the cross-domain rules; the other skills are per-domain field manuals (scene, blueprint, material, niagara, cinematics, ...). Fetch one with get_skill.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "List Skills",
+        "description": "List the agent skill files shipped inside this plugin (Resources/Skills/<name>/SKILL.md). Returns each skill's name and routing description. Read the 'core' skill first \u2014 it covers connection, discovery, the Python sandbox, and the cross-domain rules; the other skills are per-domain field manuals (scene, blueprint, material, niagara, cinematics, ...). Fetch one with get_skill.",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "skills": {
+            "type": "array",
+            "description": "Each entry: { name, description }",
+            "items": {
+              "type": "object"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of skills found"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_skill",
+      "description": "Fetch the full markdown content of one bundled skill by name (see list_skills). Start with get_skill(\"core\"), then the domain skill matching your task. Errors with the valid name list when the name is unknown.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Get Skill",
+        "description": "Fetch the full markdown content of one bundled skill by name (see list_skills). Start with get_skill(\"core\"), then the domain skill matching your task. Errors with the valid name list when the name is unknown.",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "Skill name (the directory slug returned by list_skills, e.g. 'core', 'niagara'). Case-insensitive."
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The skill's name (directory slug)"
+          },
+          "description": {
+            "type": "string",
+            "description": "The skill's frontmatter description"
+          },
+          "content": {
+            "type": "string",
+            "description": "Full SKILL.md markdown, frontmatter included"
+          },
+          "chars": {
+            "type": "integer",
+            "description": "Length of content in characters"
+          }
+        }
+      }
+    }
+  ]
+}

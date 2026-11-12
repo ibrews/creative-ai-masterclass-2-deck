@@ -1,0 +1,1536 @@
+{
+  "units": "centimeters",
+  "forward": "Local X; yaw rotates around Z",
+  "parts": {
+    "quay": {
+      "description": "12m square foundation with brass rim",
+      "components": [
+        {
+          "name": "deck",
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1200,
+            1200,
+            65
+          ],
+          "material": "quay",
+          "shape": "Cube"
+        },
+        {
+          "name": "rim",
+          "at": [
+            0,
+            0,
+            -50
+          ],
+          "size": [
+            1230,
+            1230,
+            35
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        }
+      ]
+    },
+    "townhouse": {
+      "description": "Warm 3-storey canal house",
+      "components": [
+        {
+          "name": "body",
+          "at": [
+            0,
+            0,
+            190.0
+          ],
+          "size": [
+            320,
+            310,
+            380
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "roof",
+          "at": [
+            0,
+            0,
+            405
+          ],
+          "size": [
+            370,
+            360,
+            50
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_90",
+          "at": [
+            -100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_90",
+          "at": [
+            0,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_90",
+          "at": [
+            100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_200",
+          "at": [
+            -100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_200",
+          "at": [
+            0,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_200",
+          "at": [
+            100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_310",
+          "at": [
+            -100,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_310",
+          "at": [
+            0,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_310",
+          "at": [
+            100,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "door",
+          "at": [
+            0,
+            -160,
+            75
+          ],
+          "size": [
+            80,
+            10,
+            150
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "canopy",
+          "at": [
+            0,
+            -205,
+            180
+          ],
+          "size": [
+            240,
+            125,
+            15
+          ],
+          "material": "cyan",
+          "shape": "Cube"
+        }
+      ]
+    },
+    "warehouse": {
+      "description": "Low red port warehouse",
+      "components": [
+        {
+          "name": "body",
+          "at": [
+            0,
+            0,
+            135.0
+          ],
+          "size": [
+            320,
+            310,
+            270
+          ],
+          "material": "clay",
+          "shape": "Cube"
+        },
+        {
+          "name": "roof",
+          "at": [
+            0,
+            0,
+            295
+          ],
+          "size": [
+            370,
+            360,
+            50
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_90",
+          "at": [
+            -100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_90",
+          "at": [
+            0,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_90",
+          "at": [
+            100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_200",
+          "at": [
+            -100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_200",
+          "at": [
+            0,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_200",
+          "at": [
+            100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "door",
+          "at": [
+            0,
+            -160,
+            75
+          ],
+          "size": [
+            80,
+            10,
+            150
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "canopy",
+          "at": [
+            0,
+            -205,
+            180
+          ],
+          "size": [
+            240,
+            125,
+            15
+          ],
+          "material": "cyan",
+          "shape": "Cube"
+        }
+      ]
+    },
+    "tower": {
+      "description": "Tall beacon tower with teal crown",
+      "components": [
+        {
+          "name": "body",
+          "at": [
+            0,
+            0,
+            425.0
+          ],
+          "size": [
+            320,
+            310,
+            850
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "roof",
+          "at": [
+            0,
+            0,
+            875
+          ],
+          "size": [
+            370,
+            360,
+            50
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_90",
+          "at": [
+            -100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_90",
+          "at": [
+            0,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_90",
+          "at": [
+            100,
+            -158,
+            90
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_200",
+          "at": [
+            -100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_200",
+          "at": [
+            0,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_200",
+          "at": [
+            100,
+            -158,
+            200
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_310",
+          "at": [
+            -100,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_310",
+          "at": [
+            0,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_310",
+          "at": [
+            100,
+            -158,
+            310
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_420",
+          "at": [
+            -100,
+            -158,
+            420
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_420",
+          "at": [
+            0,
+            -158,
+            420
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_420",
+          "at": [
+            100,
+            -158,
+            420
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_530",
+          "at": [
+            -100,
+            -158,
+            530
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_530",
+          "at": [
+            0,
+            -158,
+            530
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_530",
+          "at": [
+            100,
+            -158,
+            530
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_640",
+          "at": [
+            -100,
+            -158,
+            640
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_640",
+          "at": [
+            0,
+            -158,
+            640
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_640",
+          "at": [
+            100,
+            -158,
+            640
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_-100_750",
+          "at": [
+            -100,
+            -158,
+            750
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_0_750",
+          "at": [
+            0,
+            -158,
+            750
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "window_100_750",
+          "at": [
+            100,
+            -158,
+            750
+          ],
+          "size": [
+            42,
+            10,
+            55
+          ],
+          "material": "glow",
+          "shape": "Cube"
+        },
+        {
+          "name": "door",
+          "at": [
+            0,
+            -160,
+            75
+          ],
+          "size": [
+            80,
+            10,
+            150
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "canopy",
+          "at": [
+            0,
+            -205,
+            180
+          ],
+          "size": [
+            240,
+            125,
+            15
+          ],
+          "material": "cyan",
+          "shape": "Cube"
+        },
+        {
+          "name": "crown",
+          "at": [
+            0,
+            0,
+            960
+          ],
+          "size": [
+            250,
+            250,
+            160
+          ],
+          "material": "brass",
+          "shape": "Cone"
+        },
+        {
+          "name": "beacon",
+          "at": [
+            0,
+            0,
+            1075
+          ],
+          "size": [
+            90,
+            90,
+            90
+          ],
+          "material": "cyan",
+          "shape": "Sphere"
+        }
+      ]
+    },
+    "bridge": {
+      "description": "12m footbridge, 2.8m wide; local X is travel direction",
+      "components": [
+        {
+          "name": "deck",
+          "at": [
+            0,
+            0,
+            10
+          ],
+          "size": [
+            1200,
+            280,
+            35
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "rail-140",
+          "at": [
+            0,
+            -140,
+            110
+          ],
+          "size": [
+            1200,
+            10,
+            12
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "rail140",
+          "at": [
+            0,
+            140,
+            110
+          ],
+          "size": [
+            1200,
+            10,
+            12
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "post-550-140",
+          "at": [
+            -550,
+            -140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post-550140",
+          "at": [
+            -550,
+            140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post0-140",
+          "at": [
+            0,
+            -140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post0140",
+          "at": [
+            0,
+            140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post550-140",
+          "at": [
+            550,
+            -140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post550140",
+          "at": [
+            550,
+            140,
+            65
+          ],
+          "size": [
+            15,
+            15,
+            120
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        }
+      ]
+    },
+    "market_stall": {
+      "description": "Striped market pavilion with counter",
+      "components": [
+        {
+          "name": "counter",
+          "at": [
+            0,
+            0,
+            60
+          ],
+          "size": [
+            240,
+            140,
+            120
+          ],
+          "material": "clay",
+          "shape": "Cube"
+        },
+        {
+          "name": "awning",
+          "at": [
+            0,
+            0,
+            255
+          ],
+          "size": [
+            300,
+            220,
+            30
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "post-125-75",
+          "at": [
+            -125,
+            -75,
+            135
+          ],
+          "size": [
+            12,
+            12,
+            250
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post-12575",
+          "at": [
+            -125,
+            75,
+            135
+          ],
+          "size": [
+            12,
+            12,
+            250
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post125-75",
+          "at": [
+            125,
+            -75,
+            135
+          ],
+          "size": [
+            12,
+            12,
+            250
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "post12575",
+          "at": [
+            125,
+            75,
+            135
+          ],
+          "size": [
+            12,
+            12,
+            250
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "stripe-100",
+          "at": [
+            -100,
+            0,
+            273
+          ],
+          "size": [
+            25,
+            220,
+            8
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "stripe-50",
+          "at": [
+            -50,
+            0,
+            273
+          ],
+          "size": [
+            25,
+            220,
+            8
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "stripe0",
+          "at": [
+            0,
+            0,
+            273
+          ],
+          "size": [
+            25,
+            220,
+            8
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "stripe50",
+          "at": [
+            50,
+            0,
+            273
+          ],
+          "size": [
+            25,
+            220,
+            8
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "stripe100",
+          "at": [
+            100,
+            0,
+            273
+          ],
+          "size": [
+            25,
+            220,
+            8
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        },
+        {
+          "name": "produce-70",
+          "at": [
+            -70,
+            -20,
+            135
+          ],
+          "size": [
+            45,
+            45,
+            40
+          ],
+          "material": "rose",
+          "shape": "Sphere"
+        },
+        {
+          "name": "produce0",
+          "at": [
+            0,
+            -20,
+            135
+          ],
+          "size": [
+            45,
+            45,
+            40
+          ],
+          "material": "rose",
+          "shape": "Sphere"
+        },
+        {
+          "name": "produce70",
+          "at": [
+            70,
+            -20,
+            135
+          ],
+          "size": [
+            45,
+            45,
+            40
+          ],
+          "material": "rose",
+          "shape": "Sphere"
+        }
+      ]
+    },
+    "tree": {
+      "description": "Three-tier stylized evergreen",
+      "components": [
+        {
+          "name": "trunk",
+          "at": [
+            0,
+            0,
+            90
+          ],
+          "size": [
+            35,
+            35,
+            180
+          ],
+          "material": "brass",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "crown180",
+          "at": [
+            0,
+            0,
+            180
+          ],
+          "size": [
+            220,
+            220,
+            180
+          ],
+          "material": "sage",
+          "shape": "Cone"
+        },
+        {
+          "name": "crown280",
+          "at": [
+            0,
+            0,
+            280
+          ],
+          "size": [
+            180,
+            180,
+            180
+          ],
+          "material": "sage",
+          "shape": "Cone"
+        },
+        {
+          "name": "crown370",
+          "at": [
+            0,
+            0,
+            370
+          ],
+          "size": [
+            125,
+            125,
+            180
+          ],
+          "material": "sage",
+          "shape": "Cone"
+        }
+      ]
+    },
+    "lantern": {
+      "description": "Warm globe streetlamp",
+      "components": [
+        {
+          "name": "post",
+          "at": [
+            0,
+            0,
+            165
+          ],
+          "size": [
+            13,
+            13,
+            330
+          ],
+          "material": "brass",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "cap",
+          "at": [
+            0,
+            0,
+            340
+          ],
+          "size": [
+            85,
+            85,
+            16
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "globe",
+          "at": [
+            0,
+            0,
+            300
+          ],
+          "size": [
+            70,
+            70,
+            75
+          ],
+          "material": "glow",
+          "shape": "Sphere"
+        }
+      ]
+    },
+    "boat": {
+      "description": "Small sailing boat",
+      "components": [
+        {
+          "name": "hull",
+          "at": [
+            0,
+            0,
+            25
+          ],
+          "size": [
+            290,
+            120,
+            70
+          ],
+          "material": "clay",
+          "shape": "Sphere"
+        },
+        {
+          "name": "mast",
+          "at": [
+            0,
+            0,
+            175
+          ],
+          "size": [
+            10,
+            10,
+            330
+          ],
+          "material": "brass",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "sail",
+          "at": [
+            65,
+            0,
+            215
+          ],
+          "size": [
+            140,
+            12,
+            210
+          ],
+          "material": "ivory",
+          "shape": "Cube"
+        }
+      ]
+    },
+    "arch": {
+      "description": "Gateway and hanging medallion",
+      "components": [
+        {
+          "name": "left",
+          "at": [
+            -220,
+            0,
+            185
+          ],
+          "size": [
+            75,
+            90,
+            370
+          ],
+          "material": "clay",
+          "shape": "Cube"
+        },
+        {
+          "name": "right",
+          "at": [
+            220,
+            0,
+            185
+          ],
+          "size": [
+            75,
+            90,
+            370
+          ],
+          "material": "clay",
+          "shape": "Cube"
+        },
+        {
+          "name": "top",
+          "at": [
+            0,
+            0,
+            390
+          ],
+          "size": [
+            540,
+            130,
+            70
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "medallion",
+          "at": [
+            0,
+            -70,
+            365
+          ],
+          "size": [
+            100,
+            35,
+            100
+          ],
+          "material": "cyan",
+          "shape": "Sphere"
+        }
+      ]
+    },
+    "plaza": {
+      "description": "Circular central monument base",
+      "components": [
+        {
+          "name": "base",
+          "at": [
+            0,
+            0,
+            25
+          ],
+          "size": [
+            620,
+            620,
+            50
+          ],
+          "material": "ivory",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "step",
+          "at": [
+            0,
+            0,
+            65
+          ],
+          "size": [
+            470,
+            470,
+            35
+          ],
+          "material": "brass",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "pedestal",
+          "at": [
+            0,
+            0,
+            235
+          ],
+          "size": [
+            150,
+            150,
+            330
+          ],
+          "material": "jade",
+          "shape": "Cylinder"
+        },
+        {
+          "name": "ring",
+          "at": [
+            0,
+            0,
+            410
+          ],
+          "size": [
+            350,
+            350,
+            45
+          ],
+          "material": "cyan",
+          "shape": "Cylinder"
+        }
+      ]
+    },
+    "skyrail": {
+      "description": "Elevated rail segment and two supports",
+      "components": [
+        {
+          "name": "beam",
+          "at": [
+            0,
+            0,
+            700
+          ],
+          "size": [
+            1200,
+            120,
+            65
+          ],
+          "material": "jade",
+          "shape": "Cube"
+        },
+        {
+          "name": "rail_a",
+          "at": [
+            0,
+            -65,
+            750
+          ],
+          "size": [
+            1200,
+            12,
+            15
+          ],
+          "material": "cyan",
+          "shape": "Cube"
+        },
+        {
+          "name": "rail_b",
+          "at": [
+            0,
+            65,
+            750
+          ],
+          "size": [
+            1200,
+            12,
+            15
+          ],
+          "material": "cyan",
+          "shape": "Cube"
+        },
+        {
+          "name": "support-500",
+          "at": [
+            -500,
+            0,
+            340
+          ],
+          "size": [
+            70,
+            70,
+            680
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        },
+        {
+          "name": "support500",
+          "at": [
+            500,
+            0,
+            340
+          ],
+          "size": [
+            70,
+            70,
+            680
+          ],
+          "material": "brass",
+          "shape": "Cube"
+        }
+      ]
+    }
+  }
+}

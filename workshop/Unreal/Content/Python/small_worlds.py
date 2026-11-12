@@ -41,7 +41,7 @@ def material(name, color, metallic=0.0, roughness=0.65, glow=0.0):
 
 
 def mesh(label, xyz, size, mat, shape='Cube', rotation=(0, 0, 0)):
-    actor = ACTORS.spawn_actor_from_class(ue.StaticMeshActor, ue.Vector(*xyz), ue.Rotator(*rotation))
+    actor = ACTORS.spawn_actor_from_class(ue.StaticMeshActor, ue.Vector(*xyz), ue.Rotator(pitch=rotation[0], yaw=rotation[1], roll=rotation[2]))
     actor.set_actor_label(label)
     actor.set_folder_path('SmallWorlds/Geometry')
     comp = actor.static_mesh_component
@@ -91,11 +91,11 @@ def seq_transform(binding, keys, end=12.0):
             ch.add_key(ue.FrameNumber(round(seconds * 24)), float(value), interpolation=ue.MovieSceneKeyInterpolation.LINEAR)
 
 
-def sequence(cams, sculpture):
-    path = ROOT + '/Cinematics/LS_LanternFestival'
+def sequence(cams, sculpture, name="LS_LanternFestival"):
+    path = ROOT + '/Cinematics/' + name
     if ASSETS.does_asset_exist(path):
         raise RuntimeError('Sequence already exists. Preserve it and use a fresh project copy before rebuilding.')
-    seq = ue.AssetToolsHelpers.get_asset_tools().create_asset('LS_LanternFestival', ROOT + '/Cinematics', ue.LevelSequence, ue.LevelSequenceFactoryNew())
+    seq = ue.AssetToolsHelpers.get_asset_tools().create_asset(name, ROOT + '/Cinematics', ue.LevelSequence, ue.LevelSequenceFactoryNew())
     seq.set_display_rate(ue.FrameRate(24, 1))
     seq.set_playback_start(0)
     seq.set_playback_end(288)
@@ -199,7 +199,7 @@ def build(stage='starter'):
     sky.set_actor_label('SW_SkyLight')
     sky.light_component.set_mobility(ue.ComponentMobility.MOVABLE)
     sky.light_component.set_editor_property('intensity', .8 if dusk else 1.8)
-    sun = ACTORS.spawn_actor_from_class(ue.DirectionalLight, ue.Vector(0, 0, 900), ue.Rotator(-32, -35, 0))
+    sun = ACTORS.spawn_actor_from_class(ue.DirectionalLight, ue.Vector(0, 0, 900), ue.Rotator(pitch=-35, yaw=0, roll=-32))
     sun.set_actor_label('SW_KeyLight')
     sun.get_component_by_class(ue.DirectionalLightComponent).set_mobility(ue.ComponentMobility.MOVABLE)
     sun.get_component_by_class(ue.DirectionalLightComponent).set_editor_property('atmosphere_sun_light', True)

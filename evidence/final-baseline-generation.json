@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"[{\\\"stage\\\": \\\"starter\\\", \\\"actors\\\": 66, \\\"tower_heights_cm\\\": [200, 300, 400], \\\"map\\\": \\\"/Game/SmallWorlds/Maps/01_PaperCity\\\", \\\"engine\\\": \\\"5.9.0-60351404+++UE5+Release-5.9\\\", \\\"visual_acceptance\\\": \\\"Inspect the actual editor view yourself.\\\"}, {\\\"stage\\\": \\\"dusk\\\", \\\"actors\\\": 70, \\\"tower_heights_cm\\\": [200, 300, 400], \\\"map\\\": \\\"/Game/SmallWorlds/Maps/02_Dusk\\\", \\\"engine\\\": \\\"5.9.0-60351404+++UE5+Release-5.9\\\", \\\"visual_acceptance\\\": \\\"Inspect the actual editor view yourself.\\\"}, {\\\"stage\\\": \\\"festival\\\", \\\"actors\\\": 124, \\\"tower_heights_cm\\\": [200, 300, 400], \\\"map\\\": \\\"/Game/SmallWorlds/Maps/03_LanternFestival\\\", \\\"engine\\\": \\\"5.9.0-60351404+++UE5+Release-5.9\\\", \\\"visual_acceptance\\\": \\\"Inspect the actual editor view yourself.\\\"}, {\\\"stage\\\": \\\"cinematic\\\", \\\"actors\\\": 124, \\\"tower_heights_cm\\\": [200, 300, 400], \\\"map\\\": \\\"/Game/SmallWorlds/Maps/04_Cinematic\\\", \\\"engine\\\": \\\"5.9.0-60351404+++UE5+Release-5.9\\\", \\\"visual_acceptance\\\": \\\"Inspect the actual editor view yourself.\\\"}]\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "[{\"stage\": \"starter\", \"actors\": 66, \"tower_heights_cm\": [200, 300, 400], \"map\": \"/Game/SmallWorlds/Maps/01_PaperCity\", \"engine\": \"5.9.0-60351404+++UE5+Release-5.9\", \"visual_acceptance\": \"Inspect the actual editor view yourself.\"}, {\"stage\": \"dusk\", \"actors\": 70, \"tower_heights_cm\": [200, 300, 400], \"map\": \"/Game/SmallWorlds/Maps/02_Dusk\", \"engine\": \"5.9.0-60351404+++UE5+Release-5.9\", \"visual_acceptance\": \"Inspect the actual editor view yourself.\"}, {\"stage\": \"festival\", \"actors\": 124, \"tower_heights_cm\": [200, 300, 400], \"map\": \"/Game/SmallWorlds/Maps/03_LanternFestival\", \"engine\": \"5.9.0-60351404+++UE5+Release-5.9\", \"visual_acceptance\": \"Inspect the actual editor view yourself.\"}, {\"stage\": \"cinematic\", \"actors\": 124, \"tower_heights_cm\": [200, 300, 400], \"map\": \"/Game/SmallWorlds/Maps/04_Cinematic\", \"engine\": \"5.9.0-60351404+++UE5+Release-5.9\", \"visual_acceptance\": \"Inspect the actual editor view yourself.\"}]"
+  }
+}

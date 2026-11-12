@@ -1,0 +1,290 @@
+[
+  {
+    "page": 1,
+    "start": "CREATIVE AI MASTERCLASS PART 2 \u00b7 STUDENT WORKBOOK\nLET IT RUN IN UNREAL\nSmall Worlds\nWorkshop\nBuild a paper city in Unreal Engine 5.9 Preview",
+    "end": "re with the original Blender scene\n29 Choose how AI reaches the editor\n07 \u00b7 MAKE IT MOVE\n30 Create the 12-second cinematic\n08 \u00b7 LET IT RUN\n34 Save a checkpoint another chat can use",
+    "words": 313
+  },
+  {
+    "page": 2,
+    "start": "31 Review the start, middle and end\n32 Render a short image sequence\n33 Turn frames into a review video\n35 Test a fresh chat\n36 Practice one",
+    "end": " the same kit\n40 Add effects as a separate experiment\n41 Leave yourself a route back\n10 \u00b7 YOUR MEGAJAM LAUNCHPAD\n42 Turn today\u2019s scene into a jam game\n43 Leave class ready to enter",
+    "words": 89
+  },
+  {
+    "page": 3,
+    "start": "01 \u00b7 GET READY STEP 01 / 43\nChoose your starting point\nA self-paced route from a small brief to a saved Unreal cinematic.\n1. Download and ex",
+    "end": "json identifies\nbrief SW-18.\nIf you get stuck\nIf you only see a web preview, extract the complete\nfolder. If you missed Part 1, use the included files and\nbegin here.\nMY CHECKPOINT",
+    "words": 187
+  },
+  {
+    "page": 4,
+    "start": "01 \u00b7 GET READY STEP 02 / 43\nBring one assistant and Unreal\nUse the account you already have.\n1. Open Codex or Claude Desktop in its local co",
+    "end": "If you get stuck\nIf 5.9 is unavailable, stop the native steps here and\nread the reference route. Do not claim the Unreal\nscripts ran in a browser or in system Python.\nMY CHECKPOINT",
+    "words": 246
+  },
+  {
+    "page": 5,
+    "start": "01 \u00b7 GET READY STEP 03 / 43\nGive the assistant the whole folder\nIts working directory matters.\n1. In Codex choose Open folder or Add project",
+    "end": " 400 cm and\nActions/01_build_starter.py.\nIf you get stuck\nReopen the enclosing folder if it cannot see Actions\nand Unreal together. Do not select only\nUnreal/Content.\nMY CHECKPOINT",
+    "words": 171
+  },
+  {
+    "page": 6,
+    "start": "01 \u00b7 GET READY STEP 04 / 43\nOpen the supplied Unreal project\nA Blueprint-only project avoids a compiler setup.\n1. In the Starter copy, doubl",
+    "end": " engine build before continuing.\nThis project has no C++ module and can run the\noriginal scripts without an AI bridge; the updated kit\nalso supplies native MCP tools.\nMY CHECKPOINT",
+    "words": 239
+  },
+  {
+    "page": 7,
+    "start": "01 \u00b7 GET READY STEP 05 / 43\nGive your agent the\nUnreal field guide\nUseful techniques, with your own project memory kept separate.\n1. The cla",
+    "end": "k\nIf Second Brain is absent, download the updated\nclass ZIP or its separate companion package. Do not\nconnect an internal or workplace knowledge base as a\nsubstitute.\nMY CHECKPOINT",
+    "words": 256
+  },
+  {
+    "page": 8,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 06 / 43\nWhat changed in 5.9 Preview?\nOpen a scene, talk to your agent and watch the editor work.\n1. Open the",
+    "end": "e the tools you will use.\nIf you get stuck\nIf the Finished map is absent, download Finished\nfrom the class folder. A Starter intentionally contains\nno generated maps.\nMY CHECKPOINT",
+    "words": 183
+  },
+  {
+    "page": 9,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 07 / 43\nConnect your agent inside Unreal\nThe panel connects the current editor for you.\n1. In Edit \u2192 Plugins",
+    "end": "del Context Protocol \u2192 choose\nyour client \u2192 Generate Client Config; run the\nexternal agent from the generated config\u2019s folder.\nThe fallback Actions scripts also work.\nMY CHECKPOINT",
+    "words": 269
+  },
+  {
+    "page": 10,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 08 / 43\nYour first AI-directed city edit\nOne prompt, a visible new market and a saved variation.\n1. Start fr",
+    "end": "ts, choose another\nunused name. If tools are not discovered, reopen the\neditor with Harbor Workshop AI Tools enabled; do\nnot assume a chat response changed the scene.\nMY CHECKPOINT",
+    "words": 236
+  },
+  {
+    "page": 11,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 09 / 43\nYour free Forage copy\nThe class package includes the Windows beta.\n1. The updated class project includ",
+    "end": "ify you used\nthe class Windows package and exact engine build.\nThe current beta is Windows-only; other platforms\ncan inspect the Finished project and reference media.\nMY CHECKPOINT",
+    "words": 223
+  },
+  {
+    "page": 12,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 10 / 43\nImport only the parts you need\nOne mesh, its material and its texture.\n1. Use a fresh Starter project ",
+    "end": "ist in Finished, use a fresh Starter for\nthe before/after exercise. Preserve modified imports.\nMissing files usually mean the second import\nconfirmation was declined.\nMY CHECKPOINT",
+    "words": 218
+  },
+  {
+    "page": 13,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 11 / 43\nExplore the twelve-part city kit\nReadable recipes make a useful vocabulary for your agent.\n1. In Finis",
+    "end": "s, open it rather than\nrerunning the builder. To move or duplicate an\nassembled family manually, select its whole\nhierarchy; selecting one child only moves that mesh.\nMY CHECKPOINT",
+    "words": 217
+  },
+  {
+    "page": 14,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 12 / 43\nBuild the Harbor of a\nThousand Lanterns\nA complete city from one native AI tool call.\n1. In a Starter,",
+    "end": "orage sample is absent, the builder stops\nbefore making a map. Import it first. If a partial map\nexists after an error, preserve it and retry from a new\nStarter copy.\nMY CHECKPOINT",
+    "words": 222
+  },
+  {
+    "page": 15,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 13 / 43\nBring your own Fab\nlibrary into the city\nLet Forage scout; choose what belongs in your scene.\n1. Open ",
+    "end": "eds your own Epic sign-in. A\nmissing cache or unsupported library route is not\nproof you own a pack. Continue with the supplied\nkit and original practice mesh. The public beta does",
+    "words": 295
+  },
+  {
+    "page": 16,
+    "start": "not expose every command from earlier member\nCLI builds.\nMY CHECKPOINT",
+    "end": "not expose every command from earlier member\nCLI builds.\nMY CHECKPOINT",
+    "words": 11
+  },
+  {
+    "page": 17,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 14 / 43\nLet the agent use editor Python\n5.9 can discover APIs and run one useful script.\n1. Ask your agent to f",
+    "end": "f execute_python rejects a nested or star import, put\nimports at top level and use explicit module names.\nIf the toolset is absent, enable All Toolsets and\nreconnect.\nMY CHECKPOINT",
+    "words": 245
+  },
+  {
+    "page": 18,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 15 / 43\nYour free ECABridge extension\nUse it when you need its additional editor commands.\n1. The class folder ",
+    "end": "tions cover the required route. A\ndifferent engine changelist may need a different\nbinary. Do not let a compiler prompt turn this class\nexercise into an engine build.\nMY CHECKPOINT",
+    "words": 278
+  },
+  {
+    "page": 19,
+    "start": "",
+    "end": "",
+    "words": 0
+  },
+  {
+    "page": 20,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 16 / 43\nUnreal Canvas: turn the\nscene into a creative brief\nOptional service-dependent lab; preserve the native",
+    "end": "onfigured, keep the supplied native result\nand read the workflow. This optional generation\nroute is documented, not a claim that every student\naccount or cloud provider was tested.",
+    "words": 295
+  },
+  {
+    "page": 21,
+    "start": "MY CHECKPOINT",
+    "end": "MY CHECKPOINT",
+    "words": 2
+  },
+  {
+    "page": 22,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 17 / 43\nPoint at what you want to change\nUse a spatial note to give AI a concrete target.\n1. In a Canvas-enable",
+    "end": " model are unavailable, select\nthe target actors, capture the viewport and supply\ntheir labels with the prompt. Keep the same specific\ntarget and comparison workflow.\nMY CHECKPOINT",
+    "words": 260
+  },
+  {
+    "page": 23,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 18 / 43\nWrite a small job before running it\nGive the agent a finish line it can check.\n1. Open Studio/job-template",
+    "end": " will inspect.\nIf you get stuck\nShrink a broad request such as \u201cmake it amazing\u201d to\none visible change with a comparison image. Keep\nstretch ideas in a separate list.\nMY CHECKPOINT",
+    "words": 243
+  },
+  {
+    "page": 24,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 19 / 43\nRun a harmless Python check\nUnreal Python runs inside the editor.\n1. In the Output Log input, keep the nor",
+    "end": " see \u201cNo module named unreal\u201d, the\ncommand ran in the wrong Python. If the script file\nis missing, remove the ZIP from the path and select\nthe extracted Actions file.\nMY CHECKPOINT",
+    "words": 199
+  },
+  {
+    "page": 25,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 20 / 43\nBuild the daylight baseline\nGenerate native actors from a readable recipe.\n1. In Unreal choose Tools \u2192 Exe",
+    "end": "ady exists, open it instead of\nrerunning. Preserve it by copying the whole\nworkshop before a fresh build. If a script fails, read\nthe first traceback before retrying.\nMY CHECKPOINT",
+    "words": 201
+  },
+  {
+    "page": 26,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 21 / 43\nCheck scale before polishing\nUnreal scene units are centimeters.\n1. Select SW_Tower_1, SW_Tower_2 and SW_T",
+    "end": " count.\nIf you get stuck\nA 100\u00d7 scale error means meters and centimeters\nwere confused. Fix only a duplicate project, then\nrerun verification and inspect the framing.\nMY CHECKPOINT",
+    "words": 197
+  },
+  {
+    "page": 27,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 22 / 43\nInspect the material library\nSeparate the shape from its surface.\n1. Open Content \u2192 SmallWorlds \u2192 Material",
+    "end": "\ncomparison.\nIf you get stuck\nIf every rail changed, you edited the shared material.\nRestore its prior values, duplicate it and apply the\nduplicate to a single actor.\nMY CHECKPOINT",
+    "words": 197
+  },
+  {
+    "page": 28,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 23 / 43\nMake a dusk lighting variant\nChange the light while preserving the daylight map.\n1. Run Actions/02_build_d",
+    "end": "stuck\nIf the view is black, confirm you are looking through\na camera, not below the plinth. Check exposure and\nlights in the saved map before raising every intensity.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 29,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 24 / 43\nTurn one prop into a reusable recipe\nA lantern has a small, understandable construction.\n1. In small_world",
+    "end": " get stuck\nIf the proposal needs an unavailable model or API,\nask for a built-in-shape version first. Record\ngenerated asset provenance if you later use another\ntool.\nMY CHECKPOINT",
+    "words": 209
+  },
+  {
+    "page": 30,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 25 / 43\nBuild the lantern festival\nUse repetition to make a richer scene.\n1. Run Actions/03_build_festival.py. Ope",
+    "end": "ds as the same city.\nIf you get stuck\nIf it is cluttered, hide a single prop family in the\nOutliner first. Compare that change before deleting\nor rebuilding anything.\nMY CHECKPOINT",
+    "words": 175
+  },
+  {
+    "page": 31,
+    "start": "06 \u00b7 DIRECT THE AI STEP 26 / 43\nGive feedback the agent can act on\nName the visual problem and protect what works.\n1. Pick one screenshot an",
+    "end": "d choices.\nIf you get stuck\nIf the agent rewrites the whole scene, stop it, restore\nthe duplicate from your baseline and restate the exact\nactor prefix it may change.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 32,
+    "start": "06 \u00b7 DIRECT THE AI STEP 27 / 43\nRequest a batch with a fixed budget\nMake several ideas, then choose.\n1. Ask for three written variations fir",
+    "end": "g compute or changing files.\nIf you get stuck\nIf all three descriptions are vague adjectives, ask for\nobject counts, placement coordinates and a specific\nfocal point.\nMY CHECKPOINT",
+    "words": 200
+  },
+  {
+    "page": 33,
+    "start": "06 \u00b7 DIRECT THE AI STEP 28 / 43\nCompare with the\noriginal Blender scene\nUnderstand what survived the engine handoff.\n1. Open SourceAssets/Pa",
+    "end": "stuck\nIf GLB import is unavailable in your editor\nconfiguration, keep it optional. The main workshop\nuses built-in Unreal meshes and does not depend on\nthat importer.\nMY CHECKPOINT",
+    "words": 224
+  },
+  {
+    "page": 34,
+    "start": "06 \u00b7 DIRECT THE AI STEP 29 / 43\nChoose how AI reaches the editor\nThe same job can use a script or a direct tool connection.\n1. The required ",
+    "end": "er health response proves transport, not\nediting. Test one harmless read before giving write\nauthority. Do not publish an unauthenticated editor\nport to the internet.\nMY CHECKPOINT",
+    "words": 234
+  },
+  {
+    "page": 35,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 30 / 43\nCreate the 12-second cinematic\nThree shots and one animated sculpture.\n1. Run Actions/04_build_cinematic.py. ",
+    "end": "d.\nIf you get stuck\nIf the viewport stays on your free camera, enable\nSequencer\u2019s camera-cut lock. If the sequence already\nexists, open it rather than overwriting it.\nMY CHECKPOINT",
+    "words": 181
+  },
+  {
+    "page": 36,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 31 / 43\nReview the start, middle and end\nA camera move must hold its composition.\n1. For the first shot inspect frame",
+    "end": "ood\ncomposition.\nIf you get stuck\nIf a subject leaves the frame, reduce translation or\nretarget the end rotation in the duplicate sequence.\nRecheck all three samples.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 37,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 32 / 43\nRender a short image sequence\nUse frames first so a failed encode does not waste a render.\n1. Open Window \u2192 C",
+    "end": "ck the saved\nCamera Cuts track and job sequence. If the render is\nmuch brighter than the viewport, compare exposure\nand cinematic scalability before adjusting lights.\nMY CHECKPOINT",
+    "words": 232
+  },
+  {
+    "page": 38,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 33 / 43\nTurn frames into a review video\nInspect the movie after encoding.\n1. If FFmpeg is already installed, ask the ",
+    "end": "If you get stuck\nIf filenames contain gaps, repair the render or\nexplicitly choose a correct continuous range. Do not\nhide missing frames by silently looping a still.\nMY CHECKPOINT",
+    "words": 216
+  },
+  {
+    "page": 39,
+    "start": "08 \u00b7 LET IT RUN STEP 34 / 43\nSave a checkpoint\nanother chat can use\nMemory needs concrete state.\n1. Open Studio/project-memory.md. Record th",
+    "end": "saved state and an\nunambiguous next action.\nIf you get stuck\nIf it only says \u201cmade progress,\u201d replace that with\nmap paths, values, filenames and a concrete next\nstep.\nMY CHECKPOINT",
+    "words": 184
+  },
+  {
+    "page": 40,
+    "start": "08 \u00b7 LET IT RUN STEP 35 / 43\nTest a fresh chat\nMake continuity observable.\n1. Save the Unreal project and your notes. Start a new\nlocal chat",
+    "end": "son and state\nfrom files.\nIf you get stuck\nIf it recites generic advice, ask it to open the exact\nnote. If it invents a value, compare its answer with\nthe cited text.\nMY CHECKPOINT",
+    "words": 183
+  },
+  {
+    "page": 41,
+    "start": "08 \u00b7 LET IT RUN STEP 36 / 43\nPractice one recoverable failure\nUse a copy so the exercise cannot destroy your baseline.\n1. Make a full duplic",
+    "end": " your good scene.\nIf you get stuck\nIf your copy already contains 02_Dusk, the existing-\nmap guard will stop earlier. Start with the Starter\npackage for this exercise.\nMY CHECKPOINT",
+    "words": 216
+  },
+  {
+    "page": 42,
+    "start": "08 \u00b7 LET IT RUN STEP 37 / 43\nGive a longer job a real boundary\nThe finish line stays visible while you are away.\n1. Choose one extension you",
+    "end": " required action.\nIf you get stuck\nIf the task expands into a new plugin, engine build\nor purchase, stop that extension and deliver the\nbounded result you authorized.\nMY CHECKPOINT",
+    "words": 231
+  },
+  {
+    "page": 43,
+    "start": "08 \u00b7 LET IT RUN STEP 38 / 43\nSeparate checks from your verdict\nA successful command is only part of a useful result.\n1. Run the current-map ",
+    "end": "ne checks from your decision.\nIf you get stuck\nIf a check is missing, mark it unverified and perform\nit. Do not convert an intended command into\nevidence that it ran.\nMY CHECKPOINT",
+    "words": 192
+  },
+  {
+    "page": 44,
+    "start": "09 \u00b7 KEEP CREATING STEP 39 / 43\nBuild three more worlds\nfrom the same kit\nChange the brief while keeping the method.\n1. Choose one: a floati",
+    "end": "s and a clear first\nmilestone.\nIf you get stuck\nIf the first milestone cannot be inspected quickly,\nreduce the object count and postpone particles or\nexternal assets.\nMY CHECKPOINT",
+    "words": 188
+  },
+  {
+    "page": 45,
+    "start": "09 \u00b7 KEEP CREATING STEP 40 / 43\nAdd effects as a separate experiment\nStart with a visible, reversible change.\n1. Duplicate the festival map.",
+    "end": "early remains an unverified\nproposal.\nIf you get stuck\nIf it disappears in a render, inspect simulation warm-\nup and camera framing before increasing particle\ncounts.\nMY CHECKPOINT",
+    "words": 182
+  },
+  {
+    "page": 46,
+    "start": "09 \u00b7 KEEP CREATING STEP 41 / 43\nLeave yourself a route back\nFinish with files you can reopen.\n1. Keep your accepted project, source recipe, ",
+    "end": "pt and a\nverified route to reopen it.\nIf you get stuck\nIf the copy cannot open, fix missing project content\nor plugin requirements before calling it a usable\nhandoff.\nMY CHECKPOINT",
+    "words": 188
+  },
+  {
+    "page": 47,
+    "start": "10 \u00b7 YOUR MEGAJAM LAUNCHPAD STEP 42 / 43\nTurn today\u2019s scene into a jam game\nRecommendation: enter small, finish playable and learn in public",
+    "end": "cene, add the\nplayer\u2019s action and goal before expanding the\nenvironment. Keep a small downloadable target;\nexperimental web packaging can be its own later\nexperiment.\nMY CHECKPOINT",
+    "words": 308
+  },
+  {
+    "page": 48,
+    "start": "10 \u00b7 YOUR MEGAJAM LAUNCHPAD STEP 43 / 43\nLeave class ready to enter\nYour next step is a playable milestone, not another tool install.\n1. Ope",
+    "end": "ent-\ncategory eligibility. Confirm the full rules and\ncurrent organizer updates yourself; do not assume\nclass files or a source-project ZIP are a finished game\nentry.\nMY CHECKPOINT",
+    "words": 290
+  }
+]

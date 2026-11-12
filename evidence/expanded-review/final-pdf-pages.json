@@ -1,0 +1,272 @@
+[
+  {
+    "page": 1,
+    "start": "CREATIVE AI MASTERCLASS PART 2 \u00b7 STUDENT WORKBOOK\nLET IT RUN IN UNREAL\nSmall Worlds\nWorkshop\nDirect Unreal Eng",
+    "end": "lan. Every step\nincludes actions, a check and recovery guidance.\nHarbor City \u00b7 Built through native Unreal MCP",
+    "words": 71
+  },
+  {
+    "page": 2,
+    "start": "Contents\n01 \u00b7 GET READY\n01 Choose your starting point\n02 Bring one assistant and Unreal\n03 Give the assistant ",
+    "end": "f a route back\n10 \u00b7 YOUR MEGAJAM LAUNCHPAD\n42 Turn today\u2019s scene into a jam game\n43 Leave class ready to enter",
+    "words": 339
+  },
+  {
+    "page": 3,
+    "start": "01 \u00b7 GET READY STEP 01 / 43\nChoose your starting point\nA self-paced route from a small brief to a saved Unreal",
+    "end": "eview, extract the complete\nfolder. If you missed Part 1, use the included files and\nbegin here.\nMY CHECKPOINT",
+    "words": 187
+  },
+  {
+    "page": 4,
+    "start": "01 \u00b7 GET READY STEP 02 / 43\nBring one assistant and Unreal\nUse the account you already have.\n1. Open Codex or ",
+    "end": " read\nthe reference route. Do not claim the Unreal scripts ran\nin a browser or in system Python.\nMY CHECKPOINT",
+    "words": 246
+  },
+  {
+    "page": 5,
+    "start": "01 \u00b7 GET READY STEP 03 / 43\nGive the assistant the whole folder\nIts working directory matters.\n1. In Codex cho",
+    "end": "nclosing folder if it cannot see Actions and\nUnreal together. Do not select only Unreal/Content.\nMY CHECKPOINT",
+    "words": 170
+  },
+  {
+    "page": 6,
+    "start": "01 \u00b7 GET READY STEP 04 / 43\nOpen the supplied Unreal project\nA Blueprint-only project avoids a compiler setup.",
+    "end": "n run the original\nscripts without an AI bridge; the updated kit also\nsupplies native MCP tools.\nMY CHECKPOINT",
+    "words": 239
+  },
+  {
+    "page": 7,
+    "start": "01 \u00b7 GET READY STEP 05 / 43\nGive your agent the Unreal field guide\nUseful techniques, with your own project me",
+    "end": "arate companion package. Do not connect\nan internal or workplace knowledge base as a substitute.\nMY CHECKPOINT",
+    "words": 257
+  },
+  {
+    "page": 8,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 06 / 43\nWhat changed in 5.9 Preview?\nOpen a scene, talk to your agent and watc",
+    "end": "nt, download Finished from\nthe class folder. A Starter intentionally contains no\ngenerated maps.\nMY CHECKPOINT",
+    "words": 183
+  },
+  {
+    "page": 9,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 07 / 43\nConnect your agent inside Unreal\nThe panel connects the current editor",
+    "end": "n the external agent\nfrom the generated config\u2019s folder. The fallback Actions\nscripts also work.\nMY CHECKPOINT",
+    "words": 269
+  },
+  {
+    "page": 10,
+    "start": "02 \u00b7 MEET YOUR AI ART TEAM STEP 08 / 43\nYour first AI-directed city edit\nOne prompt, a visible new market and ",
+    "end": "e editor with\nHarbor Workshop AI Tools enabled; do not assume a\nchat response changed the scene.\nMY CHECKPOINT",
+    "words": 236
+  },
+  {
+    "page": 11,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 09 / 43\nYour free Forage copy\nThe class package includes the Windows beta.\n1. Th",
+    "end": "rent beta is Windows-only; other platforms can\ninspect the Finished project and reference media.\nMY CHECKPOINT",
+    "words": 223
+  },
+  {
+    "page": 12,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 10 / 43\nImport only the parts you need\nOne mesh, its material and its texture.\n1",
+    "end": "eserve modified imports. Missing\nfiles usually mean the second import confirmation was\ndeclined.\nMY CHECKPOINT",
+    "words": 218
+  },
+  {
+    "page": 13,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 11 / 43\nExplore the twelve-part city kit\nReadable recipes make a useful vocabula",
+    "end": "assembled family manually, select its whole hierarchy;\nselecting one child only moves that mesh.\nMY CHECKPOINT",
+    "words": 217
+  },
+  {
+    "page": 14,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 12 / 43\nBuild the Harbor of a\nThousand Lanterns\nA complete city from one native ",
+    "end": "it first. If a partial map exists after\nan error, preserve it and retry from a new Starter copy.\nMY CHECKPOINT",
+    "words": 222
+  },
+  {
+    "page": 15,
+    "start": "03 \u00b7 FORAGE AND YOUR KIT STEP 13 / 43\nBring your own Fab library into the city\nLet Forage scout; choose what b",
+    "end": "nal\npractice mesh. The public beta does not expose every\ncommand from earlier member CLI builds.\nMY CHECKPOINT",
+    "words": 307
+  },
+  {
+    "page": 16,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 14 / 43\nLet the agent use editor Python\n5.9 can discover APIs and run one useful ",
+    "end": "evel and use explicit module names. If\nthe toolset is absent, enable All Toolsets and reconnect.\nMY CHECKPOINT",
+    "words": 245
+  },
+  {
+    "page": 17,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 15 / 43\nYour free ECABridge extension\nUse it when you need its additional editor ",
+    "end": " a different binary. Do not let a\ncompiler prompt turn this class exercise into an engine\nbuild.\nMY CHECKPOINT",
+    "words": 278
+  },
+  {
+    "page": 18,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 16 / 43\nUnreal Canvas: turn the\nscene into a creative brief\nOptional service-depe",
+    "end": "ration route is\ndocumented, not a claim that every student account or\ncloud provider was tested.\nMY CHECKPOINT",
+    "words": 297
+  },
+  {
+    "page": 19,
+    "start": "04 \u00b7 CREATE WITH 5.9 AI STEP 17 / 43\nPoint at what you want to change\nUse a spatial note to give AI a concrete",
+    "end": " and supply their\nlabels with the prompt. Keep the same specific target\nand comparison workflow.\nMY CHECKPOINT",
+    "words": 260
+  },
+  {
+    "page": 20,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 18 / 43\nWrite a small job before running it\nGive the agent a finish line it can chec",
+    "end": "t amazing\u201d to one\nvisible change with a comparison image. Keep stretch\nideas in a separate list.\nMY CHECKPOINT",
+    "words": 243
+  },
+  {
+    "page": 21,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 19 / 43\nRun a harmless Python check\nUnreal Python runs inside the editor.\n1. In the ",
+    "end": " the script file is missing,\nremove the ZIP from the path and select the extracted\nActions file.\nMY CHECKPOINT",
+    "words": 198
+  },
+  {
+    "page": 22,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 20 / 43\nBuild the daylight baseline\nGenerate native actors from a readable recipe.\n1",
+    "end": "hole workshop\nbefore a fresh build. If a script fails, read the first\ntraceback before retrying.\nMY CHECKPOINT",
+    "words": 201
+  },
+  {
+    "page": 23,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 21 / 43\nCheck scale before polishing\nUnreal scene units are centimeters.\n1. Select S",
+    "end": "rs were\nconfused. Fix only a duplicate project, then rerun\nverification and inspect the framing.\nMY CHECKPOINT",
+    "words": 197
+  },
+  {
+    "page": 24,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 22 / 43\nInspect the material library\nSeparate the shape from its surface.\n1. Open Co",
+    "end": "ared material.\nRestore its prior values, duplicate it and apply the\nduplicate to a single actor.\nMY CHECKPOINT",
+    "words": 197
+  },
+  {
+    "page": 25,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 23 / 43\nMake a dusk lighting variant\nChange the light while preserving the daylight ",
+    "end": "not below the plinth. Check exposure and lights\nin the saved map before raising every intensity.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 26,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 24 / 43\nTurn one prop into a reusable recipe\nA lantern has a small, understandable c",
+    "end": "a built-in-shape version first. Record generated asset\nprovenance if you later use another tool.\nMY CHECKPOINT",
+    "words": 208
+  },
+  {
+    "page": 27,
+    "start": "05 \u00b7 BUILD THE WORLD STEP 25 / 43\nBuild the lantern festival\nUse repetition to make a richer scene.\n1. Run Act",
+    "end": "e prop family in the\nOutliner first. Compare that change before deleting or\nrebuilding anything.\nMY CHECKPOINT",
+    "words": 175
+  },
+  {
+    "page": 28,
+    "start": "06 \u00b7 DIRECT THE AI STEP 26 / 43\nGive feedback the agent can act on\nName the visual problem and protect what wo",
+    "end": "p it, restore the\nduplicate from your baseline and restate the exact actor\nprefix it may change.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 29,
+    "start": "06 \u00b7 DIRECT THE AI STEP 27 / 43\nRequest a batch with a fixed budget\nMake several ideas, then choose.\n1. Ask fo",
+    "end": "s are vague adjectives, ask for\nobject counts, placement coordinates and a specific focal\npoint.\nMY CHECKPOINT",
+    "words": 200
+  },
+  {
+    "page": 30,
+    "start": "06 \u00b7 DIRECT THE AI STEP 28 / 43\nCompare with the\noriginal Blender scene\nUnderstand what survived the engine ha",
+    "end": "it optional. The main workshop\nuses built-in Unreal meshes and does not depend on\nthat importer.\nMY CHECKPOINT",
+    "words": 224
+  },
+  {
+    "page": 31,
+    "start": "06 \u00b7 DIRECT THE AI STEP 29 / 43\nChoose how AI reaches the editor\nThe same job can use a script or a direct too",
+    "end": "ad before giving write authority. Do\nnot publish an unauthenticated editor port to the\ninternet.\nMY CHECKPOINT",
+    "words": 234
+  },
+  {
+    "page": 32,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 30 / 43\nCreate the 12-second cinematic\nThree shots and one animated sculpture.\n1. Run A",
+    "end": "Sequencer\u2019s camera-cut lock. If the sequence already\nexists, open it rather than overwriting it.\nMY CHECKPOINT",
+    "words": 181
+  },
+  {
+    "page": 33,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 31 / 43\nReview the start, middle and end\nA camera move must hold its composition.\n1. Fo",
+    "end": "e translation or\nretarget the end rotation in the duplicate sequence.\nRecheck all three samples.\nMY CHECKPOINT",
+    "words": 195
+  },
+  {
+    "page": 34,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 32 / 43\nRender a short image sequence\nUse frames first so a failed encode does not wast",
+    "end": "\nbrighter than the viewport, compare exposure and\ncinematic scalability before adjusting lights.\nMY CHECKPOINT",
+    "words": 230
+  },
+  {
+    "page": 35,
+    "start": "07 \u00b7 MAKE IT MOVE STEP 33 / 43\nTurn frames into a review video\nInspect the movie after encoding.\n1. If FFmpeg ",
+    "end": "citly\nchoose a correct continuous range. Do not hide missing\nframes by silently looping a still.\nMY CHECKPOINT",
+    "words": 216
+  },
+  {
+    "page": 36,
+    "start": "08 \u00b7 LET IT RUN STEP 34 / 43\nSave a checkpoint another chat can use\nMemory needs concrete state.\n1. Open Studi",
+    "end": "y says \u201cmade progress,\u201d replace that with map\npaths, values, filenames and a concrete next step.\nMY CHECKPOINT",
+    "words": 184
+  },
+  {
+    "page": 37,
+    "start": "08 \u00b7 LET IT RUN STEP 35 / 43\nTest a fresh chat\nMake continuity observable.\n1. Save the Unreal project and your",
+    "end": "e, ask it to open the exact note.\nIf it invents a value, compare its answer with the cited\ntext.\nMY CHECKPOINT",
+    "words": 183
+  },
+  {
+    "page": 38,
+    "start": "08 \u00b7 LET IT RUN STEP 36 / 43\nPractice one recoverable failure\nUse a copy so the exercise cannot destroy your b",
+    "end": "usk, the existing-map\nguard will stop earlier. Start with the Starter package for\nthis exercise.\nMY CHECKPOINT",
+    "words": 215
+  },
+  {
+    "page": 39,
+    "start": "08 \u00b7 LET IT RUN STEP 37 / 43\nGive a longer job a real boundary\nThe finish line stays visible while you are awa",
+    "end": "in, engine build or\npurchase, stop that extension and deliver the bounded\nresult you authorized.\nMY CHECKPOINT",
+    "words": 231
+  },
+  {
+    "page": 40,
+    "start": "08 \u00b7 LET IT RUN STEP 38 / 43\nSeparate checks from your verdict\nA successful command is only part of a useful r",
+    "end": "mark it unverified and perform it.\nDo not convert an intended command into evidence\nthat it ran.\nMY CHECKPOINT",
+    "words": 193
+  },
+  {
+    "page": 41,
+    "start": "09 \u00b7 KEEP CREATING STEP 39 / 43\nBuild three more worlds\nfrom the same kit\nChange the brief while keeping the m",
+    "end": " cannot be inspected quickly, reduce\nthe object count and postpone particles or external\nassets.\nMY CHECKPOINT",
+    "words": 188
+  },
+  {
+    "page": 42,
+    "start": "09 \u00b7 KEEP CREATING STEP 40 / 43\nAdd effects as a separate experiment\nStart with a visible, reversible change.\n",
+    "end": "rs in a render, inspect simulation warm-up\nand camera framing before increasing particle counts.\nMY CHECKPOINT",
+    "words": 181
+  },
+  {
+    "page": 43,
+    "start": "09 \u00b7 KEEP CREATING STEP 41 / 43\nLeave yourself a route back\nFinish with files you can reopen.\n1. Keep your acc",
+    "end": "not open, fix missing project content or\nplugin requirements before calling it a usable handoff.\nMY CHECKPOINT",
+    "words": 188
+  },
+  {
+    "page": 44,
+    "start": "10 \u00b7 YOUR MEGAJAM LAUNCHPAD STEP 42 / 43\nTurn today\u2019s scene into a jam game\nRecommendation: enter small, finis",
+    "end": "t. Keep a small downloadable target;\nexperimental web packaging can be its own later\nexperiment.\nMY CHECKPOINT",
+    "words": 308
+  },
+  {
+    "page": 45,
+    "start": "10 \u00b7 YOUR MEGAJAM LAUNCHPAD STEP 43 / 43\nLeave class ready to enter\nYour next step is a playable milestone, no",
+    "end": "r updates yourself; do not assume class files or a\nsource-project ZIP are a finished game entry.\nMY CHECKPOINT",
+    "words": 290
+  }
+]

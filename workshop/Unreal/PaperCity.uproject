@@ -4,9 +4,37 @@
   "Category": "Education",
   "Description": "Small Worlds: AI for Unreal Engine, Alex Coulombe Presents",
   "Plugins": [
-    {"Name": "PythonScriptPlugin", "Enabled": true},
-    {"Name": "EditorScriptingUtilities", "Enabled": true},
-    {"Name": "SequencerScripting", "Enabled": true},
-    {"Name": "MovieRenderPipeline", "Enabled": true}
+    {
+      "Name": "PythonScriptPlugin",
+      "Enabled": true
+    },
+    {
+      "Name": "EditorScriptingUtilities",
+      "Enabled": true
+    },
+    {
+      "Name": "SequencerScripting",
+      "Enabled": true
+    },
+    {
+      "Name": "MovieRenderPipeline",
+      "Enabled": true
+    },
+    {
+      "Name": "HarborWorkshop",
+      "Enabled": true
+    },
+    {
+      "Name": "AIAssistant",
+      "Enabled": true
+    },
+    {
+      "Name": "AllToolsets",
+      "Enabled": true
+    },
+    {
+      "Name": "ModelContextProtocol",
+      "Enabled": true
+    }
   ]
 }

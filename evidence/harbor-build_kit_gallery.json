@@ -1,0 +1,11 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"returnValue\":\"{\\\"map\\\": \\\"/Game/SmallWorlds/Maps/06_KitGallery\\\", \\\"part_types\\\": 12, \\\"parts\\\": [\\\"quay\\\", \\\"townhouse\\\", \\\"warehouse\\\", \\\"tower\\\", \\\"bridge\\\", \\\"market_stall\\\", \\\"tree\\\", \\\"lantern\\\", \\\"boat\\\", \\\"arch\\\", \\\"plaza\\\", \\\"skyrail\\\"]}\"}"
+    }
+  ],
+  "structuredContent": {
+    "returnValue": "{\"map\": \"/Game/SmallWorlds/Maps/06_KitGallery\", \"part_types\": 12, \"parts\": [\"quay\", \"townhouse\", \"warehouse\", \"tower\", \"bridge\", \"market_stall\", \"tree\", \"lantern\", \"boat\", \"arch\", \"plaza\", \"skyrail\"]}"
+  }
+}

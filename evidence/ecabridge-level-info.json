@@ -1,0 +1,28 @@
+{
+  "structuredContent": {
+    "level_name": "07_MyHarbor",
+    "level_path": "/Game/SmallWorlds/Maps/07_MyHarbor.07_MyHarbor",
+    "total_actors": 532,
+    "actor_counts": {
+      "WorldSettings": 1,
+      "Brush": 1,
+      "StaticMeshActor": 515,
+      "SkyLight": 1,
+      "DirectionalLight": 1,
+      "PostProcessVolume": 1,
+      "PointLight": 4,
+      "CineCameraActor": 3,
+      "BuoyancyManager": 1,
+      "DefaultPhysicsVolume": 1,
+      "GameplayDebuggerPlayerManager": 1,
+      "Actor": 1,
+      "AbstractNavData": 1
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\r\n\t\"level_name\": \"07_MyHarbor\",\r\n\t\"level_path\": \"/Game/SmallWorlds/Maps/07_MyHarbor.07_MyHarbor\",\r\n\t\"total_actors\": 532,\r\n\t\"actor_counts\":\r\n\t{\r\n\t\t\"WorldSettings\": 1,\r\n\t\t\"Brush\": 1,\r\n\t\t\"StaticMeshActor\": 515,\r\n\t\t\"SkyLight\": 1,\r\n\t\t\"DirectionalLight\": 1,\r\n\t\t\"PostProcessVolume\": 1,\r\n\t\t\"PointLight\": 4,\r\n\t\t\"CineCameraActor\": 3,\r\n\t\t\"BuoyancyManager\": 1,\r\n\t\t\"DefaultPhysicsVolume\": 1,\r\n\t\t\"GameplayDebuggerPlayerManager\": 1,\r\n\t\t\"Actor\": 1,\r\n\t\t\"AbstractNavData\": 1\r\n\t}\r\n}"
+    }
+  ]
+}

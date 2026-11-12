@@ -51,7 +51,7 @@ lesson('01 · Get ready', 'open-unreal', 'Open the supplied Unreal project', 'A 
     'The project requests Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. If prompted, enable them and restart this project. Do not build an engine from source.',
     'On a fresh starter the final map does not exist yet. An empty editor or missing startup-map notice is expected. Open the Output Log from Window → Developer Tools → Output Log (or search the Window menu).'
 ], 'Help me open only Unreal/PaperCity.uproject with my installed 5.9 Preview. Verify the engine version and these enabled plugins: Python Editor Script Plugin, Editor Scripting Utilities, Sequencer Scripting and Movie Render Queue. Do not convert any other project or install C++ tools.',
-       'You have the PaperCity editor open and an Output Log with no missing required plugin error.', 'If the project asks to compile C++ or reports a third-party plugin, you opened the wrong folder. This project has no C++ module and requires no AI bridge plugin.', ['PaperCity.uproject', 'Blueprint-only', 'Built-in editor plugins', 'No third-party plugin required'])
+       'You have the PaperCity editor open and an Output Log with no missing required plugin error.', 'If the project asks to compile C++, verify the class package and exact engine build before continuing. This project has no C++ module and can run the original scripts without an AI bridge; the updated kit also supplies native MCP tools.', ['PaperCity.uproject', 'Blueprint-only', 'Built-in editor plugins', 'No third-party plugin required'])
 
 lesson('01 · Get ready', 'python-check', 'Run a harmless Python check', 'Unreal Python runs inside the editor.', [
     'In the Output Log input, keep the normal console command mode and enter: py import unreal; print(unreal.SystemLibrary.get_engine_version()). Press Enter.',
@@ -215,6 +215,10 @@ lesson('06 · Keep creating', 'next', 'Leave yourself a route back', 'Finish wit
        'You have an accepted state, a readable receipt and a verified route to reopen it.', 'If the copy cannot open, fix missing project content or plugin requirements before calling it a usable handoff.', ['Accepted project', 'Source + design', 'Evidence + receipt', 'Clean sharing copy', 'Reopen check'])
 
 
+from part2_additions import add_lessons, order_lessons
+add_lessons(lesson)
+lessons = order_lessons(lessons)
+
 def write_support():
     w = ROOT / 'workshop'
     files = {
@@ -245,12 +249,19 @@ def write_support():
 
 def build():
     write_support()
+    from part2_support import write_addition_support
+    write_addition_support(ROOT)
     proof_images = {'starter': ('01-daylight.png', 'Native Unreal baseline: three paper towers, two bridges and the canal.'),
                     'dusk': ('02-dusk.png', 'The same native scene with dusk lighting and warm lanterns.'),
                     'festival': ('03-festival.png', 'Native festival map with trees, benches, boats and hanging lanterns.'),
                     'sequence': ('04-wide.png', 'Wide camera in the saved native cinematic map.'),
                     'camera': ('05-bridge.png', 'The bridge camera view, captured in Unreal Editor.'),
-                    'render': ('06-sculpture.png', 'Sculpture detail view from the native cinematic map.')}
+                    'render': ('06-sculpture.png', 'Sculpture detail view from the native cinematic map.'),
+                    'ai59': ('07-harbor-city.png','Harbor City, assembled through native Unreal MCP from the original kit.'),
+                    'first-win': ('08-harbor-market.png','A native market district ready for your AI-directed variation.'),
+                    'kit-gallery': ('10-kit-gallery.png','The twelve-part native kit gallery.'),
+                    'harbor-build': ('07-harbor-city.png','The saved 64-placement Harbor City reference.'),
+                    'forage-import': ('09-forage-monument.png','The actual imported Forage practice mesh in the native city.')}
     for l in lessons:
         if l['id'] in proof_images:
             filename, caption = proof_images[l['id']]
@@ -284,14 +295,14 @@ def build():
                              lesson=dict(title=group.split(' · ')[1],short=group.split(' · ')[1],
                                          tagline=steps[0]['subtitle'],tags='Small Worlds · Unreal Engine 5.9 Preview'),
                              notes='Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.',cases=cases))
-    hero = ROOT / 'images/part2/03-festival.png'
+    hero = ROOT / 'images/part2/07-harbor-city.png'
     if hero.exists():
-        intro = dict(title='What you will build', subtitle='Paper City: Lantern Festival, made in Unreal Engine 5.9 Preview.',
-                     img='images/part2/03-festival.png', bullets=['Four saved native maps, from daylight to a lantern festival.',
-                     'Reusable materials and individually labeled props.', 'Three camera cuts and an animated sculpture.'],
+        intro = dict(title='What you will build', subtitle='Harbor City: an original kit, Forage and native AI tools in Unreal Engine 5.9 Preview.',
+                     img='images/part2/07-harbor-city.png', bullets=['Twelve reusable part recipes and a 64-placement city.',
+                     'The actual Forage practice mesh as the central monument.', 'Native MCP builds and remixes; a three-shot cinematic.'],
                      guideStep='start', notes='Show the actual finished scene first. The numbered workbook teaches how to make and inspect it. These are native Unreal captures, not concept illustrations.')
-        if (ROOT / 'media/part2/paper-city.mp4').exists():
-            intro['clip'] = 'media/part2/paper-city.mp4'
+        if (ROOT / 'media/part2/harbor-city.mp4').exists():
+            intro['clip'] = 'media/part2/harbor-city.mp4'
         sections[0]['cases'].insert(0, intro)
         if (ROOT / 'images/part2/02-dusk.png').exists():
             sections[0]['cases'].insert(1, dict(title='One world, two lighting choices', subtitle='Compare the same camera in the daylight and dusk maps.',
@@ -303,7 +314,7 @@ def build():
     begin = html.index('const SECTIONS =')
     end = html.index('const BONUS =',begin)
     html = html[:begin]+'const SECTIONS ='+json.dumps(sections,ensure_ascii=False,indent=1)+';\n\n'+html[end:]
-    html = re.sub(r'const BONUS = .*?;\n', 'const BONUS = '+json.dumps(dict(year='NEXT',title='Keep the world. Change the brief.',tagline='Save your accepted scene, inspect the evidence and give the next session one clear step.',notes='Use the sharing and restart checks in the workbook. The full route stays available after class.'))+';\n',html,count=1)
+    html = re.sub(r'const BONUS = .*?;\n', 'const BONUS = '+json.dumps(dict(year='NEXT',title='Your next world can be a game.',tagline='Take your kit, your agent and one playable idea into the Epic AI MegaJam.',notes='End with the jam brief: one mechanic, one playable milestone and one next work session. Point students to the official registration and rules links; participation is optional.'))+';\n',html,count=1)
     bm = re.search(r'const BOOKENDS\s*=\s*', html)
     b0 = bm.start()
     _, used = json.JSONDecoder().raw_decode(html[bm.end():])

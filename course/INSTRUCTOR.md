@@ -1,37 +1,32 @@
-# Instructor route, November 12
+# Two-hour live route
 
-**Alex Coulombe Presents · 11 a.m.–1 p.m. Eastern · Unreal Engine 5.9 Preview.**
+Alex Coulombe Presents · November 12, 2026 · 11a–1p Eastern.
 
-Start with the finished scene and the cinematic, then open the workbook. Tell students that the workbook is the full independent route and the deck is its teaching view. Keep the complete course available even when choosing a shorter live route.
+The complete deck and workbook remain the default. Use this live route to get an exciting result quickly; leave the foundations and optional service labs available after class.
 
-| Minutes | Teach | Student checkpoint |
+| Minutes | Show and do | Student result |
 |---|---|---|
-| 0–10 | Show the result; reconnect to last week’s Paper City | A visible goal and the right workshop copy |
-| 10–30 | Local assistant, brief, job contract and Unreal Python probe | Real file access and exact engine version |
-| 30–50 | Native baseline, dimensions and materials | Saved baseline plus actual verification |
-| 50–70 | Dusk and festival; give one precise art-direction note | Two views and a bounded revision |
-| 70–90 | Three camera cuts and animated sculpture | Sequence scrubs through all three cameras |
-| 90–105 | Inspect motion; show rendering and evidence | Start/middle/end review, actual rendered examples |
-| 105–120 | Save memory, fresh-chat recall, recovery and next job | Recovered private design reason and next action |
+| 0–10 | Play the real Harbor City result. Open Finished and make the three-stall native AI variation. | A visible edit, rather than a long setup lecture |
+| 10–25 | Forage free copy, guided three-file import, browse the actual mesh/material/texture. | Everyone shares the original practice asset |
+| 25–45 | Native 5.9 Assistant/MCP connection; twelve-part gallery; one-call city assembly and art direction. | A city vocabulary and a saved variation |
+| 45–65 | Editor Python discovery/batching; show Canvas/spatial-annotation possibilities if your provider is ready. | Distinguish native edits from generated media |
+| 65–85 | Three camera cuts, token motion, render settings and actual movie. Use the saved reference if a learner render needs more time. | A route from scene to cinematic |
+| 85–100 | Search the Unreal field guide, demonstrate named Rotator/FColor fixes, record a design reason and try a fresh chat. | A second brain and a route to resume |
+| 100–115 | MegaJam launchpad: theme, one mechanic, tiny playable loop, owners, build/test/upload plan. | A specific competition brief |
+| 115–120 | Each student names their next action/work session. Point to official registration/rules and the class downloads. | Momentum into the jam |
 
-The remaining render, failure and extension exercises stay in the workbook for self-paced follow-through. This timing is an instructor option, not a shortened source deck.
+## Before class
 
-## Before students arrive
+Keep pristine Starter and Finished downloads. Open a separate presentation copy. Check Windows UE 5.9 CL60351404, Forage menus, native MCP and the signed-in assistant/adapter you will demonstrate. Test the exact machine/account; the automated native rehearsal does not certify an external agent’s UI login.
 
-1. Keep a pristine Starter download and a separate Finished copy. Test the exact editor and workshop you will show. Leave the accepted copy alone.
-2. Open the full workbook and test its copy button. Keep the PDFs ready for an offline fallback.
-3. In Unreal open `04_Cinematic`, then `LS_LanternFestival`. Enable camera-cut view, inspect all cuts and check the rendered movie.
-4. For a from-scratch demonstration, open a new Starter copy. Existing-map refusal is intentional protection, not a reason to delete accepted work.
-5. If direct AI tools are configured, query the current map and one tower first. If not, use the supported assistant → script → manual run route.
+Have the two result movies, PDFs, offline guide and second brain available locally. The required route is native MCP plus Forage; ECABridge stays disabled. The optional supplied bridge had a post-MRQ shutdown assertion, while the native-only two-job render closed normally. Do not turn the live class into a plugin compile.
 
-## Demonstration prompts
+Canvas generation depends on your own configured services/models. If not ready, use the documented lab and explain the distinction between a concept image and a changed native scene. Other platforms remain outside this Windows rehearsal.
 
-Use the workbook’s complete prompts rather than improvising a broad request. Good live choices are **one material variation**, **one prop recipe**, **one lantern-placement repair** and **one fresh-chat restart**. Their visible scope is small enough that students can judge the outcome.
+## Recovery
 
-Unreal Python is editor automation. The resulting maps, materials and sequence are native assets; Python is not the runtime gameplay system. The scene recipe is original AI-assisted procedural authoring, not a claim that a neural model generated the meshes from text.
+Preserve the first traceback and partial project. Show the supplied Finished result while explaining the specific failure, then resume from a clean Starter or unused map name. Never overwrite a learner’s accepted scene to rerun a demo.
 
-## When something fails
+## Close with the competition
 
-Read the first traceback. Preserve the partial project and log. Use the Finished copy to show the intended state while explaining the real failure. Resume the affected step in a clean Starter copy instead of silently substituting an unrelated project. Record which checks were performed and which remain open.
-
-The viewer’s approval is separate from a successful script, file inventory or decode check.
+Recommend a tiny playable game, not only a scene or cinematic. Suggested seed: a harbor courier with three deliveries and a timer; adapt it to the revealed theme. The organizer’s current page is authoritative: https://itch.io/jam/2026-epic-ai-megajam . Sunday November 15, 8:59p ET is the published cutoff. Student-category eligibility requires higher-education enrollment; the class itself does not confer it. Declare supplied/earlier assets and scripts. Leave with one playable milestone and a planned work session.
