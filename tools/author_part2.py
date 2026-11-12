@@ -284,6 +284,20 @@ def build():
                              lesson=dict(title=group.split(' · ')[1],short=group.split(' · ')[1],
                                          tagline=steps[0]['subtitle'],tags='Small Worlds · Unreal Engine 5.9 Preview'),
                              notes='Follow the numbered student workbook. Keep a saved checkpoint before the next chapter.',cases=cases))
+    hero = ROOT / 'images/part2/03-festival.png'
+    if hero.exists():
+        intro = dict(title='What you will build', subtitle='Paper City: Lantern Festival, made in Unreal Engine 5.9 Preview.',
+                     img='images/part2/03-festival.png', bullets=['Four saved native maps, from daylight to a lantern festival.',
+                     'Reusable materials and individually labeled props.', 'Three camera cuts and an animated sculpture.'],
+                     guideStep='start', notes='Show the actual finished scene first. The numbered workbook teaches how to make and inspect it. These are native Unreal captures, not concept illustrations.')
+        if (ROOT / 'media/part2/paper-city.mp4').exists():
+            intro['clip'] = 'media/part2/paper-city.mp4'
+        sections[0]['cases'].insert(0, intro)
+        if (ROOT / 'images/part2/02-dusk.png').exists():
+            sections[0]['cases'].insert(1, dict(title='One world, two lighting choices', subtitle='Compare the same camera in the daylight and dusk maps.',
+                pair=['images/part2/01-daylight.png', 'images/part2/02-dusk.png'], captions=['Daylight', 'Dusk'],
+                bullets=['Keep the camera and geometry fixed.', 'Change light and emissive response.', 'Judge the visible result.'],
+                guideStep='dusk', notes='Ask students what changed and what stayed fixed. Structural checks and the visual comparison answer different questions.'))
     (ROOT/'course/sections.json').write_text(json.dumps(sections, indent=2, ensure_ascii=False)+'\n')
     html = (ROOT/'index.html').read_text()
     begin = html.index('const SECTIONS =')

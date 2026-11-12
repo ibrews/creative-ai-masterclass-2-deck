@@ -23,5 +23,5 @@ env "UE-LocalDataCachePath=$CLASS_OUTPUT/ddc" bash "$CLASS_LEASE" run \
   "$CLASS_SOURCE/workshop/Unreal/PaperCity.uproject" \
   -unattended -nosplash -RenderOffscreen -NoSound -NoLiveCoding \
   "-UserDir=$CLASS_OUTPUT/user" "-abslog=$CLASS_OUTPUT/logs/native-rehearsal.log" \
-  "-ExecutePythonScript=$CLASS_SOURCE/tools/rehearse_native.py" \
+  "-ExecutePythonScript=${CLASS_SCRIPT:-$CLASS_SOURCE/tools/rehearse_native.py}" \
   -stdout -FullStdOutLogOutput
