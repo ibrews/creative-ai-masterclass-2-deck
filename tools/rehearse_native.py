@@ -17,8 +17,21 @@ sys.path.insert(0, str(Path(ue.Paths.project_dir()) / 'Content' / 'Python'))
 import small_worlds as sw
 
 results = []
-for stage in ['starter', 'dusk', 'festival', 'cinematic']:
-    results.append(sw.build(stage))
+for stage, map_name in [('starter', '01_PaperCity'), ('dusk', '02_Dusk'), ('festival', '03_LanternFestival'), ('cinematic', '04_Cinematic')]:
+    if os.environ.get('SMALL_WORLDS_FROM_SAVED') == '1':
+        sw.LEVELS.load_level(sw.ROOT + '/Maps/' + map_name)
+        for actor in sw.ACTORS.get_all_level_actors():
+            if isinstance(actor, ue.PostProcessVolume):
+                settings = actor.get_editor_property('settings')
+                settings.set_editor_property('override_auto_exposure_apply_physical_camera_exposure', True)
+                settings.set_editor_property('auto_exposure_apply_physical_camera_exposure', False)
+                actor.set_editor_property('settings', settings)
+            if isinstance(actor, ue.CineCameraActor):
+                actor.get_cine_camera_component().set_editor_property('post_process_blend_weight', 0.0)
+        sw.LEVELS.save_current_level()
+        results.append(sw.verify(stage))
+    else:
+        results.append(sw.build(stage))
 (out / 'build-results.json').write_text(json.dumps(results, indent=2))
 
 jobs = [

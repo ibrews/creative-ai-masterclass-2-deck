@@ -73,6 +73,7 @@ def camera(label, xyz, target, focal=35.0):
     comp = actor.get_cine_camera_component()
     comp.set_editor_property('current_focal_length', focal)
     comp.set_editor_property('current_aperture', 8.0)
+    comp.set_editor_property('post_process_blend_weight', 0.0)
     focus = comp.get_editor_property('focus_settings')
     focus.set_editor_property('focus_method', ue.CameraFocusMethod.DISABLE)
     comp.set_editor_property('focus_settings', focus)
@@ -207,7 +208,8 @@ def build(stage='starter'):
     pp.set_editor_property('unbound', True)
     settings = pp.get_editor_property('settings')
     for key, value in [('override_auto_exposure_method', True), ('auto_exposure_method', ue.AutoExposureMethod.AEM_MANUAL),
-                       ('override_auto_exposure_bias', True), ('auto_exposure_bias', cfg['exposure_bias'])]:
+                       ('override_auto_exposure_bias', True), ('auto_exposure_bias', cfg['exposure_bias']),
+                       ('override_auto_exposure_apply_physical_camera_exposure', True), ('auto_exposure_apply_physical_camera_exposure', False)]:
         settings.set_editor_property(key, value)
     pp.set_editor_property('settings', settings)
     cams = [camera('SW_Cam_Wide', (1850, -2450, 1500), (0, 0, 170), 38),
