@@ -358,7 +358,7 @@ Actions/01_build_starter.py</pre></div></div>
         <section class="prompt"><div class="prompt-head"><h3>Prompt to copy</h3>
         <div class="copy-tools"><span class="status" role="status"></span>
         <button class="button copy" type="button" aria-controls="prompt-open-folder" hidden>Copy prompt</button></div></div>
-        <pre id="prompt-open-folder">Read AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.</pre></section>
+        <pre id="prompt-open-folder">Read AGENTS.md, Studio/design.json and Recipes/01-start-here.md. Tell me the brief ID, the three tower wall heights in centimeters, the target engine and the first action file. Cite paths. Do not edit or launch anything.</pre></section>
       <div class="outcomes"><div><h3>Check your work</h3><p>It reports SW-18, heights 200 / 300 / 400 cm and Actions/01_build_starter.py.</p></div>
       <div><h3>If you get stuck</h3><p>Reopen the enclosing folder if it cannot see Actions and Unreal together. Do not select only Unreal/Content.</p></div></div>
       <p class="write-in small">My checkpoint</p>
@@ -445,7 +445,7 @@ Saved baseline</pre></div></div>
         <div class="copy-tools"><span class="status" role="status"></span>
         <button class="button copy" type="button" aria-controls="prompt-units" hidden>Copy prompt</button></div></div>
         <pre id="prompt-units">Check the three SW_Tower actors against Studio/design.json. Explain the difference between source-mesh size, actor scale and world-space height. Report the measured values from Unreal if connected; otherwise ask me for the Details values. Do not claim you inspected the editor from source code alone.</pre></section>
-      <div class="outcomes"><div><h3>Check your work</h3><p>Tower heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.</p></div>
+      <div class="outcomes"><div><h3>Check your work</h3><p>Tower wall heights are 200 / 300 / 400 cm. A receipt states the engine and actor count.</p></div>
       <div><h3>If you get stuck</h3><p>A 100× scale error means meters and centimeters were confused. Fix only a duplicate project, then rerun verification and inspect the framing.</p></div></div>
       <p class="write-in small">My checkpoint</p>
       <nav class="stepnav" aria-label="Navigation for step 8"><a href="#contents">↑ Contents</a><a href="#materials">Next step →</a></nav>
@@ -524,7 +524,7 @@ One coherent scene</pre></div></div>
     <article id="art-direction" class="lesson" aria-labelledby="title-art-direction">
       <div class="runhead"><span class="accent">03 · Direct the AI</span><span>Step 13 / 28</span></div>
       <header class="lesson-header"><h2 id="title-art-direction">Give feedback the agent can act on</h2><p class="deck">Name the visual problem and protect what works.</p></header>
-      <div class="work"><div><ol><li>Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”</li><li>Name the protected elements: tower heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.</li><li>Ask for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.</li></ol></div><div class="plate"><pre>Observation
+      <div class="work"><div><ol><li>Pick one screenshot and write what you see. Example: “The hanging lanterns overlap the middle tower’s windows.”</li><li>Name the protected elements: tower wall heights, camera, bridge width and accepted rail material. Limit the edit to one prop group.</li><li>Ask for one revision in a duplicate map. Capture the same camera again. Accept or reject the visible result rather than the assistant’s confidence.</li></ol></div><div class="plate"><pre>Observation
 One allowed change
 Protected choices
 Same comparison view
@@ -533,7 +533,7 @@ Accept or reject</pre></div></div>
         <section class="prompt"><div class="prompt-head"><h3>Prompt to copy</h3>
         <div class="copy-tools"><span class="status" role="status"></span>
         <button class="button copy" type="button" aria-controls="prompt-art-direction" hidden>Copy prompt</button></div></div>
-        <pre id="prompt-art-direction">The hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.</pre></section>
+        <pre id="prompt-art-direction">The hanging lanterns overlap the middle tower windows in my attached view. Propose a single change to their height or spacing. Preserve tower wall heights, both bridges, the camera and all materials. Work only in a duplicate named 03_LanternFestival_MyRevision. Explain the comparison I should inspect before editing.</pre></section>
       <div class="outcomes"><div><h3>Check your work</h3><p>The revision changes one named problem and preserves your protected choices.</p></div>
       <div><h3>If you get stuck</h3><p>If the agent rewrites the whole scene, stop it, restore the duplicate from your baseline and restate the exact actor prefix it may change.</p></div></div>
       <p class="write-in small">My checkpoint</p>
@@ -722,7 +722,7 @@ Known limits</pre></div></div>
         <section class="prompt"><div class="prompt-head"><h3>Prompt to copy</h3>
         <div class="copy-tools"><span class="status" role="status"></span>
         <button class="button copy" type="button" aria-controls="prompt-long-job" hidden>Copy prompt</button></div></div>
-        <pre id="prompt-long-job">In a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.</pre></section>
+        <pre id="prompt-long-job">In a duplicate festival map, add at most 12 original paper-market props using built-in shapes. Preserve both bridges and the three tower wall heights. Budget: 20 minutes, two retries per failing operation, no paid services. Save progress after a complete prop family. Stop with a saved map, actor inventory and three camera captures. Report any unverified step honestly and ask me to inspect the result.</pre></section>
       <div class="outcomes"><div><h3>Check your work</h3><p>The agent can explain when to continue, checkpoint, stop or ask you for a required action.</p></div>
       <div><h3>If you get stuck</h3><p>If the task expands into a new plugin, engine build or purchase, stop that extension and deliver the bounded result you authorized.</p></div></div>
       <p class="write-in small">My checkpoint</p>

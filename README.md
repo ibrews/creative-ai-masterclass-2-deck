@@ -16,7 +16,7 @@ The project uses built-in Unreal meshes and original procedural scene recipes. I
 
 ## Things to Try
 
-1. Build **01_PaperCity** and verify the three tower heights, 200 / 300 / 400 cm.
+1. Build **01_PaperCity** and verify the three tower wall heights, 200 / 300 / 400 cm.
 2. Compare the daylight and dusk maps from the same camera.
 3. Inspect the festival’s labeled trees, benches, boats and lanterns, then propose your own bounded variation.
 4. Scrub the 12-second, three-shot **LS_LanternFestival** sequence and inspect each shot’s start, middle and end.
