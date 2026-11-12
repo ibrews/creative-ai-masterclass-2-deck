@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-12",
+  "class": "Creative AI Workflow Masterclass Part 2",
+  "schedule": "2026-11-12 11:00–13:00 America/New_York",
+  "status": "instructor review ready; not human accepted",
+  "deck": "https://ibrews.github.io/creative-ai-masterclass-2-deck/",
+  "workbook": "https://ibrews.github.io/creative-ai-masterclass-2-deck/classroom/start-here.html",
+  "downloads": "https://drive.google.com/drive/folders/1KRlqQv1tcr6ADRweYq-Z56itprH5UknJ",
+  "start_here": "https://docs.google.com/document/d/10D8subC6XSCuRKup9kb80T9fxkl54wazQuMybhywoRM",
+  "signup": "https://www.alexcoulombepresents.com/classes/2026-11-11-creative-ai-masterclass-part-2",
+  "assets": [
+    {
+      "name": "Small Worlds Part 2 - Starter Project with Forage and Second Brain - 2026-11-12.zip",
+      "bytes": 125149639,
+      "sha256": "c482735b828320efaff2d8c6d00392a14e06c2866a69d6f85fd4330225725deb",
+      "url": "https://drive.google.com/file/d/16L7K3UdwFiegfo9iQ_v2BJxDcwgOp68F/view"
+    },
+    {
+      "name": "Small Worlds Part 2 - Finished Harbor City with Forage and Second Brain - 2026-11-12.zip",
+      "bytes": 125487872,
+      "sha256": "bfe42cd7a3934dc8936394f30c8511595df131590155fc2531a3cb4c8ea16629",
+      "url": "https://drive.google.com/file/d/1JiAtCBeh-8Z0_EjGVbuDI_DS8pXCLf7x/view"
+    },
+    {
+      "name": "Small Worlds Part 2 - Expanded Student Workbook.pdf",
+      "bytes": 10466183,
+      "sha256": "f15dc6abefc68359b955f309ab4bd4df2786c33dde860bc430a69df0339a4dee",
+      "url": "https://drive.google.com/file/d/1vDVsLmPtgxeBRrCxiI-_G_mdk0FQW5b1/view"
+    },
+    {
+      "name": "Small Worlds Part 2 - Expanded Slides.pdf",
+      "bytes": 15494179,
+      "sha256": "41224a2b34217b15200cd2cd7e10fd6b834b593367263508c8eb0bd9e67526b0",
+      "url": "https://drive.google.com/file/d/1OLDIRlXzGWcIV9_bbdhFlEJ7Y2C2z7TI/view"
+    },
+    {
+      "name": "Harbor City - Native Unreal 5.9 Cinematic.mp4",
+      "bytes": 3142908,
+      "sha256": "3df1dd74b3a52220d0758886f4095d3405f392efa3ba97332dcc9bfd4ff010f1",
+      "url": "https://drive.google.com/file/d/1yX5KKQVtwjc4c5shpDWqCCMETdyhEBZC/view"
+    },
+    {
+      "name": "ACP Second Brain - Unreal Classroom Edition - 2026-11-12.zip",
+      "bytes": 121817,
+      "sha256": "5022bbd86a4acd0979353abe9292f5b2f975412f59926d7f61657152a435d13b",
+      "url": "https://drive.google.com/file/d/1SSwhf9GOZUeV0FpqAVAAx1sUb4slgChO/view"
+    },
+    {
+      "name": "Forage 0.1.2b1 - Free Windows Class Copy.zip",
+      "bytes": 25734634,
+      "sha256": "44e0ca971844e9030425b08d1675a2bad2b9fb2635302c8d95d635d4e09b38ab",
+      "url": "https://drive.google.com/file/d/11Eu18lU8gZ4UKCZbAO_Tenm59kUpSbED/view"
+    },
+    {
+      "name": "ECABridge - Optional Windows UE 5.9 Preview - Known MRQ Shutdown Issue - 2026-11-12.zip",
+      "bytes": 5431280,
+      "sha256": "db027049981dd527a1514545d6e09f741fcd4af9cad665976d37cc32a6c9ac10",
+      "url": "https://drive.google.com/file/d/1blhxV3zpeckaAWirHqE7zhvXUEk1YuKK/view"
+    },
+    {
+      "name": "Build a World Enter the Jam - Class Social Card.png",
+      "bytes": 1858042,
+      "sha256": "2e389bc573a642c0a8aebc3e8fb66a509ce015ff33b3d4185d2f9e8cb97ca3f3",
+      "url": "https://drive.google.com/file/d/101CH3607IPwJ6AfpujqyVzGGESZnTE1i/view"
+    },
+    {
+      "name": "Build a World Enter the Jam - 20 Second Portrait Class Promo.mp4",
+      "bytes": 1722693,
+      "sha256": "3e6eebd36a95d7de6289f464ebb8efce76a8075b747daf6feadbf2ff0956dd2a",
+      "url": "https://drive.google.com/file/d/13QlGHhCzQKyyT_t3IuHUy6g6CqmoMKdS/view"
+    },
+    {
+      "name": "Class Signup Copy and Media Notes - Ready to Share.txt",
+      "bytes": 2100,
+      "sha256": "99c4c80d3a2a40de95027888dfa9f8ae419f11bca6639e2e2baa1c41bce9f462",
+      "url": "https://drive.google.com/file/d/1CMfO70L4kvXALxau9nc-0amhTklBBOi4/view"
+    }
+  ],
+  "verification": {
+    "cloud_sizes_and_sha256": "matched all 11 final raw files",
+    "starter_files": 543,
+    "finished_files": 567,
+    "finished_maps": 6,
+    "native_assets": 24,
+    "forage_plugin_files": 240,
+    "second_brain_files": 51,
+    "second_brain_exact_stage_match": true,
+    "ecabridge_in_main_projects": false,
+    "native_engine": "Windows UE 5.9.0 Preview CL60351404",
+    "student_steps": 43,
+    "content_slides": 100,
+    "workbook_pdf_pages": 45,
+    "slides_pdf_pages": 100
+  },
+  "limits": [
+    "ECABridge optional package has an observed post-MRQ shutdown assertion; use native MCP default for class rendering.",
+    "Fab-account asset handoff requires the learner own login; third-party asset acquisition was not rehearsed.",
+    "Forage and optional ECABridge binaries target Windows and the pinned UE preview.",
+    "Second Brain classroom candidate is delivered in class downloads; global member portal release remains separate.",
+    "Promo assets are ready to share; no social post was sent."
+  ]
+}

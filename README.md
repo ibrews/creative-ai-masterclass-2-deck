@@ -55,3 +55,5 @@ An independent rendered review passed all **101 slides** at desktop and phone si
 ## Class promotion
 
 [Social card](images/promo/megajam-class-card.png), [20-second portrait video](media/promo/megajam-masterclass-2026-11-12-portrait.mp4) and [ready-to-share captions](promo/SIGNUP-COPY.txt) promote the November 12 class with an Epic AI MegaJam preparation angle. The silent video uses the actual native Unreal cinematic; the card is AI-assisted artwork. These assets are prepared, not posted. Signup points to the live class calendar.
+
+Pinned download identities and verification scope are in [the delivery manifest](course/delivery-manifest.json). Earlier Paper City-only downloads are preserved in a separate folder rather than replacing the current class files.

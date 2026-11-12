@@ -17,7 +17,7 @@ env "UE-LocalDataCachePath=$CLASS_OUTPUT/ddc" bash "$CLASS_LEASE" run \
   --owner-task "AI Masterclass Part 2 native rehearsal" \
   --project "$CLASS_SOURCE/workshop/Unreal" \
   --engine "$CLASS_ENGINE" \
-  --purpose "Build four original classroom maps and capture six views" \
+  --purpose "Rehearse original classroom maps, kit and cinematics" \
   --disk-path "$CLASS_OUTPUT" --reserve-gib "${CLASS_RESERVE_GIB:-4}" \
   -- "$CLASS_ENGINE/Engine/Binaries/Win64/UnrealEditor-Cmd.exe" \
   "$CLASS_SOURCE/workshop/Unreal/PaperCity.uproject" \

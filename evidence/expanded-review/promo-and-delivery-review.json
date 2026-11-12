@@ -1,0 +1,38 @@
+{
+  "verdict": "PASS",
+  "blocking_defects": [],
+  "review_host": "Alexs-MacBook-Pro-3.local / Apple M1 Max",
+  "browser": "isolated headless Chrome via Playwright; no signed-in profile",
+  "drive_guide": "One-page Google-rendered PDF/PNG readable; numbered startup steps, Starter/Finished distinction,43steps,45page workbook and100page slides clearly stated. No clipping.",
+  "promo_card": "Headline,Nov12 11am\u20131pmET, included materials andsignup URL visible/readable.",
+  "portrait_video": {
+    "sample_seconds": [
+      2,
+      6,
+      10,
+      16
+    ],
+    "finding": "All sampled frames readable with clear date/time, signup URL and native scene imagery; no clipped text."
+  },
+  "signup_copy": "Short andlong captions clearly state ThursdayNov12 11am\u20131pmEastern andsignup URL. Media description andjam eligibility distinction present.",
+  "production": {
+    "url": "https://www.alexcoulombepresents.com/classes/2026-11-11-creative-ai-masterclass-part-2",
+    "visible_date": "Thu, Nov12 \u00b7 11am\u20131pm ET",
+    "book_your_seat_enabled": true,
+    "checkout_clicked": false
+  },
+  "public_deck": {
+    "url": "https://ibrews.github.io/creative-ai-masterclass-2-deck/",
+    "slides_including_settings": 101,
+    "harbor_movie": {
+      "explicit_play_advanced": true,
+      "duration_seconds": 12,
+      "video_width": 1280
+    }
+  },
+  "public_workbook": {
+    "steps": 43,
+    "contents_plus_step_headings": 44
+  },
+  "observed_model": "UNKNOWN"
+}

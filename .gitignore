@@ -42,3 +42,6 @@ evidence/expanded-review/**/*.png
 evidence/expanded-review/**/*.jpg
 evidence/second-brain-review/**/*.png
 evidence/second-brain-review/**/*.jpg
+
+# Google-rendered document review PDFs are regenerated from the linked Doc.
+evidence/expanded-review/**/*.pdf
